@@ -17,8 +17,15 @@
     const groups = Array.from(document.querySelectorAll(".cmd-group"));
     const empty = document.getElementById("cmd-empty");
     let filter = "all";
+    // the search also matches the category name (e.g. "music", "coins", "setup")
+    groups.forEach((g) => {
+      const h = g.querySelector("h2");
+      const cat = h ? h.textContent.replace(/\d+\s*$/, "").trim().toLowerCase() : "";
+      g.querySelectorAll(".cmd").forEach((c) => { c.dataset.search = (c.dataset.search || "") + " " + cat + " " + (g.dataset.group || ""); });
+    });
+    const count = document.getElementById("cmd-count");
     const apply = () => {
-      const q = (search.value || "").trim().toLowerCase();
+      const q = (search.value || "").trim().toLowerCase().replace(/\s+/g, " ");
       let shown = 0;
       groups.forEach((g) => {
         const inCat = filter === "all" || g.dataset.group === filter;
@@ -32,7 +39,12 @@
         shown += visible;
       });
       empty.hidden = shown !== 0;
+      if (count) count.textContent = (q || filter !== "all") ? shown + (shown === 1 ? " match" : " matches") : "";
     };
+    search.addEventListener("keydown", (e) => { if (e.key === "Escape") { search.value = ""; apply(); } });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "/" && document.activeElement !== search && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "")) { e.preventDefault(); search.focus(); }
+    });
     search.addEventListener("input", apply);
     chips.forEach((chip) =>
       chip.addEventListener("click", () => {
@@ -43,6 +55,26 @@
       })
     );
   }
+
+  // a small Copy button on every command card, with an inline "Copied" confirmation
+  const copyText = (text) => navigator.clipboard && window.isSecureContext ? navigator.clipboard.writeText(text) : Promise.reject();
+  document.querySelectorAll(".cmd header").forEach((head) => {
+    const name = head.querySelector(".cmd-name");
+    if (!name || !name.dataset.copy) return;
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "cmd-copy"; b.textContent = "Copy";
+    b.setAttribute("aria-label", "Copy " + name.dataset.copy);
+    let t;
+    b.addEventListener("click", () => {
+      const done = (ok) => {
+        b.textContent = ok ? "Copied \u2713" : name.dataset.copy; b.classList.toggle("ok", ok);
+        clearTimeout(t); t = setTimeout(() => { b.textContent = "Copy"; b.classList.remove("ok"); }, 1600);
+      };
+      copyText(name.dataset.copy).then(() => done(true), () => done(false));
+    });
+    const badges = head.querySelector(".badges");
+    head.insertBefore(b, badges ? badges.nextSibling : null);
+  });
 
   document.querySelectorAll(".cmd-name").forEach((btn) =>
     btn.addEventListener("click", () => {
@@ -142,6 +174,37 @@
       }, { passive: true });
       document.documentElement.addEventListener("pointerleave", () => rigs.forEach((r) => { r.style.transform = ""; }));
     }
+  })();
+
+  // home page demo chat: plays a short scene on a loop. Every message is in the HTML (crawlers and no-JS visitors see the
+  // whole chat); the script only hides and reveals them. Pauses off-screen and in hidden tabs; reduced motion keeps the static chat.
+  (function () {
+    const box = document.getElementById("demo-chat");
+    if (!box || reduce || !("IntersectionObserver" in window)) return;
+    const steps = Array.from(box.querySelectorAll(".demo-step"));
+    const typing = box.querySelector(".demo-typing");
+    // [step index or "typing", wait in ms before the next beat]
+    const SCRIPT = [[0, 1400], ["typing", 1500], [1, 2600], [2, 3200], [3, 3600], ["reset", 700]];
+    let i = 0, timer = 0, visible = false, playing = false;
+    const show = (el) => { el.classList.add("on"); };
+    const reset = () => { steps.forEach((s) => s.classList.remove("on")); typing.classList.remove("on"); box.classList.remove("demo-fade"); };
+    box.classList.add("demo-on");
+    reset();
+    const beat = () => {
+      timer = 0;
+      if (!visible || document.hidden) { playing = false; return; }
+      const [what, wait] = SCRIPT[i];
+      if (what === "typing") typing.classList.add("on");
+      else if (what === "reset") box.classList.add("demo-fade");
+      else { typing.classList.remove("on"); show(steps[what]); }
+      i = (i + 1) % SCRIPT.length;
+      if (i === 0) timer = setTimeout(() => { reset(); beat(); }, wait);
+      else timer = setTimeout(beat, wait);
+    };
+    const resume = () => { if (!playing && visible && !document.hidden) { playing = true; timer = setTimeout(beat, 500); } };
+    const pause = () => { clearTimeout(timer); timer = 0; playing = false; };
+    new IntersectionObserver((es) => { visible = es[0].isIntersecting; visible ? resume() : pause(); }, { threshold: 0.25 }).observe(box);
+    document.addEventListener("visibilitychange", () => (document.hidden ? pause() : resume()));
   })();
 
   // close the mobile menu after picking a link or pressing Escape
