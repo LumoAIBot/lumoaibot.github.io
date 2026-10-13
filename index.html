@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7fccec6f48">
+  <link rel="stylesheet" href="styles.css?v=85086c9a13">
   <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
   <script src="/assets/lumo-holiday.js?v=641148b99e"></script>
 </head>
@@ -185,6 +185,62 @@
       </ul>
     </section>
 
+    <section class="section demo-sec" id="demo" aria-labelledby="demo-title">
+      <div class="wrap demo-wrap">
+        <div class="section-head reveal">
+          <span class="kicker">See it in action</span>
+          <h2 id="demo-title">A minute in a server with Lumo</h2>
+          <p>AI-powered chat, music and levels, all in the channels you already use.</p>
+        </div>
+        <figure class="mock demo" id="demo-chat" aria-label="Example chat: a member asks Lumo for game night ideas, another plays a song, and a level-up message appears">
+          <div class="dc-window">
+            <div class="dc-bar"><span class="hash">#</span> general</div>
+            <div class="demo-log">
+              <div class="dc-msg demo-step" data-step="1">
+                <span class="dc-avatar user" aria-hidden="true">M</span>
+                <div class="dc-body">
+                  <div class="dc-meta"><b>Mira</b><time>Today at 8:02 PM</time></div>
+                  <p class="dc-text"><span class="dc-mention">@Lumo</span> any ideas for game night tonight?</p>
+                </div>
+              </div>
+              <div class="dc-msg demo-step" data-step="2" data-typing>
+                <img class="dc-avatar" src="assets/logo.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                <div class="dc-body">
+                  <div class="dc-meta"><b class="bot-name">Lumo</b><span class="dc-tag">APP</span><time>Today at 8:02 PM</time></div>
+                  <p class="dc-text">Start with a quick Trivia round, then Blackjack for Lumo Coins. Open them both with <span class="dc-cmd">/game</span>, and I’ll keep score!</p>
+                </div>
+              </div>
+              <div class="dc-msg demo-step" data-step="3">
+                <img class="dc-avatar" src="assets/logo.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                <div class="dc-body">
+                  <div class="dc-used"><span class="dc-used-user">Kai</span> used <span class="dc-used-cmd">/play</span></div>
+                  <div class="dc-meta"><b class="bot-name">Lumo</b><span class="dc-tag">APP</span><time>Today at 8:03 PM</time></div>
+                  <div class="dc-embed">
+                    <div class="dc-embed-title">✦ Now playing</div>
+                    <p><b>Midnight Static (Lo-fi Mix)</b> (3:12)<br>Up next: 3 songs</p>
+                    <div class="demo-bar" aria-hidden="true"><span></span></div>
+                  </div>
+                  <div class="dc-buttons">
+                    <span class="dc-btn dc-btn-secondary"><span aria-hidden="true">⏸️</span> Pause</span>
+                    <span class="dc-btn dc-btn-secondary"><span aria-hidden="true">⏭️</span> Skip</span>
+                    <span class="dc-btn dc-btn-secondary"><span aria-hidden="true">📜</span> Queue</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dc-msg demo-step demo-lvl" data-step="4">
+                <img class="dc-avatar" src="assets/logo.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                <div class="dc-body">
+                  <div class="dc-meta"><b class="bot-name">Lumo</b><span class="dc-tag">APP</span><time>Today at 8:05 PM</time></div>
+                  <p class="dc-text"><span aria-hidden="true">🎉</span> GG <span class="dc-mention">@Kai</span>, you reached <b>level 12</b>!</p>
+                </div>
+              </div>
+            </div>
+            <div class="demo-typing" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span> <b>Lumo</b> is typing…</div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
     <section class="section" id="highlights">
       <div class="wrap">
         <div class="section-head reveal">
@@ -275,6 +331,6 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="/assets/lumo-music.js?v=b76e843706" data-slot=".nav-right .nav-menu" data-src="/assets/audio/outer-space-loop.mp3?v=75da4f5d" data-exclude="^/dashboard/" data-volume="0.16" data-fade="2.5" defer></script>
   <script src="/assets/lumo-stats.js?v=58f722e6f5" defer></script>
-  <script src="script.js?v=b9dc660147" defer></script>
+  <script src="script.js?v=a78d9ab043" defer></script>
 </body>
 </html>
