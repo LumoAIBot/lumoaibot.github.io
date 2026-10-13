@@ -8,6 +8,7 @@
 (function () {
   "use strict";
   var KEY = "lumo-holiday";
+  function T(s) { try { var el = document.getElementById("lumo-t"), d = el && JSON.parse(el.textContent); return d && Object.prototype.hasOwnProperty.call(d, s) ? d[s] : s; } catch (e) { return s; } }  /* page language (#lumo-t) */
   var PREFS = ["auto", "off", "halloween", "thanksgiving", "christmas"];
   var NAMES = { halloween: "Halloween", thanksgiving: "Thanksgiving", christmas: "Christmas" };
   var root = document.documentElement;
@@ -188,7 +189,7 @@
     for (var i = 0; i < on.length; i++) { on[i].setAttribute("aria-pressed", on[i].getAttribute("data-holiday-set") === p ? "true" : "false"); }
     var auto = season(new Date());
     var hint = document.querySelectorAll("[data-holiday-now]");
-    for (var j = 0; j < hint.length; j++) { hint[j].textContent = auto ? "\u00b7 now: " + NAMES[auto] : "\u00b7 none right now"; }
+    for (var j = 0; j < hint.length; j++) { hint[j].textContent = auto ? T("\u00b7 now: {name}").replace("{name}", T(NAMES[auto])) : T("\u00b7 none right now"); }
   }
   function apply() {
     var p = pref(), h = pick(p);

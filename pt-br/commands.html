@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comandos do Lumo: todos os 19 comandos de barra</title>
+  <meta name="description" content="Todos os comandos de barra do Lumo com opções e permissões: música, sete jogos, Lumo Coins, perfis, sorteios, enquetes, configuração do servidor e Premium.">
+  <meta name="theme-color" content="#0b0d14">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://lumobot.org/pt-br/commands.html">
+  <meta property="og:site_name" content="Lumo AI">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lumobot.org/pt-br/commands.html">
+  <meta property="og:title" content="Comandos do Lumo">
+  <meta property="og:description" content="Pesquise entre os 19 comandos de barra: música, jogos, coins, sorteios, enquetes, registros e Premium.">
+  <meta property="og:image" content="https://lumobot.org/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lumo: o mascote robô acenando ao lado do nome Lumo e do slogan bot de Discord tudo em um com IA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Comandos do Lumo">
+  <meta name="twitter:description" content="Pesquise entre os 19 comandos de barra: música, jogos, coins, sorteios, enquetes, registros e Premium.">
+  <meta name="twitter:image" content="https://lumobot.org/og-image.png">
+  <meta name="twitter:image:alt" content="Lumo: o mascote robô acenando ao lado do nome Lumo e do slogan bot de Discord tudo em um com IA">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=85086c9a13">
+  <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
+  <script src="/assets/lumo-holiday.js?v=b35e80daaf"></script>
+  <!--i18n-->
+  <link rel="alternate" hreflang="en" href="https://lumobot.org/commands.html">
+  <link rel="alternate" hreflang="es" href="https://lumobot.org/es/commands.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://lumobot.org/pt-br/commands.html">
+  <link rel="alternate" hreflang="ja" href="https://lumobot.org/ja/commands.html">
+  <link rel="alternate" hreflang="x-default" href="https://lumobot.org/commands.html">
+  <link rel="stylesheet" href="/assets/lumo-lang.css?v=8f501865ca">
+  <script>(function(){var D={"en": "/", "es": "/es/", "pt-BR": "/pt-br/", "ja": "/ja/"},cur="pt-BR",has=true,rel="commands.html",p=null;try{p=localStorage.getItem("lumo-lang")}catch(e){}if(!p){if(cur!=="en")return;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase();var m=c.indexOf("pt")===0?"pt-BR":c.indexOf("es")===0?"es":c.indexOf("ja")===0?"ja":c.indexOf("en")===0?"en":null;if(m){p=m;break}}if(!p||p==="en")return}if(p===cur||!D[p]||!has)return;location.replace(D[p]+rel+location.search+location.hash)})()</script>
+  <script type="application/json" id="lumo-t">{"Copy": "Copiar", "Copy {n}": "Copiar {n}", "Copied ✓": "Copiado ✓", "Copied {n}": "Copiado: {n}", "{n} match": "{n} resultado", "{n} matches": "{n} resultados", "Right-click a message → Apps → {n}": "Clique com o botão direito numa mensagem → Apps → {n}", "Dark": "Escuro", "Light": "Claro", "Auto": "Auto", "Appearance: {n}": "Aparência: {n}", "Appearance: {n}. Theme and seasonal options": "Aparência: {n}. Tema e opções sazonais", "just now": "agora mesmo", "{n} min ago": "há {n} min", "Online since": "Online desde", "Last seen": "Visto por último", "checking…": "verificando…", "{n} servers": "{n} servidores", "{n} members": "{n} membros", "server": "servidor", "servers": "servidores", "Halloween": "Halloween", "Thanksgiving": "Ação de Graças", "Christmas": "Natal", "· now: {name}": "· agora: {name}", "· none right now": "· nenhum agora", "Toggle music": "Ligar ou desligar a música"}</script>
+  <script src="/assets/lumo-lang.js?v=bea16ebb2e" defer></script>
+  <!--/i18n-->
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Início do Lumo"><img src="../assets/logo.webp" alt="" width="36" height="36" decoding="async"><span>Lumo</span></a>
+      <nav class="nav-right" aria-label="Principal">
+        <div class="nav-links">
+        <a href="getting-started.html">Primeiros passos</a>
+        <a href="features.html">Recursos</a>
+        <a href="commands.html" aria-current="page">Comandos</a>
+        <a href="premium.html">Premium</a>
+        <a href="faq.html">Dúvidas</a>
+        <a href="dashboard.html">Painel <span class="beta-chip">Beta</span></a>
+        </div>
+        <!--i18n-sw--><details class="lang-pop"><summary aria-label="Idioma: Português (Brasil)" title="Idioma"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-code" translate="no">PT</span></summary><div class="lang-menu"><span class="lang-h">Idioma</span><a href="/commands.html" hreflang="en" lang="en" data-lang="en"><span translate="no">English</span></a><a href="/es/commands.html" hreflang="es" lang="es" data-lang="es"><span translate="no">Español</span></a><a href="/pt-br/commands.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR" aria-current="true"><span translate="no">Português (Brasil)</span><span class=lang-ck aria-hidden=true>✓</span></a><a href="/ja/commands.html" hreflang="ja" lang="ja" data-lang="ja"><span translate="no">日本語</span></a></div></details><!--/i18n-sw--><div class="theme-pop"><button type="button" class="theme-btn" data-theme-menu aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu" aria-label="Aparência e tema sazonal" title="Aparência"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button><div class="theme-menu" id="theme-menu" hidden><div class="theme-seg-wrap"><span>Aparência</span><div class="theme-seg" role="group" aria-label="Tema de cores"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>Escuro</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Claro</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>Auto</span></button></div></div><div class="theme-seg-wrap"><span>Sazonal <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="Tema sazonal"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Auto</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>Não</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>Halloween</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>Ação de Graças</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>Natal</span></button></div></div></div></div>
+        <a class="btn btn-ghost btn-sm nav-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+        <a class="btn btn-primary btn-sm nav-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Adicionar ao Discord</a>
+        <details class="nav-menu">
+          <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+          <div class="nav-panel">
+          <a href="getting-started.html">Primeiros passos</a>
+          <a href="features.html">Recursos</a>
+          <a href="commands.html" aria-current="page">Comandos</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="dashboard.html">Sobre o painel <span class="beta-chip">Beta</span></a>
+          <a class="btn btn-ghost nav-panel-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+            <a class="btn btn-primary nav-panel-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Adicionar ao Discord</a>
+            <div class="theme-seg-wrap"><span>Aparência</span><div class="theme-seg" role="group" aria-label="Tema de cores"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>Escuro</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Claro</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>Auto</span></button></div></div><div class="theme-seg-wrap"><span>Sazonal <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="Tema sazonal"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Auto</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>Não</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>Halloween</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>Ação de Graças</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>Natal</span></button></div></div>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="wrap page-hero-inner">
+        <img class="hero-pose" src="../assets/robot/cool-256.webp" alt="Lumo, o robô, de óculos escuros" width="112" height="112" fetchpriority="high" decoding="async">
+        <span class="kicker">Comandos</span>
+        <h1>Todos os <span class="grad">comandos</span></h1>
+        <p class="lead">Pesquise ou filtre abaixo. Clique num comando para copiar. <span class="badge b-premium">Premium</span> quer dizer que o servidor precisa do Premium.</p>
+      </div>
+    </header>
+
+    <div class="cmd-bar">
+      <div class="wrap cmd-tools">
+        <label class="search">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
+          <input id="cmd-search" type="search" placeholder="Pesquisar 19 comandos de barra…" autocomplete="off" aria-label="Pesquise comandos por nome, descrição ou categoria" title="Aperte / para pesquisar">
+        </label>
+        <span class="cmd-count" id="cmd-count" aria-live="polite"></span>
+        <div class="chips" role="group" aria-label="Filtrar por categoria"><button class="chip active" data-filter="all" type="button">Todos</button><button class="chip" data-filter="chat" type="button">Chat e voz</button><button class="chip" data-filter="music" type="button">Música</button><button class="chip" data-filter="games" type="button">Jogos</button><button class="chip" data-filter="coins" type="button">Lumo Coins</button><button class="chip" data-filter="community" type="button">Perfis e estatísticas</button><button class="chip" data-filter="giveaways" type="button">Sorteios e enquetes</button><button class="chip" data-filter="admin" type="button">Configuração do servidor</button><button class="chip" data-filter="premium" type="button">Premium</button></div>
+      </div>
+    </div>
+
+    <section class="section section-tight cmd-section" id="commands">
+      <div class="wrap">
+        <p class="cmd-note h-mini"><img class="mini-bot" src="../assets/robot/gaming-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>19 comandos de barra. <code class="arg">arg?</code> quer dizer opcional.</span></p>
+        <p class="cmd-note h-mini"><img class="mini-bot" src="../assets/robot/idea-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span><strong>Cargos por reação e Personalizar</strong> não são mais comandos de barra: gerencie no <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">painel web (beta)</a>, junto com sorteios e enquetes.</span></p>
+        <div id="cmd-list">
+<section class="cmd-group" data-group="chat"><h2><span aria-hidden="true">🎙️</span> Chat e voz <small>3</small></h2><div class="cmd-grid"><article class="cmd" data-cat="chat" data-search="/help how lumo works, and every command. topic jump straight to a help page">
+  <header><button class="cmd-name" type="button" data-copy="/help" title="Copiar">/help</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Como o Lumo funciona, e todos os comandos.</p><ul class="args"><li><code class="arg">topic?</code><span>Ir direto para uma página de ajuda</span></li></ul>
+</article>
+<article class="cmd" data-cat="chat" data-search="/voice premium join or leave your voice channel for live voice with lumo. pick join or leave. talking with lumo in voice needs premium. music works on any server. action join your voice channel and listen, or leave it">
+  <header><button class="cmd-name" type="button" data-copy="/voice" title="Copiar">/voice</button><span class="badges"><span class="badge b-premium">Premium</span><span class="badge b-any">Todos</span></span></header>
+  <p>Entra ou sai do seu canal de voz para falar ao vivo com o Lumo. Escolha entrar ou sair. Falar com o Lumo por voz precisa do Premium. A música funciona em qualquer servidor.</p><ul class="args"><li><code class="arg req">action</code><span>Entrar no seu canal de voz e ouvir, ou sair</span></li></ul>
+</article>
+<article class="cmd" data-cat="chat" data-search="/ping lumo latency and connection status.">
+  <header><button class="cmd-name" type="button" data-copy="/ping" title="Copiar">/ping</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Latência e status de conexão do Lumo.</p>
+</article></div></section>
+<section class="cmd-group" data-group="music"><h2><span aria-hidden="true">🎵</span> Música <small>4</small></h2><div class="cmd-grid"><article class="cmd" data-cat="music" data-search="/play play a song, or add it to the queue if something is playing. one song per command. up to 25 songs can wait per server, and you get added to queue with its position. the next song starts by itself when one ends. the now-playing message shows what is up next and has pause/resume, skip, stop (clears the queue) and queue buttons for anyone in the voice channel, and for admins. query song name or a soundcloud link">
+  <header><button class="cmd-name" type="button" data-copy="/play" title="Copiar">/play</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Toque uma música, ou adicione à fila se algo estiver tocando. Uma música por comando. Até 25 músicas podem esperar por servidor, e você recebe Adicionada à fila com a posição. A próxima começa sozinha quando uma acaba. A mensagem do que está tocando mostra o que vem a seguir e tem botões de Pausar/Continuar, Pular, Parar (limpa a fila) e Fila para qualquer um no canal de voz e para os admins.</p><ul class="args"><li><code class="arg req">query</code><span>Nome da música ou um link do SoundCloud</span></li></ul>
+</article>
+<article class="cmd" data-cat="music" data-search="/queue view show what is playing and the next songs in the queue. only you see it. anyone in the server can look.">
+  <header><button class="cmd-name" type="button" data-copy="/queue view" title="Copiar">/queue view</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Mostra o que está tocando e as próximas músicas da fila. Só você vê. Qualquer um do servidor pode olhar.</p>
+</article>
+<article class="cmd" data-cat="music" data-search="/queue remove remove one song from the queue by its position. position 1 is the song that plays next. you need to be in the voice channel, or be an admin. position position in the queue (1 = next up)">
+  <header><button class="cmd-name" type="button" data-copy="/queue remove" title="Copiar">/queue remove</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Remove uma música da fila pela posição. A posição 1 é a próxima a tocar. Você precisa estar no canal de voz ou ser admin.</p><ul class="args"><li><code class="arg req">position</code><span>Posição na fila (1 = a próxima)</span></li></ul>
+</article>
+<article class="cmd" data-cat="music" data-search="/queue clear empty the queue. the current song keeps playing. you need to be in the voice channel, or be an admin.">
+  <header><button class="cmd-name" type="button" data-copy="/queue clear" title="Copiar">/queue clear</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Esvazia a fila. A música atual continua tocando. Você precisa estar no canal de voz ou ser admin.</p>
+</article></div></section>
+<section class="cmd-group" data-group="games"><h2><span aria-hidden="true">🎲</span> Jogos <small>3</small></h2><div class="cmd-grid"><article class="cmd" data-cat="games" data-search="/game lumo coin games: open the game hub, or jump straight into a game. run it on its own to open the game hub: your balance, a line about each game and a button per game. press one, type your bet, and play. games: blackjack, slots, poker, higher or lower, coin toss, trivia and connect four. every result shows your new balance, with same bet, double and quit buttons for a minute. only you can press your buttons. play money only. game skip the hub and start this game bet bet in lumo coins (asked for if you pick a game without one)">
+  <header><button class="cmd-name" type="button" data-copy="/game" title="Copiar">/game</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Jogos com Lumo Coins: abra a central de jogos ou entre direto num jogo. Use sozinho para abrir a central: seu saldo, uma linha sobre cada jogo e um botão por jogo. Aperte um, digite a aposta e jogue. Jogos: Blackjack, Caça-níqueis, Pôquer, Maior ou menor, Cara ou coroa, Trivia e Lig 4. Cada resultado mostra o novo saldo, com botões de Mesma aposta, Dobrar e Sair por um minuto. Só você pode apertar seus botões. Só dinheiro de brincadeira.</p><ul class="args"><li><code class="arg">game?</code><span>Pular a central e começar este jogo</span></li><li><code class="arg">bet?</code><span>Aposta em Lumo Coins (é pedida se você escolher um jogo sem ela)</span></li></ul>
+</article>
+<article class="cmd" data-cat="games" data-search="/slots spin the lumo coin slots. pick a machine, or use your last one. pick cosmos wheel, nebula or event horizon, or leave machine empty to use your last one. the result card shows the reel grid, multiplier, payout and your balance, with same bet, double, paytable and quit buttons. bets 100 to 10,000. play money only. bet bet in lumo coins (asked for if you leave it out) machine which cabinet to sit at">
+  <header><button class="cmd-name" type="button" data-copy="/slots" title="Copiar">/slots</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Gire o caça-níqueis de Lumo Coins. Escolha uma máquina ou use a última. Escolha Cosmos Wheel, Nebula ou Event Horizon, ou deixe a máquina vazia para usar a última. O cartão de resultado mostra os rolos, o multiplicador, o prêmio e o saldo, com botões de Mesma aposta, Dobrar, Tabela de prêmios e Sair. Apostas de 100 a 10,000. Só dinheiro de brincadeira.</p><ul class="args"><li><code class="arg">bet?</code><span>Aposta em Lumo Coins (é pedida se você deixar em branco)</span></li><li><code class="arg">machine?</code><span>Em qual máquina jogar</span></li></ul>
+</article>
+<article class="cmd" data-cat="games" data-search="/connect4 connect four for lumo coins: play lumo, or challenge a member. leave opponent empty to play lumo, or challenge a member: you each put in the same bet and the winner takes the pot. bets 10 to 1,000. play money only. opponent challenge a member (leave empty to play lumo) bet bet in lumo coins (asked for if you leave it out)">
+  <header><button class="cmd-name" type="button" data-copy="/connect4" title="Copiar">/connect4</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Lig 4 valendo Lumo Coins: jogue contra o Lumo ou desafie um membro. Deixe o oponente vazio para jogar contra o Lumo, ou desafie um membro: os dois apostam o mesmo valor e quem ganhar leva tudo. Apostas de 10 a 1,000. Só dinheiro de brincadeira.</p><ul class="args"><li><code class="arg">opponent?</code><span>Desafie um membro (deixe vazio para jogar contra o Lumo)</span></li><li><code class="arg">bet?</code><span>Aposta em Lumo Coins (é pedida se você deixar em branco)</span></li></ul>
+</article></div></section>
+<section class="cmd-group" data-group="coins"><h2><span aria-hidden="true">🪙</span> Lumo Coins <small>2</small></h2><div class="cmd-grid"><article class="cmd" data-cat="coins" data-search="/coins wallet your lumo coin wallet and the top 10 on this server. your lumo coin wallet is shared across servers. each server has its own lumo house wallet (100,000,000 to start), and the leaderboard shows this server’s house.">
+  <header><button class="cmd-name" type="button" data-copy="/coins wallet" title="Copiar">/coins wallet</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Sua carteira de Lumo Coins e o top 10 deste servidor. Sua carteira é a mesma em todos os servidores. Cada servidor tem a própria carteira da casa do Lumo (100,000,000 no início), e o ranking mostra a casa deste servidor.</p>
+</article>
+<article class="cmd" data-cat="coins" data-search="/coins daily claim today&#x27;s lumo coins (once per eastern day; consecutive days build a streak bonus). takes no options: just run it. claim on consecutive days (eastern time) to build a day n streak: from day 2 you get +100 more per day, up to +500, and a missed day starts it over.">
+  <header><button class="cmd-name" type="button" data-copy="/coins daily" title="Copiar">/coins daily</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Resgate as Lumo Coins de hoje (uma vez por dia, horário do Leste; dias seguidos somam um bônus de sequência). Não tem opções: é só usar. Resgate em dias seguidos (horário do Leste) para criar uma sequência de Dia N: a partir do dia 2 você ganha +100 a mais por dia, até +500, e se perder um dia ela recomeça.</p>
+</article></div></section>
+<section class="cmd-group" data-group="community"><h2><span aria-hidden="true">📊</span> Perfis e estatísticas <small>4</small></h2><div class="cmd-grid"><article class="cmd" data-cat="community" data-search="/profile show a member&#x27;s discord facts, lumo coin wallet and badges. member who to look up. leave empty for yourself.">
+  <header><button class="cmd-name" type="button" data-copy="/profile" title="Copiar">/profile</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Mostra os dados do Discord de um membro, a carteira de Lumo Coins e as insígnias.</p><ul class="args"><li><code class="arg">member?</code><span>Quem procurar. Deixe vazio para ver você.</span></li></ul>
+</article>
+<article class="cmd" data-cat="community" data-search="/rank your level card on this server, or another member&#x27;s. shows the level, server rank, xp to the next level and the next level role as a picture. works in every server, and it is the same level as on /profile. member who to look up. leave empty for yourself.">
+  <header><button class="cmd-name" type="button" data-copy="/rank" title="Copiar">/rank</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Seu cartão de nível neste servidor, ou o de outro membro. Mostra em imagem o nível, a posição no servidor, a XP até o próximo nível e o próximo cargo por nível. Funciona em todo servidor e é o mesmo nível de /profile.</p><ul class="args"><li><code class="arg">member?</code><span>Quem procurar. Deixe vazio para ver você.</span></li></ul>
+</article>
+<article class="cmd" data-cat="community" data-search="/server show this server&#x27;s stats and lumo setup.">
+  <header><button class="cmd-name" type="button" data-copy="/server" title="Copiar">/server</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Mostra as estatísticas deste servidor e a configuração do Lumo.</p>
+</article>
+<article class="cmd" data-cat="community" data-search="/top ranks on this server: messages, voice time, or levels. pick messages, voice time or levels. levels shows the top 5 as a picture. sort how to rank people">
+  <header><button class="cmd-name" type="button" data-copy="/top" title="Copiar">/top</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Rankings deste servidor: mensagens, tempo de voz ou níveis. Escolha Mensagens, Tempo de voz ou Níveis. Níveis mostra o top 5 em imagem.</p><ul class="args"><li><code class="arg">sort?</code><span>Como classificar as pessoas</span></li></ul>
+</article></div></section>
+<section class="cmd-group" data-group="giveaways"><h2><span aria-hidden="true">🎉</span> Sorteios e enquetes <small>9</small></h2><div class="cmd-grid"><article class="cmd" data-cat="giveaways" data-search="/giveaway start start a giveaway in this channel (or another one). administrators only. posts a giveaway with enter and leave buttons. duration looks like 30m, 2h, 1d or 1d12h (1 minute to 30 days). winners are drawn fairly at random from people still in the server. up to 10 running at once. free, no ai. prize what people can win duration how long it runs, like 30m, 2h, 1d or 1d12h (1 minute to 30 days) winners how many winners (1-20, default 1) role only people with this role can enter (optional) channel where to post it (default: this channel)">
+  <header><button class="cmd-name" type="button" data-copy="/giveaway start" title="Copiar">/giveaway start</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Começa um sorteio neste canal (ou em outro). Só administradores. Posta um sorteio com botões de Participar e Sair. A duração é tipo 30m, 2h, 1d ou 1d12h (de 1 minuto a 30 dias). Os vencedores são sorteados de forma justa entre quem ainda está no servidor. Até 10 ao mesmo tempo. Grátis, sem IA.</p><ul class="args"><li><code class="arg req">prize</code><span>O que dá pra ganhar</span></li><li><code class="arg req">duration</code><span>Quanto tempo dura, tipo 30m, 2h, 1d ou 1d12h (de 1 minuto a 30 dias)</span></li><li><code class="arg">winners?</code><span>Quantos vencedores (1-20, padrão 1)</span></li><li><code class="arg">role?</code><span>Só quem tem este cargo pode participar (opcional)</span></li><li><code class="arg">channel?</code><span>Onde postar (padrão: este canal)</span></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/giveaway end end a giveaway now and pick the winners. administrators only. ends it now and picks the winners. safe to press twice: winners are only picked once. giveaway which giveaway">
+  <header><button class="cmd-name" type="button" data-copy="/giveaway end" title="Copiar">/giveaway end</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Encerra um sorteio agora e escolhe os vencedores. Só administradores. Encerra agora e sorteia os vencedores. Pode apertar duas vezes sem problema: os vencedores só são sorteados uma vez.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Qual sorteio</span></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/giveaway reroll pick a new winner for a giveaway that has ended. administrators only. picks a new winner after a giveaway ended. someone who already won is never picked again. giveaway which giveaway count how many new winners (default 1)">
+  <header><button class="cmd-name" type="button" data-copy="/giveaway reroll" title="Copiar">/giveaway reroll</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Sorteia um novo vencedor para um sorteio encerrado. Só administradores. Sorteia um novo vencedor depois que o sorteio acabou. Quem já ganhou nunca é sorteado de novo.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Qual sorteio</span></li><li><code class="arg">count?</code><span>Quantos novos vencedores (padrão 1)</span></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/giveaway cancel cancel a running giveaway without picking anyone. administrators only. stops a running giveaway without picking anyone. giveaway which giveaway">
+  <header><button class="cmd-name" type="button" data-copy="/giveaway cancel" title="Copiar">/giveaway cancel</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Cancela um sorteio em andamento sem sortear ninguém. Só administradores. Para um sorteio em andamento sem sortear ninguém.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Qual sorteio</span></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/giveaway list show this server&#x27;s active giveaways and the latest finished ones. shows what is running and the latest finished giveaways, only to you.">
+  <header><button class="cmd-name" type="button" data-copy="/giveaway list" title="Copiar">/giveaway list</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Mostra os sorteios ativos deste servidor e os últimos encerrados. Mostra o que está rolando e os últimos sorteios encerrados, só para você.</p>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/poll create post a poll in this channel (or another one). administrators only. posts a poll with 2 to 10 option buttons. one vote per person that they can change, or several with multiple. counts update live and nobody sees who voted for what. add a duration to close it automatically. up to 10 open at once. free, no ai. question what you want to ask option1 first option option2 second option option3 third option (optional) option4 fourth option (optional) option5 fifth option (optional) option6 sixth option (optional) option7 seventh option (optional) option8 eighth option (optional) option9 ninth option (optional) option10 tenth option (optional) duration close it automatically after this long, like 30m, 2h or 1d (optional) multiple let people pick several options (default: one) channel where to post it (default: this channel)">
+  <header><button class="cmd-name" type="button" data-copy="/poll create" title="Copiar">/poll create</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Posta uma enquete neste canal (ou em outro). Só administradores. Posta uma enquete com botões para 2 a 10 opções. Um voto por pessoa, que pode ser trocado, ou vários com multiple. A contagem atualiza ao vivo e ninguém vê quem votou em quê. Adicione uma duração para fechar sozinha. Até 10 abertas ao mesmo tempo. Grátis, sem IA.</p><ul class="args"><li><code class="arg req">question</code><span>O que você quer perguntar</span></li><li><code class="arg req">option1</code><span>Primeira opção</span></li><li><code class="arg req">option2</code><span>Segunda opção</span></li><li><code class="arg">option3?</code><span>Terceira opção (opcional)</span></li><li><code class="arg">option4?</code><span>Quarta opção (opcional)</span></li><li><code class="arg">option5?</code><span>Quinta opção (opcional)</span></li><li><code class="arg">option6?</code><span>Sexta opção (opcional)</span></li><li><code class="arg">option7?</code><span>Sétima opção (opcional)</span></li><li><code class="arg">option8?</code><span>Oitava opção (opcional)</span></li><li><code class="arg">option9?</code><span>Nona opção (opcional)</span></li><li><code class="arg">option10?</code><span>Décima opção (opcional)</span></li><li><code class="arg">duration?</code><span>Fechar sozinha depois desse tempo, tipo 30m, 2h ou 1d (opcional)</span></li><li><code class="arg">multiple?</code><span>Deixar escolher várias opções (padrão: uma)</span></li><li><code class="arg">channel?</code><span>Onde postar (padrão: este canal)</span></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/poll close close a poll now and post the final results. administrators only. closes a poll now and posts the final results. poll which poll">
+  <header><button class="cmd-name" type="button" data-copy="/poll close" title="Copiar">/poll close</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Fecha uma enquete agora e posta o resultado final. Só administradores. Fecha a enquete agora e posta o resultado final.</p><ul class="args"><li><code class="arg req">poll</code><span>Qual enquete</span></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/poll results show the current (or final) results of a poll, just to you. shows the current (or final) counts and percentages, only to you. poll which poll">
+  <header><button class="cmd-name" type="button" data-copy="/poll results" title="Copiar">/poll results</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Mostra o resultado atual (ou final) de uma enquete, só para você. Mostra a contagem e as porcentagens atuais (ou finais), só para você.</p><ul class="args"><li><code class="arg req">poll</code><span>Qual enquete</span></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/poll list show this server&#x27;s open polls and the latest closed ones. shows the open polls and the latest closed ones, only to you.">
+  <header><button class="cmd-name" type="button" data-copy="/poll list" title="Copiar">/poll list</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Mostra as enquetes abertas deste servidor e as últimas fechadas. Mostra as abertas e as últimas fechadas, só para você.</p>
+</article></div></section>
+<section class="cmd-group" data-group="admin"><h2><span aria-hidden="true">🛡️</span> Configuração do servidor <small>9</small></h2><div class="cmd-grid"><article class="cmd" data-cat="admin" data-search="/setup status see what&#x27;s set up in this server and what needs fixing. administrators only. a private checklist of what is set up in your server (welcome, logs, auto-role, reaction and color roles, date channel, void, automod, premium, customization) with the command to fix each gap. it warns about deleted channels or roles, missing permissions and role order, and changes nothing.">
+  <header><button class="cmd-name" type="button" data-copy="/setup status" title="Copiar">/setup status</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Veja o que está configurado neste servidor e o que precisa de ajuste. Só administradores. Uma lista privada do que está configurado no seu servidor (boas-vindas, registros, cargo automático, cargos por reação e de cor, canal de data, Void, AutoMod, Premium, personalização) com o comando para resolver cada pendência. Avisa sobre canais ou cargos apagados, permissões faltando e ordem dos cargos, e não muda nada.</p>
+</article>
+<article class="cmd" data-cat="admin" data-search="/setup language pick the language lumo uses in this server. administrators only. pick english, español, português (brasil) or 日本語 for lumo&#x27;s replies, buttons, cards and logs in this server. english is the default. slash command names and descriptions follow each person&#x27;s own discord language. language the language for lumo&#x27;s messages, /help and games here">
+  <header><button class="cmd-name" type="button" data-copy="/setup language" title="Copiar">/setup language</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Escolha o idioma que o Lumo usa neste servidor. Só administradores. Escolha English, Español, Português (Brasil) ou 日本語 para as respostas, botões, cartões e registros do Lumo neste servidor. Inglês é o padrão. Os nomes e descrições dos comandos de barra seguem o idioma do Discord de cada pessoa.</p><ul class="args"><li><code class="arg req">language</code><span>O idioma das mensagens do Lumo, do /help e dos jogos aqui</span></li></ul>
+</article>
+<article class="cmd" data-cat="admin" data-search="/setup welcome set the channel for welcome messages. administrators only. channel channel where new-member welcomes should post">
+  <header><button class="cmd-name" type="button" data-copy="/setup welcome" title="Copiar">/setup welcome</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Define o canal das mensagens de boas-vindas. Só administradores.</p><ul class="args"><li><code class="arg req">channel</code><span>Canal onde as boas-vindas aos novos membros são postadas</span></li></ul>
+</article>
+<article class="cmd" data-cat="admin" data-search="/setup autorole give a role to people as soon as they join. administrators only. role role new members receive on join off turn auto-role off for this server">
+  <header><button class="cmd-name" type="button" data-copy="/setup autorole" title="Copiar">/setup autorole</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Dá um cargo para as pessoas assim que entram. Só administradores.</p><ul class="args"><li><code class="arg">role?</code><span>Cargo que os novos membros recebem ao entrar</span></li><li><code class="arg">off?</code><span>Desligar o cargo automático neste servidor</span></li></ul>
+</article>
+<article class="cmd" data-cat="admin" data-search="/setup datechannel set the voice channel that shows today&#x27;s date. administrators only. channel voice channel to rename each night at midnight (eastern unless you change it on the dashboard)">
+  <header><button class="cmd-name" type="button" data-copy="/setup datechannel" title="Copiar">/setup datechannel</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Define o canal de voz que mostra a data de hoje. Só administradores.</p><ul class="args"><li><code class="arg req">channel</code><span>Canal de voz renomeado toda noite à meia-noite (horário do Leste, a menos que você mude no painel)</span></li></ul>
+</article>
+<article class="cmd" data-cat="admin" data-search="/setup logs set the server log channel and pick which events lumo posts. channel channel that receives log embeds event one event to turn on or off enabled on or off for that event">
+  <header><button class="cmd-name" type="button" data-copy="/setup logs" title="Copiar">/setup logs</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Define o canal de registros do servidor e quais eventos o Lumo posta.</p><ul class="args"><li><code class="arg">channel?</code><span>Canal que recebe os registros</span></li><li><code class="arg">event?</code><span>Um evento para ligar ou desligar</span></li><li><code class="arg">enabled?</code><span>Ligado ou desligado para esse evento</span></li></ul>
+</article>
+<article class="cmd" data-cat="admin" data-search="/purge delete up to 100 recent messages in this channel. administrators only. amount how many messages to delete (1-100)">
+  <header><button class="cmd-name" type="button" data-copy="/purge" title="Copiar">/purge</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Apaga até 100 mensagens recentes deste canal. Só administradores.</p><ul class="args"><li><code class="arg">amount?</code><span>Quantas mensagens apagar (1-100)</span></li></ul>
+</article>
+<article class="cmd" data-cat="admin" data-search="/forgetme erase the messages, memory and activity stats lumo stores for this server. owner only. only the server owner can use it, and it asks for confirmation first. it also erases everyone&#x27;s xp and levels in the server. premium, settings, usage counters and lumo coin wallets are kept.">
+  <header><button class="cmd-name" type="button" data-copy="/forgetme" title="Copiar">/forgetme</button><span class="badges"><span class="badge b-admin">Dono do servidor</span></span></header>
+  <p>Apaga as mensagens, a memória e as estatísticas de atividade que o Lumo guarda deste servidor. Só o dono. Só o dono do servidor pode usar, e ele pede confirmação antes. Também apaga a XP e os níveis de todo mundo no servidor. Premium, configurações, contadores de uso e carteiras de Lumo Coins são mantidos.</p>
+</article>
+<article class="cmd" data-cat="admin" data-search="/setup void make a bait channel. a post there is deleted and logged. administrators only. action what a post in the bait channel does. log only until you say otherwise. channel use this channel instead of making #void timeout_minutes timeout length, 1 to 10080 minutes. only used when action is timeout.">
+  <header><button class="cmd-name" type="button" data-copy="/setup void" title="Copiar">/setup void</button><span class="badges"><span class="badge b-admin">Admin</span><span class="badge b-any">Grátis</span></span></header>
+  <p>Cria um canal isca. O que for postado lá é apagado e registrado. Só administradores. Começa só registrando. Admins, quem tem Gerenciar servidor e outros bots não são afetados.</p><ul class="args"><li><code class="arg">action</code><span>O que acontece com um post no canal isca: só registrar, castigo, expulsar, softban ou desligado</span></li><li><code class="arg">channel</code><span>Usar este canal em vez de criar #void</span></li><li><code class="arg">timeout_minutes</code><span>Duração do castigo, de 1 a 10080 minutos. Só usado quando a ação é castigo</span></li></ul>
+</article></div></section>
+<section class="cmd-group" data-group="premium"><h2><span aria-hidden="true">✦</span> Premium <small>3</small></h2><div class="cmd-grid"><article class="cmd" data-cat="premium" data-search="/premium status show this server&#x27;s premium status and how to upgrade. shows this server’s plan and when it ends. on a premium server it also shows ai replies used today and images and videos used this month, with when each resets.">
+  <header><button class="cmd-name" type="button" data-copy="/premium status" title="Copiar">/premium status</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
+  <p>Mostra o status do Premium deste servidor e como assinar. Mostra o plano do servidor e quando acaba. Num servidor Premium também mostra as respostas da IA usadas hoje e as imagens e vídeos usados no mês, com quando cada um reinicia.</p>
+</article>
+<article class="cmd" data-cat="premium" data-search="/premium claim activate your ko-fi lumo premium payment for this server. administrators only. use the email you paid with, or the transaction id from your ko-fi receipt. later renewals extend the same server by themselves. paid_with the email you paid with on ko-fi, or the transaction id from your receipt">
+  <header><button class="cmd-name" type="button" data-copy="/premium claim" title="Copiar">/premium claim</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Ativa seu pagamento do Lumo Premium no Ko-fi para este servidor. Só administradores. Use o e-mail com que você pagou ou o ID da transação do recibo do Ko-fi. As renovações estendem o mesmo servidor sozinhas.</p><ul class="args"><li><code class="arg req">paid_with</code><span>O e-mail com que você pagou no Ko-fi ou o ID da transação do recibo</span></li></ul>
+</article>
+<article class="cmd" data-cat="premium" data-search="/premium redeem redeem a lumo premium code for this server. administrators only. code your code, like lumo-xxxx-xxxx (older aeth- codes work too)">
+  <header><button class="cmd-name" type="button" data-copy="/premium redeem" title="Copiar">/premium redeem</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
+  <p>Resgata um código do Lumo Premium para este servidor. Só administradores.</p><ul class="args"><li><code class="arg req">code</code><span>Seu código, tipo LUMO-XXXX-XXXX (códigos AETH- antigos também funcionam)</span></li></ul>
+</article></div></section>
+        </div>
+        <p class="empty" id="cmd-empty" hidden><img class="mini-bot" src="../assets/robot/surprised-96.webp" alt="" width="64" height="64" loading="lazy" decoding="async"><br>Nenhum comando corresponde a essa busca.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="../assets/logo.webp" alt="" width="34" height="34" loading="lazy" decoding="async"><span>Lumo</span></a>
+        <p class="footer-wave"><img class="mini-bot" src="../assets/robot/wave-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Valeu pela visita!</span></p>
+        <p>Um bot de Discord com IA para música, jogos e ferramentas do servidor. Criado e mantido por <a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a>.</p>
+      </div>
+      <nav class="footer-cols" aria-label="Rodapé">
+        <div>
+          <h2>Explorar</h2>
+          <a href="getting-started.html">Primeiros passos</a>
+          <a href="features.html">Recursos</a>
+          <a href="commands.html" aria-current="page">Comandos</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="changelog.html">Novidades</a>
+          <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+          <a href="dashboard.html">Sobre o painel</a>
+        </div>
+        <div>
+          <h2>Suporte</h2>
+          <a href="https://discord.gg/KZjebts36C" target="_blank" rel="noopener">Entre no nosso servidor de suporte</a>
+          <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">Mande mensagem para o Ori no Discord</a>
+          <a href="faq.html#claim">Ativar o Premium</a>
+          <a href="faq.html#permissions">Permissões explicadas</a>
+          <a href="status.html">Status</a>
+        </div>
+        <div>
+          <h2>Jurídico</h2>
+          <a href="../terms.html">Termos de Serviço</a>
+          <a href="../privacy.html">Política de Privacidade</a>
+        </div>
+      </nav>
+    </div>
+    <div class="wrap footer-note">Sem vínculo com o Discord. Lumo Coins são dinheiro de brincadeira, sem valor real. Música: <a href="https://opengameart.org/content/outer-space-loop" target="_blank" rel="noopener">Outer Space Loop</a> de wipics (CC0).</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/lumo-music.js?v=7885974567" data-slot=".nav-right .nav-menu" data-src="/assets/audio/outer-space-loop.mp3?v=75da4f5d" data-exclude="^/dashboard/" data-volume="0.16" data-fade="2.5" defer></script>
+  <script src="../script.js?v=493c621e93" defer></script>
+</body>
+</html>

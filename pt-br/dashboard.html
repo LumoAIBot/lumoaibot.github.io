@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel do Lumo (beta)</title>
+  <meta name="description" content="O painel web do Lumo (beta): entre com o Discord para conferir a configuração do servidor, mudar boas-vindas, registros e o cargo de entrada, gerenciar cargos por reação, Personalizar, sorteios e enquetes, escolher onde a IA responde e ver o uso. Aberto a quem gerencia um servidor onde o Lumo está.">
+  <meta name="theme-color" content="#0b0d14">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://lumobot.org/pt-br/dashboard.html">
+  <meta property="og:site_name" content="Lumo AI">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lumobot.org/pt-br/dashboard.html">
+  <meta property="og:title" content="Painel do Lumo (beta)">
+  <meta property="og:description" content="O painel web do Lumo (beta): entre com o Discord para conferir a configuração do servidor, mudar boas-vindas, registros e o cargo de entrada, gerenciar cargos por reação, Personalizar, sorteios e enquetes, escolher onde a IA responde e ver o uso. Aberto a quem gerencia um servidor onde o Lumo está.">
+  <meta property="og:image" content="https://lumobot.org/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lumo: o mascote robô acenando ao lado do nome Lumo e do slogan bot de Discord tudo em um com IA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Painel do Lumo (beta)">
+  <meta name="twitter:description" content="O painel web do Lumo (beta): entre com o Discord para conferir a configuração do servidor, mudar boas-vindas, registros e o cargo de entrada, gerenciar cargos por reação, Personalizar, sorteios e enquetes, escolher onde a IA responde e ver o uso. Aberto a quem gerencia um servidor onde o Lumo está.">
+  <meta name="twitter:image" content="https://lumobot.org/og-image.png">
+  <meta name="twitter:image:alt" content="Lumo: o mascote robô acenando ao lado do nome Lumo e do slogan bot de Discord tudo em um com IA">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=85086c9a13">
+  <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
+  <script src="/assets/lumo-holiday.js?v=b35e80daaf"></script>
+  <!--i18n-->
+  <link rel="alternate" hreflang="en" href="https://lumobot.org/dashboard.html">
+  <link rel="alternate" hreflang="es" href="https://lumobot.org/es/dashboard.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://lumobot.org/pt-br/dashboard.html">
+  <link rel="alternate" hreflang="ja" href="https://lumobot.org/ja/dashboard.html">
+  <link rel="alternate" hreflang="x-default" href="https://lumobot.org/dashboard.html">
+  <link rel="stylesheet" href="/assets/lumo-lang.css?v=8f501865ca">
+  <script>(function(){var D={"en": "/", "es": "/es/", "pt-BR": "/pt-br/", "ja": "/ja/"},cur="pt-BR",has=true,rel="dashboard.html",p=null;try{p=localStorage.getItem("lumo-lang")}catch(e){}if(!p){if(cur!=="en")return;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase();var m=c.indexOf("pt")===0?"pt-BR":c.indexOf("es")===0?"es":c.indexOf("ja")===0?"ja":c.indexOf("en")===0?"en":null;if(m){p=m;break}}if(!p||p==="en")return}if(p===cur||!D[p]||!has)return;location.replace(D[p]+rel+location.search+location.hash)})()</script>
+  <script type="application/json" id="lumo-t">{"Copy": "Copiar", "Copy {n}": "Copiar {n}", "Copied ✓": "Copiado ✓", "Copied {n}": "Copiado: {n}", "{n} match": "{n} resultado", "{n} matches": "{n} resultados", "Right-click a message → Apps → {n}": "Clique com o botão direito numa mensagem → Apps → {n}", "Dark": "Escuro", "Light": "Claro", "Auto": "Auto", "Appearance: {n}": "Aparência: {n}", "Appearance: {n}. Theme and seasonal options": "Aparência: {n}. Tema e opções sazonais", "just now": "agora mesmo", "{n} min ago": "há {n} min", "Online since": "Online desde", "Last seen": "Visto por último", "checking…": "verificando…", "{n} servers": "{n} servidores", "{n} members": "{n} membros", "server": "servidor", "servers": "servidores", "Halloween": "Halloween", "Thanksgiving": "Ação de Graças", "Christmas": "Natal", "· now: {name}": "· agora: {name}", "· none right now": "· nenhum agora", "Toggle music": "Ligar ou desligar a música"}</script>
+  <script src="/assets/lumo-lang.js?v=bea16ebb2e" defer></script>
+  <!--/i18n-->
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Início do Lumo"><img src="../assets/logo.webp" alt="" width="36" height="36" decoding="async"><span>Lumo</span></a>
+      <nav class="nav-right" aria-label="Principal">
+        <div class="nav-links">
+        <a href="getting-started.html">Primeiros passos</a>
+        <a href="features.html">Recursos</a>
+        <a href="commands.html">Comandos</a>
+        <a href="premium.html">Premium</a>
+        <a href="faq.html">Dúvidas</a>
+        <a href="dashboard.html" aria-current="page">Painel <span class="beta-chip">Beta</span></a>
+        </div>
+        <!--i18n-sw--><details class="lang-pop"><summary aria-label="Idioma: Português (Brasil)" title="Idioma"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-code" translate="no">PT</span></summary><div class="lang-menu"><span class="lang-h">Idioma</span><a href="/dashboard.html" hreflang="en" lang="en" data-lang="en"><span translate="no">English</span></a><a href="/es/dashboard.html" hreflang="es" lang="es" data-lang="es"><span translate="no">Español</span></a><a href="/pt-br/dashboard.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR" aria-current="true"><span translate="no">Português (Brasil)</span><span class=lang-ck aria-hidden=true>✓</span></a><a href="/ja/dashboard.html" hreflang="ja" lang="ja" data-lang="ja"><span translate="no">日本語</span></a></div></details><!--/i18n-sw--><div class="theme-pop"><button type="button" class="theme-btn" data-theme-menu aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu" aria-label="Aparência e tema sazonal" title="Aparência"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button><div class="theme-menu" id="theme-menu" hidden><div class="theme-seg-wrap"><span>Aparência</span><div class="theme-seg" role="group" aria-label="Tema de cores"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>Escuro</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Claro</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>Auto</span></button></div></div><div class="theme-seg-wrap"><span>Sazonal <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="Tema sazonal"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Auto</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>Não</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>Halloween</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>Ação de Graças</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>Natal</span></button></div></div></div></div>
+        <a class="btn btn-ghost btn-sm nav-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+        <a class="btn btn-primary btn-sm nav-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Adicionar ao Discord</a>
+        <details class="nav-menu">
+          <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+          <div class="nav-panel">
+          <a href="getting-started.html">Primeiros passos</a>
+          <a href="features.html">Recursos</a>
+          <a href="commands.html">Comandos</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="dashboard.html" aria-current="page">Sobre o painel <span class="beta-chip">Beta</span></a>
+          <a class="btn btn-ghost nav-panel-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+            <a class="btn btn-primary nav-panel-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Adicionar ao Discord</a>
+            <div class="theme-seg-wrap"><span>Aparência</span><div class="theme-seg" role="group" aria-label="Tema de cores"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>Escuro</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Claro</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>Auto</span></button></div></div><div class="theme-seg-wrap"><span>Sazonal <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="Tema sazonal"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Auto</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>Não</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>Halloween</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>Ação de Graças</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>Natal</span></button></div></div>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="wrap page-hero-inner">
+        <img class="hero-pose" src="../assets/robot/working-320.webp" alt="Lumo, o robô, digitando num notebook" width="112" height="112" fetchpriority="high" decoding="async">
+        <span class="kicker">Beta</span>
+        <h1><span class="grad">Painel</span> do Lumo</h1>
+        <p class="lead">Uma página web onde quem gerencia um servidor pode conferir e mudar a configuração do Lumo, sem digitar comando.</p>
+      </div>
+    </header>
+
+    <section class="section section-tight" id="dashboard">
+      <div class="wrap wrap-mid">
+        <div class="beta-notice" role="note">
+          <span class="badge b-premium">Beta</span>
+          <p><strong>O painel do Lumo está em beta.</strong></p>
+          <p>Qualquer pessoa que gerencie um servidor onde o Lumo está pode entrar com o Discord. Você só vê os servidores onde tem Gerenciar servidor ou Administrador e onde o Lumo está. Tudo no Lumo continua funcionando no Discord com comandos de barra também.</p>
+        </div>
+
+        <h2 class="db-h">O que faz</h2>
+        <div class="info-grid">
+          <article class="info-card"><h3>Lista de configuração</h3><p>A mesma lista do <code>/setup status</code>: o que está configurado, o que ajustar depois e o comando que resolve, incluindo o canal isca Void.</p></article>
+          <article class="info-card"><h3>Uso e plano</h3><p>As imagens e vídeos do mês, as respostas da IA de hoje em relação ao limite diário, o status e o vencimento do Premium, e a carteira da casa.</p></article>
+          <article class="info-card"><h3>Mudar ajustes</h3><p>Quem gerencia pode definir o canal de boas-vindas, mudar o cartão e a mensagem de boas-vindas (com prévia ao vivo), definir o cargo de entrada e os registros do servidor, e ligar as mensagens de nível. O Void é configurado no Discord com <code>/setup void</code>, e a lista mostra se está ligado. Administradores gerenciam cargos por reação, de cor e por nível. Com o Premium, dá para personalizar o nome, a personalidade e o avatar do bot.</p></article>
+          <article class="info-card"><h3>Sorteios e enquetes</h3><p>Administradores podem começar um sorteio ou uma enquete escolhendo o canal, ver o que está rolando e encerrar, sortear de novo, cancelar ou fechar. São os mesmos sorteios e enquetes de <code>/giveaway</code> e <code>/poll</code>.</p></article>
+          <article class="info-card"><h3>Canais da IA</h3><p>Quem gerencia escolhe onde o chat com IA do Lumo responde: em todo lugar (o padrão), só em alguns canais ou em todos menos alguns. Um canal também pode ter seu próprio tom, ou responder só quando alguém mencionar ou responder. Tópicos seguem o canal deles.</p></article>
+          <article class="info-card"><h3>Seguro por padrão</h3><p>Entre com o Discord. Ele só pergunta quem você é e quais servidores você gerencia. Você só vê os servidores que gerencia, e cada mudança é conferida de novo no servidor e registrada.</p></article>
+        </div>
+
+        <div class="db-open">
+          <div class="cta center"><a class="btn btn-primary" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="db-tag">beta</span></a></div>
+          <p class="db-note">Abre o painel beta em outro site.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="../assets/logo.webp" alt="" width="34" height="34" loading="lazy" decoding="async"><span>Lumo</span></a>
+        <p class="footer-wave"><img class="mini-bot" src="../assets/robot/wave-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Valeu pela visita!</span></p>
+        <p>Um bot de Discord com IA para música, jogos e ferramentas do servidor. Criado e mantido por <a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a>.</p>
+      </div>
+      <nav class="footer-cols" aria-label="Rodapé">
+        <div>
+          <h2>Explorar</h2>
+          <a href="getting-started.html">Primeiros passos</a>
+          <a href="features.html">Recursos</a>
+          <a href="commands.html">Comandos</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="changelog.html">Novidades</a>
+          <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+          <a href="dashboard.html" aria-current="page">Sobre o painel</a>
+        </div>
+        <div>
+          <h2>Suporte</h2>
+          <a href="https://discord.gg/KZjebts36C" target="_blank" rel="noopener">Entre no nosso servidor de suporte</a>
+          <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">Mande mensagem para o Ori no Discord</a>
+          <a href="faq.html#claim">Ativar o Premium</a>
+          <a href="faq.html#permissions">Permissões explicadas</a>
+          <a href="status.html">Status</a>
+        </div>
+        <div>
+          <h2>Jurídico</h2>
+          <a href="../terms.html">Termos de Serviço</a>
+          <a href="../privacy.html">Política de Privacidade</a>
+        </div>
+      </nav>
+    </div>
+    <div class="wrap footer-note">Sem vínculo com o Discord. Lumo Coins são dinheiro de brincadeira, sem valor real. Música: <a href="https://opengameart.org/content/outer-space-loop" target="_blank" rel="noopener">Outer Space Loop</a> de wipics (CC0).</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/lumo-music.js?v=7885974567" data-slot=".nav-right .nav-menu" data-src="/assets/audio/outer-space-loop.mp3?v=75da4f5d" data-exclude="^/dashboard/" data-volume="0.16" data-fade="2.5" defer></script>
+  <script src="../script.js?v=493c621e93" defer></script>
+</body>
+</html>

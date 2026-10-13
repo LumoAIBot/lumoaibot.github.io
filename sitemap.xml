@@ -11,4 +11,33 @@
   <url><loc>https://lumobot.org/changelog.html</loc><lastmod>2026-10-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://lumobot.org/terms.html</loc><lastmod>2026-10-08</lastmod><priority>0.4</priority></url>
   <url><loc>https://lumobot.org/privacy.html</loc><lastmod>2026-10-08</lastmod><priority>0.4</priority></url>
+<!--i18n-->
+  <url><loc>https://lumobot.org/es/</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/features.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/commands.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/getting-started.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/faq.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/premium.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/dashboard.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/status.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/es/changelog.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/features.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/commands.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/getting-started.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/faq.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/premium.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/dashboard.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/status.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/pt-br/changelog.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/features.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/commands.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/getting-started.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/faq.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/premium.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/dashboard.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/status.html</loc><priority>0.7</priority></url>
+  <url><loc>https://lumobot.org/ja/changelog.html</loc><priority>0.7</priority></url>
+<!--/i18n-->
 </urlset>

@@ -1,5 +1,6 @@
 // Lumo showcase: command search/filter, click-to-copy, scroll reveal. No dependencies, no tracking.
 (function () {
+function T(s, v) { var o = s; try { var el = document.getElementById("lumo-t"), d = el && JSON.parse(el.textContent); if (d && Object.prototype.hasOwnProperty.call(d, s)) o = d[s]; } catch (e) {} return v == null ? o : String(o).split("{n}").join(v); }  /* page language (#lumo-t) */
   const toast = document.getElementById("toast");
   let timer;
   function notify(msg) {
@@ -39,7 +40,7 @@
         shown += visible;
       });
       empty.hidden = shown !== 0;
-      if (count) count.textContent = (q || filter !== "all") ? shown + (shown === 1 ? " match" : " matches") : "";
+      if (count) count.textContent = (q || filter !== "all") ? T(shown === 1 ? "{n} match" : "{n} matches", shown) : "";
     };
     search.addEventListener("keydown", (e) => { if (e.key === "Escape") { search.value = ""; apply(); } });
     document.addEventListener("keydown", (e) => {
@@ -62,13 +63,13 @@
     const name = head.querySelector(".cmd-name");
     if (!name || !name.dataset.copy) return;
     const b = document.createElement("button");
-    b.type = "button"; b.className = "cmd-copy"; b.textContent = "Copy";
-    b.setAttribute("aria-label", "Copy " + name.dataset.copy);
+    b.type = "button"; b.className = "cmd-copy"; b.textContent = T("Copy");
+    b.setAttribute("aria-label", T("Copy {n}", name.dataset.copy));
     let t;
     b.addEventListener("click", () => {
       const done = (ok) => {
-        b.textContent = ok ? "Copied \u2713" : name.dataset.copy; b.classList.toggle("ok", ok);
-        clearTimeout(t); t = setTimeout(() => { b.textContent = "Copy"; b.classList.remove("ok"); }, 1600);
+        b.textContent = ok ? T("Copied \u2713") : name.dataset.copy; b.classList.toggle("ok", ok);
+        clearTimeout(t); t = setTimeout(() => { b.textContent = T("Copy"); b.classList.remove("ok"); }, 1600);
       };
       copyText(name.dataset.copy).then(() => done(true), () => done(false));
     });
@@ -79,9 +80,9 @@
   document.querySelectorAll(".cmd-name").forEach((btn) =>
     btn.addEventListener("click", () => {
       const text = btn.dataset.copy;
-      if (!text) { notify("Right-click a message → Apps → " + btn.textContent); return; }
+      if (!text) { notify(T("Right-click a message → Apps → {n}", btn.textContent)); return; }
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(text).then(() => notify("Copied " + text), () => notify(text));
+        navigator.clipboard.writeText(text).then(() => notify(T("Copied {n}", text)), () => notify(text));
       } else {
         notify(text);
       }
@@ -235,8 +236,8 @@
       const meta = document.querySelector('meta[name="theme-color"]');
       if (meta) meta.setAttribute("content", eff === "light" ? "#f5f7fb" : "#0b0d14");
       document.querySelectorAll("[data-theme-set]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.themeSet === pref)));
-      const names = { dark: "Dark", light: "Light", auto: "Auto" };
-      document.querySelectorAll("[data-theme-menu]").forEach((b) => { b.setAttribute("aria-label", "Appearance: " + names[pref] + ". Theme and seasonal options"); b.title = "Appearance: " + names[pref]; });
+      const names = { dark: T("Dark"), light: T("Light"), auto: T("Auto") };
+      document.querySelectorAll("[data-theme-menu]").forEach((b) => { b.setAttribute("aria-label", T("Appearance: {n}. Theme and seasonal options", names[pref])); b.title = T("Appearance: {n}", names[pref]); });
     };
     const save = (pref) => { try { localStorage.setItem(KEY, pref); } catch (e) {} apply(pref); };
     // the top-bar button opens a small menu: Appearance (Dark / Light / Auto) and Seasonal (lumo-holiday.js handles those buttons)

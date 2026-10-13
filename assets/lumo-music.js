@@ -8,6 +8,7 @@
      navigates normally. Config: data-slot / data-slot-in / data-slot-mq (top-bar spot on small screens), data-src, data-exclude (path regex), data-forms="1", data-volume, data-fade on the script tag. */
 (function () {
   "use strict";
+  function T(s) { try { var el = document.getElementById("lumo-t"), d = el && JSON.parse(el.textContent); return d && Object.prototype.hasOwnProperty.call(d, s) ? d[s] : s; } catch (e) { return s; } }  /* page language (#lumo-t) */
   if (window.LumoMusic) { return; }
   var tag = document.currentScript, ds = (tag && tag.dataset) || {};
   var cfg = window.LUMO_MUSIC || {
@@ -139,7 +140,7 @@
   function mountButton() {
     if (!btn) {
       btn = document.createElement("button");
-      btn.type = "button"; btn.className = "lumo-music"; btn.setAttribute("aria-label", "Toggle music");
+      btn.type = "button"; btn.className = "lumo-music"; btn.setAttribute("aria-label", T("Toggle music"));
       btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">' +
         '<path fill="currentColor" d="M9 17.5a2.5 2.5 0 1 1-2-2.45V5.6l10-2.1v11.4a2.5 2.5 0 1 1-2-2.45V7.1l-6 1.26v9.14z"/>' +
         '<path class="lm-x" d="M4 4l16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
@@ -205,6 +206,7 @@
     if (!doc.body) { location.href = url; return; }
     dropPageListeners();
     document.title = doc.title;
+    if (doc.documentElement.lang) { document.documentElement.lang = doc.documentElement.lang; }  // a language switch swaps in place too
     Array.prototype.forEach.call(document.body.attributes, function (a) { if (!doc.body.hasAttribute(a.name)) { document.body.removeAttribute(a.name); } });
     Array.prototype.forEach.call(doc.body.attributes, function (a) { document.body.setAttribute(a.name, a.value); });
     // scripts in <head> that the next page has and this one doesn't (rare) are added too
