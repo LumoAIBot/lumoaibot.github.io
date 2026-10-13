@@ -1,0 +1,21 @@
+/* Language switcher (i18n/build.py adds it next to the theme menu) and the "only in English" notes. */
+.lang-pop{position:relative;flex-shrink:0}
+.lang-pop>summary{list-style:none;cursor:pointer;height:44px;min-width:44px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:12px;border:1px solid var(--line-2);background:rgb(var(--fg) / .05);color:var(--head);font-weight:700;font-size:.8rem;letter-spacing:.04em}
+.lang-pop>summary::-webkit-details-marker{display:none}
+.lang-pop>summary:hover,.lang-pop[open]>summary{background:rgb(var(--fg) / .1)}
+.lang-pop>summary:focus-visible{outline:2px solid var(--hover-bd,#7b86ff);outline-offset:2px}
+.lang-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:60;min-width:210px;max-width:calc(100vw - 24px);display:grid;gap:4px;padding:10px;border-radius:14px;border:1px solid var(--line-2);background:var(--panel-2,#1b2031);box-shadow:0 18px 40px rgb(0 0 0 / .35)}
+.lang-h{color:var(--dim);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:2px 8px 4px}
+.lang-menu a{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:42px;padding:0 12px;border-radius:10px;color:var(--head);text-decoration:none;font-weight:600}
+.lang-menu a:hover,.lang-menu a:focus-visible{background:rgb(var(--fg) / .08)}
+.lang-menu a[aria-current]{background:rgb(var(--fg) / .06);border:1px solid var(--line-2)}
+.lang-ck{color:var(--accent,#22d3ee)}
+.lang-note{color:var(--dim);font-size:.92rem}
+.lang-only-en{display:flex;flex-wrap:wrap;gap:4px 14px;margin:0 0 18px;padding:10px 14px;border:1px solid var(--line-2);border-radius:12px;background:rgb(var(--fg) / .04)}
+@media (max-width:640px){.lang-pop>summary{padding:0 8px}.lang-pop>summary .lang-code{font-size:.72rem}}
+html[lang="ja"] h1,html[lang="ja"] h2,html[lang="ja"] h3{word-break:auto-phrase}
+
+/* status pills: their words live in styles.css as CSS content */
+html[lang="es"] .st-pill.is-online::after{content:"Funciona"}html[lang="es"] .st-pill.is-partial::after{content:"Con problemas"}html[lang="es"] .st-pill.is-offline::after{content:"Caído"}html[lang="es"] .st-pill.is-checking::after{content:"Comprobando…"}
+html[lang="pt-BR"] .st-pill.is-online::after{content:"Funcionando"}html[lang="pt-BR"] .st-pill.is-partial::after{content:"Com problemas"}html[lang="pt-BR"] .st-pill.is-offline::after{content:"Fora do ar"}html[lang="pt-BR"] .st-pill.is-checking::after{content:"Verificando…"}
+html[lang="ja"] .st-pill.is-online::after{content:"正常"}html[lang="ja"] .st-pill.is-partial::after{content:"不調"}html[lang="ja"] .st-pill.is-offline::after{content:"停止"}html[lang="ja"] .st-pill.is-checking::after{content:"確認中…"}

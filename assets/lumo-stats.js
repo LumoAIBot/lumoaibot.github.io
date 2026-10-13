@@ -4,6 +4,7 @@
    and stays hidden if it has never had an answer. No cookies; the last numbers live in localStorage. */
 (function () {
   "use strict";
+function T(s, v) { var o = s; try { var el = document.getElementById("lumo-t"), d = el && JSON.parse(el.textContent); if (d && Object.prototype.hasOwnProperty.call(d, s)) o = d[s]; } catch (e) {} return v == null ? o : String(o).split("{n}").join(v); }  /* page language (#lumo-t) */
   var box = document.querySelector("[data-live-stats]");
   if (!box) return;
   var URL_ = box.getAttribute("data-src") || "https://dashboard.lumobot.org/api/public/stats";
@@ -27,10 +28,10 @@
   function show(d) {
     if (!d || typeof d.servers !== "number" || typeof d.members !== "number" || d.servers < 1) return false;
     var s = box.querySelector('[data-stat="servers"]'), m = box.querySelector('[data-stat="members"]');
-    if (s) { s.textContent = short(d.servers); s.title = d.servers.toLocaleString() + " servers"; }
-    if (m) { m.textContent = short(d.members); m.title = d.members.toLocaleString() + " members"; }
+    if (s) { s.textContent = short(d.servers); s.title = T("{n} servers", d.servers.toLocaleString((document.documentElement.lang || []))); }
+    if (m) { m.textContent = short(d.members); m.title = T("{n} members", d.members.toLocaleString((document.documentElement.lang || []))); }
     var sl = box.querySelector('[data-unit="servers"]');
-    if (sl) sl.textContent = d.servers === 1 ? "server" : "servers";
+    if (sl) sl.textContent = d.servers === 1 ? T("server") : T("servers");
     box.hidden = false;
     return true;
   }

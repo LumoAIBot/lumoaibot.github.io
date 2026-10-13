@@ -17,3 +17,11 @@ The "Add to Discord" buttons (nav on every page, plus the home hero and closing 
 
 To host on GitHub Pages, put these files in a repo (or a `docs/` folder) and enable Pages for that branch/folder.
 The mock Discord panels are illustrations in HTML/CSS, not screenshots. No tracking scripts.
+
+## Languages
+
+The English pages at the root are the source. `/es/`, `/pt-br/` and `/ja/` are built from them with
+`python3 i18n/build.py` (translations in `i18n/<code>.json`, keyed by the English text). Run it after editing an
+English page, then `python3 i18n/build.py --check` should print no "would change" line. It also adds the hreflang
+links, the language switcher and the cache-busting versions to every page, and the language URLs to `sitemap.xml`.
+`privacy.html` and `terms.html` stay English and say so in all four languages. Changelog entries stay English.

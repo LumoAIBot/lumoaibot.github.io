@@ -6,6 +6,7 @@
    The last good answer is kept in this browser (key "lumo-status-last") so a red page can say when Lumo was last seen. */
 (function () {
   "use strict";
+function T(s, v) { var o = s; try { var el = document.getElementById("lumo-t"), d = el && JSON.parse(el.textContent); if (d && Object.prototype.hasOwnProperty.call(d, s)) o = d[s]; } catch (e) {} return v == null ? o : String(o).split("{n}").join(v); }  /* page language (#lumo-t) */
   var URL = "https://dashboard.lumobot.org/api/public/status";
   var KEY = "lumo-status-last";
   var TIMEOUT = 5000;
@@ -17,19 +18,19 @@
 
   function fmtTime(sec) {
     var d = new Date(sec * 1000), now = new Date();
-    var t = d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    var t = d.toLocaleTimeString((document.documentElement.lang || []), { hour: "numeric", minute: "2-digit" });
     var day = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
     var that = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
     if (that === day) { return "Today, " + t; }
     if (day - that === 864e5) { return "Yesterday, " + t; }
     var opts = { month: "short", day: "numeric" };
     if (d.getFullYear() !== now.getFullYear()) { opts.year = "numeric"; }
-    return d.toLocaleDateString([], opts) + ", " + t;
+    return d.toLocaleDateString((document.documentElement.lang || []), opts) + ", " + t;
   }
   function ago() {
     if (busy) { return; }
     var s = Math.round((Date.now() - checkedAt) / 1000);
-    when.textContent = s < 45 ? "just now" : s < 3600 ? Math.round(s / 60) + " min ago" : fmtTime(checkedAt / 1000);
+    when.textContent = s < 45 ? T("just now") : s < 3600 ? T("{n} min ago", Math.round(s / 60)) : fmtTime(checkedAt / 1000);
   }
   function saved() {
     try { var v = JSON.parse(localStorage.getItem(KEY) || "null"); return v && typeof v.seen === "number" ? v : null; } catch (e) { return null; }
@@ -64,13 +65,13 @@
     var ping = $(".st-ping"), lab = $(".st-since-l"), since = $(".st-since");
     if (up) {
       ping.textContent = typeof d.latency_ms === "number" ? d.latency_ms + " ms" : "—";
-      lab.textContent = "Online since";
+      lab.textContent = T("Online since");
       since.textContent = d.started_at ? fmtTime(d.started_at) : "—";
       save(d);
     } else {
       ping.textContent = "—";
       var last = saved();
-      lab.textContent = "Last seen";
+      lab.textContent = T("Last seen");
       since.textContent = last ? fmtTime(last.seen) : "—";
     }
   }
@@ -78,7 +79,7 @@
     if (busy) { return; }
     busy = true;
     btn.setAttribute("aria-busy", "true"); btn.disabled = true;
-    when.textContent = "checking…";
+    when.textContent = T("checking…");
     var ctrl = window.AbortController ? new AbortController() : null;
     var timer = setTimeout(function () { if (ctrl) { ctrl.abort(); } }, TIMEOUT);
     var started = Date.now();

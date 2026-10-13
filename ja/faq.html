@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumo FAQ：権限、Premiumコード、プライバシー、上限</title>
+  <meta name="description" content="Lumoについての回答：各Discord権限が必要な理由、Ko-fiで支払った後のPremiumの有効化、Premium終了時の扱い、ロールの順番、メッセージの保存、AI・画像・動画の上限。">
+  <meta name="theme-color" content="#0b0d14">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://lumobot.org/ja/faq.html">
+  <meta property="og:site_name" content="Lumo AI">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lumobot.org/ja/faq.html">
+  <meta property="og:title" content="Lumo FAQ">
+  <meta property="og:description" content="権限の説明、Ko-fiで支払った後のPremiumの有効化、Premium終了時の扱い、プライバシー、AI・画像・動画の上限。">
+  <meta property="og:image" content="https://lumobot.org/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lumo：Lumoの名前と「AI搭載オールインワンDiscordボット」のキャッチコピーの横で手を振るロボットのマスコット">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lumo FAQ">
+  <meta name="twitter:description" content="権限の説明、Ko-fiで支払った後のPremiumの有効化、Premium終了時の扱い、プライバシー、AI・画像・動画の上限。">
+  <meta name="twitter:image" content="https://lumobot.org/og-image.png">
+  <meta name="twitter:image:alt" content="Lumo：Lumoの名前と「AI搭載オールインワンDiscordボット」のキャッチコピーの横で手を振るロボットのマスコット">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=85086c9a13">
+  <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
+  <script src="/assets/lumo-holiday.js?v=b35e80daaf"></script>
+  <!--i18n-->
+  <link rel="alternate" hreflang="en" href="https://lumobot.org/faq.html">
+  <link rel="alternate" hreflang="es" href="https://lumobot.org/es/faq.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://lumobot.org/pt-br/faq.html">
+  <link rel="alternate" hreflang="ja" href="https://lumobot.org/ja/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://lumobot.org/faq.html">
+  <link rel="stylesheet" href="/assets/lumo-lang.css?v=8f501865ca">
+  <script>(function(){var D={"en": "/", "es": "/es/", "pt-BR": "/pt-br/", "ja": "/ja/"},cur="ja",has=true,rel="faq.html",p=null;try{p=localStorage.getItem("lumo-lang")}catch(e){}if(!p){if(cur!=="en")return;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase();var m=c.indexOf("pt")===0?"pt-BR":c.indexOf("es")===0?"es":c.indexOf("ja")===0?"ja":c.indexOf("en")===0?"en":null;if(m){p=m;break}}if(!p||p==="en")return}if(p===cur||!D[p]||!has)return;location.replace(D[p]+rel+location.search+location.hash)})()</script>
+  <script type="application/json" id="lumo-t">{"Copy": "コピー", "Copy {n}": "{n}をコピー", "Copied ✓": "コピーしました ✓", "Copied {n}": "コピーしました：{n}", "{n} match": "{n}件", "{n} matches": "{n}件", "Right-click a message → Apps → {n}": "メッセージを右クリック → アプリ → {n}", "Dark": "ダーク", "Light": "ライト", "Auto": "自動", "Appearance: {n}": "表示：{n}", "Appearance: {n}. Theme and seasonal options": "表示：{n}。テーマと季節のオプション", "just now": "たった今", "{n} min ago": "{n}分前", "Online since": "オンライン開始", "Last seen": "最終確認", "checking…": "確認中…", "{n} servers": "{n}サーバー", "{n} members": "メンバー{n}人", "server": "サーバー", "servers": "サーバー", "Halloween": "ハロウィン", "Thanksgiving": "感謝祭", "Christmas": "クリスマス", "· now: {name}": "· 現在：{name}", "· none right now": "· 今はなし", "Toggle music": "音楽のオン・オフ"}</script>
+  <script src="/assets/lumo-lang.js?v=bea16ebb2e" defer></script>
+  <!--/i18n-->
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Lumoホーム"><img src="../assets/logo.webp" alt="" width="36" height="36" decoding="async"><span>Lumo</span></a>
+      <nav class="nav-right" aria-label="メイン">
+        <div class="nav-links">
+        <a href="getting-started.html">はじめに</a>
+        <a href="features.html">機能</a>
+        <a href="commands.html">コマンド</a>
+        <a href="premium.html">Premium</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="dashboard.html">ダッシュボード <span class="beta-chip">ベータ</span></a>
+        </div>
+        <!--i18n-sw--><details class="lang-pop"><summary aria-label="言語: 日本語" title="言語"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-code" translate="no">日本</span></summary><div class="lang-menu"><span class="lang-h">言語</span><a href="/faq.html" hreflang="en" lang="en" data-lang="en"><span translate="no">English</span></a><a href="/es/faq.html" hreflang="es" lang="es" data-lang="es"><span translate="no">Español</span></a><a href="/pt-br/faq.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR"><span translate="no">Português (Brasil)</span></a><a href="/ja/faq.html" hreflang="ja" lang="ja" data-lang="ja" aria-current="true"><span translate="no">日本語</span><span class=lang-ck aria-hidden=true>✓</span></a></div></details><!--/i18n-sw--><div class="theme-pop"><button type="button" class="theme-btn" data-theme-menu aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu" aria-label="表示と季節テーマ" title="表示"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button><div class="theme-menu" id="theme-menu" hidden><div class="theme-seg-wrap"><span>表示</span><div class="theme-seg" role="group" aria-label="カラーテーマ"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>ダーク</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>ライト</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>自動</span></button></div></div><div class="theme-seg-wrap"><span>季節テーマ <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="季節テーマ"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>自動</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>オフ</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>ハロウィン</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>感謝祭</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>クリスマス</span></button></div></div></div></div>
+        <a class="btn btn-ghost btn-sm nav-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボードを開く <span class="beta-chip">ベータ</span></a>
+        <a class="btn btn-primary btn-sm nav-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Discordに追加</a>
+        <details class="nav-menu">
+          <summary aria-label="メニュー"><span class="bars" aria-hidden="true"></span></summary>
+          <div class="nav-panel">
+          <a href="getting-started.html">はじめに</a>
+          <a href="features.html">機能</a>
+          <a href="commands.html">コマンド</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html" aria-current="page">FAQ</a>
+          <a href="dashboard.html">ダッシュボードについて <span class="beta-chip">ベータ</span></a>
+          <a class="btn btn-ghost nav-panel-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボードを開く <span class="beta-chip">ベータ</span></a>
+            <a class="btn btn-primary nav-panel-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Discordに追加</a>
+            <div class="theme-seg-wrap"><span>表示</span><div class="theme-seg" role="group" aria-label="カラーテーマ"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>ダーク</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>ライト</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>自動</span></button></div></div><div class="theme-seg-wrap"><span>季節テーマ <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="季節テーマ"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>自動</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>オフ</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>ハロウィン</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>感謝祭</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>クリスマス</span></button></div></div>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="wrap page-hero-inner">
+        <img class="hero-pose" src="../assets/robot/thinking-256.webp" alt="あごに手を当てて考えるロボットのLumo" width="112" height="112" fetchpriority="high" decoding="async">
+        <span class="kicker">FAQ</span>
+        <h1>よくある<span class="grad">質問</span></h1>
+        <p class="lead">権限、Premiumコード、ロールの順番、プライバシー、上限について。</p>
+        <div class="cta"><a class="btn btn-primary" href="https://discord.gg/KZjebts36C" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18a19.9 19.9 0 0 0 6 3l1.3-2.1a13 13 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4a13 13 0 0 1-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.1-.8-9.6-3.6-13.6ZM8 15.3c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.5 8 10.5s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg>サポートサーバーに参加</a><a class="btn btn-ghost" href="premium.html">Premiumを入手</a></div>
+      </div>
+    </header>
+
+    <section class="section section-tight">
+      <div class="wrap faq-layout">
+        <nav class="faq-toc" aria-label="質問"><strong>移動</strong><a href="#permissions">権限</a><a href="#role-order">ロールの順番</a><a href="#claim">Premiumを入手</a><a href="#premium-ends">Premium終了時</a><a href="#renew">更新とお知らせ</a><a href="#ai-limit">AI・画像・動画の上限</a><a href="#dashboard">Webダッシュボード</a><a href="#ai-channels">AIチャンネル</a><a href="#channel-tone">チャンネルの口調</a><a href="#welcome-card">ウェルカムカード</a><a href="#giveaways">プレゼント企画＆投票</a><a href="#music-queue">音楽のキュー</a><a href="#levels">レベルとXP</a><a href="#storage">メッセージの保存</a><a href="#content">作らないもの</a><a href="#contact">Oriへの連絡</a></nav>
+        <div class="faq-list">
+<h2 class="faq-group h-mini"><img class="mini-bot" src="../assets/robot/working-96.webp" alt="" width="36" height="36" loading="lazy" decoding="async">設定</h2><details class="faq" id="permissions"><summary>なぜLumoはたくさんの権限を求めるの？</summary><div class="faq-body"><p>招待リンクが求める権限は1セット（<code>309576723664</code>）です。管理者、キック、BAN、サーバー管理は<b>含まれません</b>。各権限は機能と結びついています：</p><div class="table-scroll"><table class="legal-table faq-table"><thead><tr><th scope="col">権限</th><th scope="col">Lumoが必要とする理由</th></tr></thead><tbody><tr><th scope="row">チャンネルを見る、メッセージを送信</th><td>追加したチャンネルを読み、そこで返信するため。これがないと何も動きません。</td></tr><tr><th scope="row">スレッドでメッセージを送信、公開スレッドの作成</th><td>スレッド内で返信し、頼まれたときにスレッドを作るため。</td></tr><tr><th scope="row">埋め込みリンク</th><td><code>/help</code>、ゲーム、ウォレット、再生中パネルの金色の埋め込みを投稿するため。</td></tr><tr><th scope="row">ファイルを添付</th><td>生成した画像・動画、ウェルカムカード、描画したゲーム画面を送るため。</td></tr><tr><th scope="row">メッセージ履歴を読む</th><td>会話や返信のつながりを追い、<code>/purge</code>が削除するメッセージを確認するため。</td></tr><tr><th scope="row">リアクションの追加</th><td>Webダッシュボードで設定するリアクションロールとカラーロールのパネルにリアクションを付けるため。</td></tr><tr><th scope="row">外部の絵文字を使用</th><td>返信やパネルでサーバーのカスタム絵文字を使うため。</td></tr><tr><th scope="row">ロールの管理</th><td>リアクションロール、カラーロール、<code>/setup autorole</code>のロールを付与するため。Discordの仕様で、Lumoのロールがそれらより上にある必要があります（下記参照）。</td></tr><tr><th scope="row">チャンネルの管理</th><td><code>/setup datechannel</code>のボイスチャンネル名を毎晩変更するため。</td></tr><tr><th scope="row">監査ログを表示</th><td><code>/setup logs</code>のログに誰が何をしたか（メッセージを削除した人、ロールを変更した人など）を表示するため。</td></tr><tr><th scope="row">メッセージの管理</th><td><code>/purge</code>、Void、AutoModがメッセージを削除するために必要です。</td></tr><tr><th scope="row">メンバーをモデレート</th><td>招待には含まれません。VoidやAutoModのルールでタイムアウトをオンにする場合だけ、Lumoのロールにこの権限を付けてください。</td></tr><tr><th scope="row">ニックネームの変更</th><td>Webダッシュボードのカスタマイズページで、サーバー内のLumoの名前を変えるため。</td></tr><tr><th scope="row">接続、発言</th><td>ボイスチャンネルに参加して話したり音楽を流したりするため：<code>/play</code>と<code>/voice</code>。</td></tr></tbody></table></div><p>サーバー設定 → ロールで権限を個別にオフにできます。ほかは動き続け、表の該当機能だけが止まります。</p></div></details>
+<details class="faq" id="role-order"><summary>Lumoがロールを付与できないのはなぜ？ロールを上に移動するには？</summary><div class="faq-body"><p>Discordでは、ボットは自分のロールより<b>下</b>にあるロールしか付与できません。リアクションロール、カラーロール、自動ロールがうまくいかないときは：</p><ol><li>サーバー設定 → ロールを開きます。</li><li><b>Lumo</b>のロールを、付与するすべてのロールより上にドラッグします。</li><li>保存してもう一度試します。<b>ロールの管理</b>権限が残っているか確認してください。</li></ol></div></details>
+<details class="faq" id="dashboard"><summary>/reactionroleと/customizeはどこへ？Webダッシュボードとは？</summary><div class="faq-body"><p>リアクションロールとカスタマイズは、スラッシュコマンドから<b>Webダッシュボード（ベータ）</b>に移りました。プレゼント企画、投票、<b>AIチャンネル</b>（AIチャットが返信する場所）のページもあります。<a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">dashboard.lumobot.org</a>でDiscordにログインしてサーバーを選び、<b>ロール</b>（リアクションロールのパネルの投稿・編集・削除、12色のカラーロールの追加）や<b>カスタマイズ</b>（名前・人格・アバター・プロフィールバナー・自己紹介。Premiumが必要）を使います。</p><p>表示されるのは、あなたがサーバー管理または管理者権限を持ち、Lumoがいるサーバーだけです。リアクションロール、プレゼント企画、投票には管理者権限、設定とカスタマイズにはサーバー管理権限が必要です。投稿済みのパネルはこれまでどおり動きます。Discordの<code>/help</code>からもダッシュボードに移動できます。</p></div></details>
+<details class="faq" id="ai-channels"><summary>Lumoが返信するチャンネルは選べる？</summary><div class="faq-body"><p>はい。<b>Webダッシュボード（ベータ）</b>でサーバーを開き、<b>機能</b>の<b>AIチャンネル</b>カードへ（設定からもリンクがあります）。<b>サーバー管理</b>権限が必要です。モードは3つ：<b>全チャンネル</b>（初期値なので、選ぶまで何も変わりません）、<b>チェックしたチャンネルだけ</b>、<b>チェックしたチャンネル以外すべて</b>。スレッドとフォーラムの投稿は、親チャンネルの設定に従います。</p><p>返信しない設定のチャンネルでは、Lumoは返信せず、AIも呼ばず、誰の1日の上限も消費しません。音楽、ゲーム、プレゼント企画、投票などのコマンドはすべてのチャンネルで使え、DMも変わりません。この設定のスラッシュコマンドはまだなく、ダッシュボードで行います。</p></div></details>
+<details class="faq" id="channel-tone"><summary>チャンネルごとに口調を変えたり、メンションされたときだけ返信させたりできる？</summary><div class="faq-body"><p>はい。同じ<b>AIチャンネル</b>ページで、テキストチャンネルに<b>チャンネルメモ</b>を追加できます。<b>口調のヒント</b>は短い1行（最大200文字。例：<i>フレンドリーで簡潔に</i>）で、Lumoはそのチャンネルでだけ従います。書けるのは口調だけで、リンク、メンション、AIに新しい指示を出そうとする内容は拒否されます。<b>@mentionedでメンションされたときか返信されたときだけ答える</b>にチェックすると、普段の会話で名前が出ても反応せず、本当のメンションや返信には答えます。</p><p>チャンネルメモはサーバーあたり最大25件、各リストは最大100チャンネルまで。ルールの保存にPremiumは不要ですが、AIチャット自体にはPremiumが必要です。</p></div></details>
+<details class="faq" id="welcome-card"><summary>ウェルカムメッセージとカードは変えられる？</summary><div class="faq-body"><p>はい、無料です。新メンバー全員に<b>ウェルカムカード</b>（アバター、名前、メンバー番号入りの画像）と短いメッセージが届きます。<b>Webダッシュボード（ベータ）</b>でサーバーを開き、<b>機能</b>の<b>ウェルカム</b>カードへ（設定からもリンクがあります）。<b>サーバー管理</b>権限が必要です。ウェルカムのオン・オフ、チャンネルの選択（<code>/setup welcome</code>と同じもの）、カードのオフ、カードのタイトル・サブタイトル・上のメッセージの変更、ライブプレビュー、初期設定へのリセットができます。</p><p><code>{user}</code>でメンバーの名前、<code>{mention}</code>で新メンバーへのメンション（メッセージ内のみ）、<code>{server}</code>と<code>{count}</code>でメンバー番号。@everyone、@here、ロール、チャンネルへのメンションは削除され、Discordの招待リンクは使えず、メンションできるのは新メンバーだけです。カードを作れないときは、メッセージをテキストで投稿します。</p></div></details>
+<details class="faq" id="giveaways"><summary>プレゼント企画と投票の仕組みは？</summary><div class="faq-body"><p><code>/giveaway</code>と<code>/poll</code>を使えるのはサーバーの<b>管理者</b>だけです（ほかのメンバーにはコマンドが表示されません）。<code>/giveaway start</code>（賞品、期間、当選者数、必要なロール（任意））や<code>/poll create</code>（選択肢2〜10個の質問、期間（任意）、複数選択の可否）で始めます。メンバーはボタンを押すだけ。プレゼント企画は<b>参加</b>か<b>取り消す</b>、投票は選択肢ごとのボタンです。</p><p>当選者はサーバーに残っている人からランダムに選ばれ、再抽選で同じ人が2回選ばれることはありません。投票は変更でき、名前が表示されることはありません。サーバーごとにプレゼント企画は10件、投票は10件まで同時に実施できます。無料でAIを使わず、AIの上限にもカウントされません。再起動後もボタンとタイマーは動き続けます。同じ機能はWebダッシュボード（ベータ）にもあります。</p></div></details>
+<details class="faq" id="music-queue"><summary>音楽のキューの仕組みは？</summary><div class="faq-body"><p><code>/play</code>は1曲ずつ追加します。何も再生していなければすぐに始まり、再生中なら<b>キューに追加</b>と順番が表示され、曲が終わると次の曲が自動で始まります。サーバーごとに最大25曲まで待機できます。再生できない曲は、Lumoがその旨を伝えてスキップします。</p><p>再生中メッセージには次の曲と、<b>一時停止／再開</b>、<b>スキップ</b>、<b>停止</b>（キューも空にします）、<b>キュー</b>（次の10曲の非公開リスト）のボタンがあります。<code>/queue view</code>、<code>/queue remove</code>（順番を指定）、<code>/queue clear</code>でもコマンドで同じ操作ができます。ボタンと削除・クリアのコマンドはボイスチャンネルにいる人と管理者が使え、キューは誰でも見られます。キューはメモリ上にあるため、再起動やLumoのボイスチャンネル退出で空になります。</p></div></details>
+<details class="faq" id="levels"><summary>レベルとXPの仕組みは？</summary><div class="faq-body"><p>全員がどのサーバーでもXPを獲得できます。メッセージ1件で15〜25XP（最大で1分に1回）、ほかの人とボイスチャンネルにいると1分ごとに10XP。ボット、Webhook、DMはカウントされません。レベル1には100XPが必要で、レベルが上がるごとに少しずつ増えます。<code>/rank</code>でレベルカード、<code>/top</code> <code>sort: Levels</code>で上位5人、<code>/profile</code>でも同じレベルを表示します。</p><p>レベルアップ通知とレベルロールは初期設定でオフです。サーバー管理者が<a href="dashboard.html">Webダッシュボード（ベータ）</a>の<b>レベルアップ通知とロール</b>カードでオンにでき、XPが付かないチャンネルも選べます。Lumoが保存するのはXPの数値だけで、書いた内容は保存しません。<code>/forgetme</code>で消去できます。</p></div></details>
+<h2 class="faq-group h-mini"><img class="mini-bot" src="../assets/robot/money-96.webp" alt="" width="36" height="36" loading="lazy" decoding="async">Premium</h2><details class="faq" id="claim"><summary>支払い後にPremiumを有効にするには？</summary><div class="faq-body"><p><a href="https://ko-fi.com/lumobot" target="_blank" rel="noopener">Ko-fi</a>で<b>Lumo Premium</b>メンバーシップに参加します。その後、<b>管理者</b>権限を持つ人が、Premiumにしたいサーバーでこれを実行します：</p><p><code>/premium claim you@example.com</code></p><p>支払いに使ったメールアドレスか、Ko-fiの領収書の取引IDを使います。Premiumはすぐに有効になり、更新のたびに同じサーバーが自動で延長されます。支払いは60日以内に有効化できます。Ko-fiがDiscordアカウントを共有している場合、LumoからDMでコードも届きます。</p><p><code>LUMO-XXXX-XXXX</code>のようなコード（または古い<code>AETH-</code>コード）をお持ちなら、<code>/premium redeem</code>で使ってください。15分以内に5回間違えるとその間はロックされるので、正確にコピーしてください。</p></div></details>
+<details class="faq" id="premium-ends"><summary>Premiumが終わるとどうなる？</summary><div class="faq-body"><p>AI機能（AIチャット、ライブボイス、絵文字の説明）がオフになります。終了時にはLumoがお知らせを投稿します。</p><p>Webダッシュボードで設定した名前・人格・アバター・バナー・自己紹介は<b>削除されず一時停止</b>になり、更新すれば戻ります。無料の機能はすべてそのまま使えます：音楽、7種類のゲームとLumo Coins、プレゼント企画と投票、リアクションロールとカラーロール、ログ、自動ロール、ウェルカムメッセージ、<code>/profile</code>、<code>/server</code>、<code>/top</code>。</p><p>Ko-fiで解約しても、支払った月の終わりまでPremiumは続きます。<a href="premium.html#renewals">更新と期限</a>をご覧ください。</p></div></details>
+<details class="faq" id="renew"><summary>更新の仕組みは？お知らせは届く？</summary><div class="faq-body"><p>Ko-fiのメンバーシップは毎月更新され、支払うたびに残り期間に1か月が加算されるので、無駄になりません。Ko-fiのサーバーは自動更新なのでお知らせは届きません。</p><p>コードは30日分で、同じように加算されます。コードの期限の約3日前に、Lumoがサーバーのシステムチャンネルにお知らせを1回投稿します（投稿できない場合は、コードを使った人、次にサーバー所有者にDMします）。</p></div></details>
+<details class="faq" id="ai-limit"><summary>AI・画像・動画の上限の仕組みは？</summary><div class="faq-body"><p>公平にするため、1人あたりサーバーごとに<b>1日20回のAI返信</b>、Premiumサーバー全体で<b>1日100回のAI返信</b>までです。AI返信とは、チャットまたはライブボイスでのAIの返答1回のことです。どちらも米国東部時間の0時にリセットされます。</p><p>あなたの20回、またはサーバーの100回を使い切ると、Lumoはどの上限に達したかとリセット時期を伝え（各チャンネルで最大1時間に1回）、それまで返信しません。上限に達したのがあなただけなら、ほかの人は使い続けられます。音楽、ゲーム、ロールなどAI以外の機能は動き続けます。画像と動画には別に月間の上限があります。</p><p>画像と動画は月間の上限を共有します。1人あたりサーバーごとに<b>月2件</b>（画像、画像編集、動画のいずれか）、サーバー全体で<b>月15件</b>まで。動画は<b>3秒</b>です。毎月1日の米国東部時間0時にリセット。エラーやコンテンツポリシーによるブロックはカウントされません。サーバーが上限に達すると、Lumoがリセット日を1行で伝えます（各チャンネルで最大1時間に1回）。</p></div></details>
+<h2 class="faq-group h-mini"><img class="mini-bot" src="../assets/robot/wink-96.webp" alt="" width="36" height="36" loading="lazy" decoding="async">プライバシー</h2><details class="faq" id="storage"><summary>Lumoはメッセージを保存する？</summary><div class="faq-body"><p>短期間だけ、Premiumのサーバーでのみ保存します。会話の流れを追うため、AIが返信できるチャンネルの最近のメッセージを短く記録します（先頭280文字、チャンネルごとに最大150件）。各記録は<b>3日で消えます</b>。Premiumでないサーバーや、AIがオフのチャンネルでは、メッセージの文面は一切保存しません。Discordでメッセージを削除すると、保存したコピーも削除されます。</p><p>Lumoはボイスの音声を録音・保存しません。AIに送った内容（メッセージ、画像、ライブボイスがオンのときにボイスチャンネルで話した内容）は、返信を書くために外部のAIプロバイダーであるxAI（Grokの開発元）が処理します。Lumo Coinsのウォレット、統計、サーバー設定は削除されるまで保存されます。詳しくは<a href="../privacy.html">プライバシーポリシー</a>（英語）をご覧ください。</p></div></details>
+<details class="faq" id="content"><summary>Lumoが作らないものは？</summary><div class="faq-body"><p>Lumoは<a href="https://discord.com/guidelines" target="_blank" rel="noopener">Discordのルール</a>とAIプロバイダーのルールに従います。<b>露骨な性的コンテンツ</b>は作りません。<b>きわどい</b>画像は<b>年齢制限チャンネル</b>でのみ作成します。<b>実在の人物の写真</b>（メンバーのプロフィール画像や添付した写真）からは、年齢制限チャンネルであっても、性的・きわどい・露出の多いものは作りません。AIプロバイダーが依頼を断った場合はそう伝え、断りを回避するために言い換えることはしません。<a href="../terms.html#acceptable-use">利用規約</a>（英語）をご覧ください。</p></div></details>
+<h2 class="faq-group h-mini"><img class="mini-bot" src="../assets/robot/wave-96.webp" alt="" width="36" height="36" loading="lazy" decoding="async">ヘルプ</h2><details class="faq" id="contact"><summary>Oriに連絡するには？</summary><div class="faq-body"><p>いちばん早いのは<a href="https://discord.gg/KZjebts36C" target="_blank" rel="noopener">Discordのサポートサーバー</a>です。質問、バグ報告、Premiumのサポートはそちらへ。データ削除のご依頼や、Ko-fiの支払いが反映されない場合は、直接メッセージをください：<a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">DiscordでOriにメッセージ</a>。ボットはGitHubで<a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a>として開発・運営しています。</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="../assets/logo.webp" alt="" width="34" height="34" loading="lazy" decoding="async"><span>Lumo</span></a>
+        <p class="footer-wave"><img class="mini-bot" src="../assets/robot/wave-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>ご覧いただきありがとうございます！</span></p>
+        <p>音楽・ゲーム・サーバーツールのためのAI搭載Discordボット。開発・運営：<a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a></p>
+      </div>
+      <nav class="footer-cols" aria-label="フッター">
+        <div>
+          <h2>見る</h2>
+          <a href="getting-started.html">はじめに</a>
+          <a href="features.html">機能</a>
+          <a href="commands.html">コマンド</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html" aria-current="page">FAQ</a>
+          <a href="changelog.html">更新履歴</a>
+          <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボードを開く <span class="beta-chip">ベータ</span></a>
+          <a href="dashboard.html">ダッシュボードについて</a>
+        </div>
+        <div>
+          <h2>サポート</h2>
+          <a href="https://discord.gg/KZjebts36C" target="_blank" rel="noopener">サポートサーバーに参加</a>
+          <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">DiscordでOriにメッセージ</a>
+          <a href="faq.html#claim">Premiumを有効化</a>
+          <a href="faq.html#permissions">権限の説明</a>
+          <a href="status.html">稼働状況</a>
+        </div>
+        <div>
+          <h2>規約</h2>
+          <a href="../terms.html">利用規約</a>
+          <a href="../privacy.html">プライバシーポリシー</a>
+        </div>
+      </nav>
+    </div>
+    <div class="wrap footer-note">Discordとは無関係です。Lumo Coinsは遊び用で、現実の価値はありません。音楽：wipics作<a href="https://opengameart.org/content/outer-space-loop" target="_blank" rel="noopener">Outer Space Loop</a>（CC0）</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/lumo-music.js?v=7885974567" data-slot=".nav-right .nav-menu" data-src="/assets/audio/outer-space-loop.mp3" data-exclude="^/dashboard/" data-volume="0.16" data-fade="2.5" defer></script>
+  <script src="../script.js?v=493c621e93" defer></script>
+</body>
+</html>
