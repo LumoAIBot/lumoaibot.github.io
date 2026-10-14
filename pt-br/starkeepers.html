@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como jogar Starkeepers: guia para iniciantes do jogo do céu noturno do Lumo</title>
+  <meta name="description" content="Aprenda Starkeepers passo a passo: pegue estrelas toda noite, raridades e famílias, brilho e luz, seu céu e o do servidor, constelações, sequências e tarefas, Observar estrelas, viagens, estrelas desejadas, enxames de cometas, conquistas, estrelas cadentes e eclipses.">
+  <meta name="theme-color" content="#0b0d14">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://lumobot.org/pt-br/starkeepers.html">
+  <meta property="og:site_name" content="Lumo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lumobot.org/pt-br/starkeepers.html">
+  <meta property="og:title" content="Como jogar Starkeepers">
+  <meta property="og:description" content="Um guia amigável, imagem por imagem, do jogo do céu noturno do Lumo para o Discord.">
+  <meta property="og:image" content="https://lumobot.org/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lumo: o mascote robô acenando ao lado do nome Lumo e do slogan bot de Discord tudo em um com IA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Como jogar Starkeepers">
+  <meta name="twitter:description" content="Um guia amigável, imagem por imagem, do jogo do céu noturno do Lumo para o Discord.">
+  <meta name="twitter:image" content="https://lumobot.org/og-image.png">
+  <meta name="twitter:image:alt" content="Lumo: o mascote robô acenando ao lado do nome Lumo e do slogan bot de Discord tudo em um com IA">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=c557543704">
+  <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
+  <script src="/assets/lumo-holiday.js?v=b35e80daaf"></script>
+  <!--i18n-->
+  <link rel="alternate" hreflang="en" href="https://lumobot.org/starkeepers.html">
+  <link rel="alternate" hreflang="es" href="https://lumobot.org/es/starkeepers.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://lumobot.org/pt-br/starkeepers.html">
+  <link rel="alternate" hreflang="ja" href="https://lumobot.org/ja/starkeepers.html">
+  <link rel="alternate" hreflang="x-default" href="https://lumobot.org/starkeepers.html">
+  <link rel="stylesheet" href="/assets/lumo-lang.css?v=8f501865ca">
+  <script>(function(){var D={"en": "/", "es": "/es/", "pt-BR": "/pt-br/", "ja": "/ja/"},cur="pt-BR",has=true,rel="starkeepers.html",p=null;try{p=localStorage.getItem("lumo-lang")}catch(e){}if(!p){if(cur!=="en")return;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase();var m=c.indexOf("pt")===0?"pt-BR":c.indexOf("es")===0?"es":c.indexOf("ja")===0?"ja":c.indexOf("en")===0?"en":null;if(m){p=m;break}}if(!p||p==="en")return}if(p===cur||!D[p]||!has)return;location.replace(D[p]+rel+location.search+location.hash)})()</script>
+  <script type="application/json" id="lumo-t">{"Copy": "Copiar", "Copy {n}": "Copiar {n}", "Copied ✓": "Copiado ✓", "Copied {n}": "Copiado: {n}", "{n} match": "{n} resultado", "{n} matches": "{n} resultados", "Right-click a message → Apps → {n}": "Clique com o botão direito numa mensagem → Apps → {n}", "Dark": "Escuro", "Light": "Claro", "Auto": "Auto", "Appearance: {n}": "Aparência: {n}", "Appearance: {n}. Theme and seasonal options": "Aparência: {n}. Tema e opções sazonais", "just now": "agora mesmo", "{n} min ago": "há {n} min", "Online since": "Online desde", "Last seen": "Visto por último", "checking…": "verificando…", "{n} servers": "{n} servidores", "{n} members": "{n} membros", "server": "servidor", "servers": "servidores", "Halloween": "Halloween", "Thanksgiving": "Ação de Graças", "Christmas": "Natal", "· now: {name}": "· agora: {name}", "· none right now": "· nenhum agora", "Toggle music": "Ligar ou desligar a música"}</script>
+  <script src="/assets/lumo-lang.js?v=bea16ebb2e" defer></script>
+  <!--/i18n-->
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Início do Lumo"><img src="../assets/logo.webp" alt="" width="36" height="36" decoding="async"><span>Lumo</span></a>
+      <nav class="nav-right" aria-label="Principal">
+        <div class="nav-links">
+        <a href="getting-started.html">Primeiros passos</a>
+        <a href="features.html">Recursos</a>
+        <a href="starkeepers.html" aria-current="page">Como jogar</a>
+        <a href="commands.html">Comandos</a>
+        <a href="premium.html">Premium</a>
+        <a href="faq.html">Dúvidas</a>
+        <a href="dashboard.html">Painel <span class="beta-chip">Beta</span></a>
+        </div>
+        <!--i18n-sw--><details class="lang-pop"><summary aria-label="Idioma: Português (Brasil)" title="Idioma"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-code" translate="no">PT</span></summary><div class="lang-menu"><span class="lang-h">Idioma</span><a href="/starkeepers.html" hreflang="en" lang="en" data-lang="en"><span translate="no">English</span></a><a href="/es/starkeepers.html" hreflang="es" lang="es" data-lang="es"><span translate="no">Español</span></a><a href="/pt-br/starkeepers.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR" aria-current="true"><span translate="no">Português (Brasil)</span><span class=lang-ck aria-hidden=true>✓</span></a><a href="/ja/starkeepers.html" hreflang="ja" lang="ja" data-lang="ja"><span translate="no">日本語</span></a></div></details><!--/i18n-sw--><div class="theme-pop"><button type="button" class="theme-btn" data-theme-menu aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu" aria-label="Aparência e tema sazonal" title="Aparência"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button><div class="theme-menu" id="theme-menu" hidden><div class="theme-seg-wrap"><span>Aparência</span><div class="theme-seg" role="group" aria-label="Tema de cores"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>Escuro</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Claro</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>Auto</span></button></div></div><div class="theme-seg-wrap"><span>Sazonal <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="Tema sazonal"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Auto</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>Não</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>Halloween</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>Ação de Graças</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>Natal</span></button></div></div></div></div>
+        <a class="btn btn-ghost btn-sm nav-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+        <a class="btn btn-primary btn-sm nav-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Adicionar ao Discord</a>
+        <details class="nav-menu">
+          <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
+          <div class="nav-panel">
+          <a href="getting-started.html">Primeiros passos</a>
+          <a href="features.html">Recursos</a>
+          <a href="starkeepers.html" aria-current="page">Como jogar</a>
+          <a href="commands.html">Comandos</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="dashboard.html">Sobre o painel <span class="beta-chip">Beta</span></a>
+          <a class="btn btn-ghost nav-panel-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+            <a class="btn btn-primary nav-panel-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Adicionar ao Discord</a>
+            <div class="theme-seg-wrap"><span>Aparência</span><div class="theme-seg" role="group" aria-label="Tema de cores"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>Escuro</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Claro</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>Auto</span></button></div></div><div class="theme-seg-wrap"><span>Sazonal <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="Tema sazonal"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Auto</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>Não</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>Halloween</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>Ação de Graças</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>Natal</span></button></div></div>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main id="main">
+    <header class="page-hero">
+      <div class="wrap page-hero-inner">
+        <img class="hero-pose" src="../assets/robot/happy-256.webp" alt="Lumo, o mascote robô, sorrindo" width="112" height="112" fetchpriority="high" decoding="async">
+        <span class="kicker">Starkeepers · como jogar</span>
+        <h1>Como jogar <span class="grad">Starkeepers</span></h1>
+        <p class="lead">O jogo do céu noturno do Lumo, explicado imagem por imagem. Pegue estrelas toda noite, faça seu céu crescer e acendam juntos o céu do servidor.</p>
+        <div class="cta center"><a class="btn btn-primary" href="#start">Comece aqui</a><a class="btn btn-ghost" href="features.html#starkeepers">Ver a página de recursos</a></div>
+      </div>
+    </header>
+    <nav class="guide-toc wrap" aria-label="Nesta página"><a href="#start"><span aria-hidden="true">🛠️</span> Primeiros passos</a><a href="#watch"><span aria-hidden="true">🔭</span> A vigília noturna e pegar estrelas</a><a href="#rarities"><span aria-hidden="true">✨</span> Raridades e famílias</a><a href="#brightness"><span aria-hidden="true">🌟</span> Brilho e luz</a><a href="#skies"><span aria-hidden="true">🌌</span> Seu céu e o céu do servidor</a><a href="#constellations"><span aria-hidden="true">🗺️</span> Constelações, regiões e bônus</a><a href="#streak"><span aria-hidden="true">🔥</span> Sequência, tarefas e meta do servidor</a><a href="#stargazing"><span aria-hidden="true">🔭</span> Observar estrelas</a><a href="#trips"><span aria-hidden="true">🧭</span> Viagens pelo céu e fragmentos</a><a href="#wish"><span aria-hidden="true">🌠</span> Estrela desejada</a><a href="#shooting"><span aria-hidden="true">☄️</span> Estrelas cadentes e enxames de cometas</a><a href="#eclipse"><span aria-hidden="true">🌑</span> O eclipse</a><a href="#milestones"><span aria-hidden="true">🏅</span> Conquistas</a><a href="#tips"><span aria-hidden="true">💡</span> Dicas</a><a href="#faq"><span aria-hidden="true">❓</span> Perguntas frequentes</a></nav>
+    <section class="section guide-sec" id="start">
+      <div class="wrap guide-row guide-solo">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🛠️</span> Passo 1</span>
+          <h2>Primeiros passos: um admin ativa</h2>
+          <p>O Starkeepers é grátis para todo servidor, mas começa <b>desligado</b>. Um admin ativa no painel web: abra <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">o painel</a>, escolha seu servidor, abra <b>Starkeepers</b> e ative. Pronto.</p><ol class="guide-steps"><li>Admin: ative o Starkeepers no painel.</li><li>Opcional: escolha um <b>canal de estrelas cadentes</b> para estrelas que caem e enxames de cometas, e ative <b>Observar estrelas</b>.</li><li>Todos: digitem <code>/sky watch</code>.</li></ol>
+        </div>
+        
+      </div>
+    </section>
+    <section class="section guide-sec" id="watch">
+      <div class="wrap guide-row guide-flip">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🔭</span> Toda noite</span>
+          <h2>A vigília noturna e pegar estrelas</h2>
+          <p>À meia-noite (horário do Leste) surge um novo grupo de estrelas para <b>você</b> (cada um tem o seu). Use <code>/sky watch</code> para vê-las na aba <b>Hoje à noite</b> e toque numa estrela para pegá-la.</p><ul class="checks"><li>Sua primeira captura da noite é grátis; as outras custam um pouco de poeira estelar.</li><li>Pegar uma estrela que você já tem deixa ela mais brilhante.</li><li>As quatro abas embaixo (Hoje à noite, Estrelas, Céu do servidor, Meu céu) funcionam em qualquer tela.</li></ul>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/tonight.webp" alt="A aba Hoje à noite do /sky watch com as estrelas da noite, a sequência, as tarefas e a meta do servidor" width="744" height="375" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="rarities">
+      <div class="wrap guide-row">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">✨</span> O que você pode encontrar</span>
+          <h2>Raridades e famílias</h2>
+          <p>Há <b>100 estrelas</b> em <b>8 famílias</b> (Brasa, Geada, Aurora, Maré, Flor, Véu, Lanterna e Vazio), cada uma com seu formato. Cada estrela tem uma raridade, de Comum a Celestial. As mais raras brilham maiores e são liberadas conforme você sobe de nível.</p><ul class="checks"><li>Algumas estrelas só aparecem em certas fases da lua.</li><li>Se você passar um tempo sem uma estrela rara, uma rede de segurança garante que uma apareça.</li></ul>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/rarities.webp" alt="A arte das estrelas de cada família, de Comum a Celestial" width="870" height="976" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="brightness">
+      <div class="wrap guide-row guide-flip">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🌟</span> Faça suas estrelas crescerem</span>
+          <h2>Brilho e luz</h2>
+          <p>Cada estrela tem um <b>brilho</b> de 1 a 5. Aumente com poeira estelar na aba <b>Estrelas</b>, pegando a mesma estrela de novo ou com fragmentos das viagens. Estrelas mais brilhantes e raras dão mais <b>luz</b>, e a luz é o que acende as constelações.</p><p>A <b>poeira estelar</b> vem de jogar: conversar, voz, os jogos do Lumo e o próprio Starkeepers. Nunca é vendida e nunca são Lumo Coins. Moedas só compram visual.</p>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/stars.webp" alt="A aba Estrelas com poeira estelar, luz e suas estrelas mais brilhantes" width="748" height="373" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="skies">
+      <div class="wrap guide-row">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🌌</span> Dois céus</span>
+          <h2>Seu céu e o céu do servidor</h2>
+          <p><b>Meu céu</b> é a sua própria imagem: cada estrela que você pegou, na cor da família, com as mais brilhantes nomeadas. Toque em <b>Cintilar</b> para ver o céu brilhar.</p><p>O <b>céu do servidor</b> é de todos. Você coloca suas estrelas nas constelações dele e o servidor todo as acende junto.</p>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/mysky.webp" alt="A imagem do céu de um jogador com estrelas nomeadas" width="960" height="560" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="constellations">
+      <div class="wrap guide-row guide-flip">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🗺️</span> Juntos</span>
+          <h2>Constelações, regiões e bônus</h2>
+          <p>O céu do servidor tem <b>regiões</b>, cada uma com suas <b>constelações</b>. Preencha os espaços de uma constelação com estrelas das famílias certas e atinja a meta de luz para <b>acendê-la</b>. A etiqueta sempre diz o que falta, por exemplo “falta 1 estrela”.</p><ul class="checks"><li>Constelações acesas dão pequenos <b>bônus</b> para o servidor todo, como um pouco mais de poeira estelar ou chances um pouco melhores.</li><li>Acender algumas constelações abre novas regiões.</li><li>Todos que ajudaram ganham o emblema daquela constelação.</li></ul>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/serversky.webp" alt="O céu compartilhado do servidor com regiões e constelações" width="960" height="608" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="streak">
+      <div class="wrap guide-row guide-solo">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🔥</span> Não pare</span>
+          <h2>Sequência, tarefas e meta do servidor</h2>
+          <p>Vigie toda noite para aumentar sua <b>sequência</b>: a cada 7ª noite vem uma estrela extra. Toda noite você também tem <b>3 pequenas tarefas</b> (como “pegue 2 estrelas”) por um pouco de poeira estelar, e o servidor todo compartilha uma <b>meta</b> com um pequeno bônus quando é atingida.</p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="section guide-sec" id="stargazing">
+      <div class="wrap guide-row guide-flip">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🔭</span> Opcional · o dia todo</span>
+          <h2>Observar estrelas</h2>
+          <p>Quando um admin ativa, aparece um botão <b>Observar</b> na aba Hoje à noite. Encontre a constelação escondida num pedaço do céu escolhendo as letras dela. Os primeiros acertos de cada noite dão um pouco de poeira estelar (dentro do limite diário) e há um ranking da noite.</p>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/stargaze.webp" alt="Um desafio de Observar estrelas: encontre a constelação entre as estrelas com letras" width="698" height="696" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="trips">
+      <div class="wrap guide-row">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🧭</span> Enquanto você está fora</span>
+          <h2>Viagens pelo céu e fragmentos</h2>
+          <p>Toque em <b>Viagens</b> na aba Estrelas para mandar uma das suas estrelas numa <b>viagem de 2 horas</b>. Quando ela voltar, toque em <b>Recolher</b> para ganhar <b>fragmentos</b> da família dela (as mais brilhantes trazem mais). <b>10 fragmentos</b> de uma família deixam uma estrela dessa família 1 ponto mais brilhante, uma vez por estrela a cada noite.</p><ul class="checks"><li>As primeiras 3 viagens da noite também dão 1 de poeira estelar cada.</li><li>O Lumo atualiza a mensagem da viagem quando ela volta. Ative <b>Me avise</b> se quiser uma menção.</li></ul>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/trips.webp" alt="A tela de Viagens com uma estrela voltando e fragmentos recolhidos" width="729" height="297" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="wish">
+      <div class="wrap guide-row guide-flip">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🌠</span> Uma estrela que você quer</span>
+          <h2>Estrela desejada</h2>
+          <p>Toque em <b>Desejo</b> na aba Estrelas e escolha uma estrela que você ainda não tem. A cada noite ela tem uma pequena chance extra de aparecer na sua vigília, e essa chance cresce um pouco a cada noite em que ela não aparece (até 10%). Trocar de estrela recomeça a contagem.</p>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/wish.webp" alt="A tela de Estrela desejada com a chance extra desta noite" width="628" height="306" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="shooting">
+      <div class="wrap guide-row">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">☄️</span> Ao vivo num canal</span>
+          <h2>Estrelas cadentes e enxames de cometas</h2>
+          <p>Algumas vezes por dia uma <b>estrela cadente</b> cai no canal escolhido pelo admin. As primeiras 3 pessoas que tocam em <b>Pegar</b> ficam com ela.</p><p>De vez em quando passa um <b>enxame de cometas</b> por um minuto (se um admin ativou). Todos tocam em <b>Ajudar a pegar</b>; quem ajuda ganha poeira estelar e os maiores ajudantes ganham um pouco mais.</p>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/comet.webp" alt="Uma mensagem de enxame de cometas com o botão Ajudar a pegar e os maiores ajudantes" width="628" height="258" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="eclipse">
+      <div class="wrap guide-row guide-flip">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🌑</span> Uma vez por mês</span>
+          <h2>O eclipse</h2>
+          <p>Uma vez por mês o céu escurece por duas noites. A região do <b>Anel do Eclipse</b> se abre, estrelas raras e celestiais aparecem um pouco mais, qualquer estrela lunar pode surgir e caem mais estrelas.</p>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/eclipse.webp" alt="A animação do eclipse como aparece no Discord" width="420" height="236" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="milestones">
+      <div class="wrap guide-row">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">🏅</span> Seu progresso</span>
+          <h2>Conquistas</h2>
+          <p>As conquistas de coleção (sua 10ª, 50ª e 100ª captura, uma família inteira, sua primeira Celestial e mais) dão um <b>título</b> que você pode mostrar na imagem do seu céu, um pouco de poeira estelar e às vezes um <b>fundo</b> novo. Veja em <b>Mais → Conquistas</b> na aba Estrelas.</p>
+        </div>
+        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/pt-br/milestones.webp" alt="A lista de Conquistas com títulos e progresso" width="628" height="454" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+    <section class="section guide-sec" id="tips">
+      <div class="wrap guide-row guide-flip guide-solo">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">💡</span> Bom saber</span>
+          <h2>Dicas</h2>
+          <ul class="checks"><li>Vigie toda noite, nem que seja para uma captura: isso mantém sua sequência.</li><li>Veja suas tarefas na aba Hoje à noite: são poeira estelar rápida.</li><li>Coloque estrelas onde o servidor precisa: a etiqueta diz o que falta.</li><li>Mande uma estrela numa viagem antes de sair.</li><li>Deseje a estrela que completa uma família.</li><li>Faça brilhar as estrelas que você colocou: a luz delas conta para o servidor todo.</li></ul>
+        </div>
+        
+      </div>
+    </section>
+    <section class="section guide-sec" id="faq">
+      <div class="wrap guide-row guide-solo">
+        <div class="guide-copy reveal">
+          <span class="kicker"><span aria-hidden="true">❓</span> Perguntas</span>
+          <h2>Dúvidas</h2>
+          <div class="guide-faq"><details class="faq"><summary>O Starkeepers custa alguma coisa?</summary><div class="faq-body"><p>Não. É grátis para todo servidor. Lumo Coins só compram visual (fundos e estilos de estrela); poeira estelar não pode ser comprada.</p></div></details><details class="faq"><summary>Por que não vejo o /sky?</summary><div class="faq-body"><p>Primeiro um admin precisa ativar o Starkeepers no painel.</p></div></details><details class="faq"><summary>Quando aparecem estrelas novas?</summary><div class="faq-body"><p>Toda noite à meia-noite, horário do Leste (ET).</p></div></details><details class="faq"><summary>Posso perder minhas estrelas?</summary><div class="faq-body"><p>Não. As estrelas que você pega continuam suas. Se quiser, pode apagar seus dados em Mais → Esquecer minhas estrelas.</p></div></details><details class="faq"><summary>Por que uma constelação diz “falta 1 estrela”?</summary><div class="faq-body"><p>Ela só acende quando todos os espaços estão preenchidos e a meta de luz é atingida. A etiqueta diz exatamente o que falta.</p></div></details><details class="faq"><summary>Os enxames de cometas ou as estrelas cadentes mencionam todo mundo?</summary><div class="faq-body"><p>Não. Eles só postam no canal escolhido pelo admin e ficam desligados até um admin ativá-los.</p></div></details></div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="wrap">
+        <div class="final-cta reveal">
+          <img class="cta-bot" src="../assets/robot/celebrating-256.webp" alt="Lumo, o mascote robô, comemorando" width="104" height="104" loading="lazy" decoding="async">
+          <h2>Pronto para pegar sua primeira estrela?</h2>
+          <p>Adicione o Lumo, ative o Starkeepers no painel e digite <code>/sky watch</code>.</p>
+          <div class="cta center"><a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Adicionar ao Discord</a><a class="btn btn-ghost" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="../assets/logo.webp" alt="" width="34" height="34" loading="lazy" decoding="async"><span>Lumo</span></a>
+        <p class="footer-wave"><img class="mini-bot" src="../assets/robot/wave-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Valeu pela visita!</span></p>
+        <p>Um bot de Discord centrado no Starkeepers, um jogo do céu noturno, com música, jogos, ferramentas do servidor e Premium com IA. Criado e mantido por <a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a>.</p>
+      </div>
+      <nav class="footer-cols" aria-label="Rodapé">
+        <div>
+          <h2>Explorar</h2>
+          <a href="getting-started.html">Primeiros passos</a>
+          <a href="features.html">Recursos</a>
+          <a href="starkeepers.html" aria-current="page">Como jogar</a>
+          <a href="commands.html">Comandos</a>
+          <a href="premium.html">Premium</a>
+          <a href="faq.html">Dúvidas</a>
+          <a href="changelog.html">Novidades</a>
+          <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">Abrir o painel <span class="beta-chip">Beta</span></a>
+          <a href="dashboard.html">Sobre o painel</a>
+        </div>
+        <div>
+          <h2>Suporte</h2>
+          <a href="https://discord.gg/KZjebts36C" target="_blank" rel="noopener">Entre no nosso servidor de suporte</a>
+          <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">Mande mensagem para o Ori no Discord</a>
+          <a href="faq.html#claim">Ativar o Premium</a>
+          <a href="faq.html#permissions">Permissões explicadas</a>
+          <a href="status.html">Status</a>
+        </div>
+        <div>
+          <h2>Jurídico</h2>
+          <a href="../terms.html">Termos de Serviço</a>
+          <a href="../privacy.html">Política de Privacidade</a>
+        </div>
+      </nav>
+    </div>
+    <div class="wrap footer-note">Sem vínculo com o Discord. Lumo Coins são dinheiro de brincadeira, sem valor real. Música: <a href="https://opengameart.org/content/outer-space-loop" target="_blank" rel="noopener">Outer Space Loop</a> de wipics (CC0).</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/lumo-music.js?v=7885974567" data-slot=".nav-right .nav-menu" data-src="/assets/audio/outer-space-loop.mp3?v=75da4f5d" data-exclude="^/dashboard/" data-volume="0.16" data-fade="2.5" defer></script>
+  <script src="../script.js?v=493c621e93" defer></script>
+</body>
+</html>
