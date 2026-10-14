@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://lumobot.org/"
 LANGS = {"en": ("", "English", "EN"), "es": ("es/", "Español", "ES"), "pt-BR": ("pt-br/", "Português (Brasil)", "PT"),
          "ja": ("ja/", "日本語", "日本")}
-PAGES = ["index.html", "features.html", "commands.html", "getting-started.html", "faq.html", "premium.html",
+PAGES = ["index.html", "features.html", "commands.html", "getting-started.html", "starkeepers.html", "faq.html", "premium.html",
          "dashboard.html", "status.html", "changelog.html", "404.html"]
 ENGLISH_ONLY = ["privacy.html", "terms.html"]
 ONLY_EN_NOTE = ("This page is only in English.", "Esta página solo está en inglés.", "Esta página só está em inglês.",
@@ -128,6 +128,16 @@ def rewrite_urls(page_html: str) -> str:
     return re.sub(r'\b(href|src|srcset|poster)="([^"]*)"', attr, page_html)
 
 
+def localize_shots(page_html: str, code: str) -> str:
+    """Guide screenshots live in assets/guide/<lang>/; use this language's picture when there is one."""
+    d = code.lower()
+
+    def swap(m):
+        alt = ROOT / "assets" / "guide" / d / m.group(1)
+        return f"assets/guide/{d}/{m.group(1)}" if alt.exists() else m.group(0)
+    return re.sub(r"assets/guide/en/([\w.-]+)", swap, page_html)
+
+
 def build_lang(code: str, page: str, en_html: str) -> str:
     tr = table(code)
     src = BLOCK.sub("", en_html)
@@ -137,6 +147,7 @@ def build_lang(code: str, page: str, en_html: str) -> str:
                           f'      <p class="lang-note">{CHANGELOG_NOTE}</p>', 1)
     src = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", src, flags=re.S)  # English-only structured data
     out = htmltr.translate(src, tr.get, lang=code)
+    out = localize_shots(out, code)
     out = out.replace(f'"{url_of("en", page)}"', f'"{url_of(code, page)}"')  # canonical, og:url
     out = rewrite_urls(out)
     return add_bits(out, code, page, tr)
