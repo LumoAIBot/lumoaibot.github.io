@@ -81,7 +81,7 @@
       <header class="legal-head">
         <div class="legal-kick"><img class="legal-bot" src="assets/robot/salute-192.webp" alt="Lumo the robot giving a salute" width="64" height="64" loading="lazy" decoding="async"><span class="kicker">Legal</span></div>
         <h1>Privacy Policy</h1>
-        <p class="legal-meta">Effective October 8, 2026</p>
+        <p class="legal-meta">Effective October 13, 2026</p>
         <p>This policy explains what the Lumo Discord bot (“Lumo”, “the bot”) collects, why, where it is kept, who it is shared with, and how to get it deleted. Lumo is run by Ori, an individual developer (“I”, “me”). You can reach me through my <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">Discord profile</a>. Also see the <a href="terms.html">Terms of Service</a>.</p>
       </header>
 
@@ -138,6 +138,10 @@
         <h3>Activity, levels and ranks</h3>
         <p>For each member in each server: how many messages you have sent (in total and per channel), how long you have spent in voice channels, and the date tracking began for that server. This powers <code>/profile</code> and <code>/top</code>. Message content is not part of these stats.</p>
         <p>Lumo also keeps one XP count for each member in every server (just the number, never what you wrote). It gives your level on <code>/rank</code>, <code>/profile</code> and <code>/top</code>. <code>/forgetme</code> erases it.</p>
+
+        <h3>Starkeepers</h3>
+        <p>Starkeepers is off unless a server admin turns it on. For each member who plays in a server, Lumo keeps your user ID, the stars you caught and how bright they are, your stardust and how much you earned today, tonight’s stars, the sky style you picked, the constellation badges you earned and a few counters (stars caught, nights watched). For the server it keeps the shared server sky: which star sits in each constellation slot, the user ID of the member who placed it, and when constellations were lit. The picture of the server sky and the dashboard page never show who placed a star. Data is kept separately for each server. No message content and no AI are involved.</p>
+        <p>You can delete your own Starkeepers data in a server with <strong>Forget my stars</strong> in <code>/sky collection</code>. Stars you already placed in the server sky stay there, but with no user ID attached, so constellations your server lit stay lit. The server owner’s <code>/forgetme</code> erases the server’s whole Starkeepers data, including the server sky.</p>
 
         <h3>Giveaways and polls</h3>
         <p>When a server runs a giveaway, Lumo saves the prize, the end time, the required role (if any), who started it, and the Discord user IDs of the people who pressed Enter, plus the winners. For a poll it saves the question, the options, the end time, who started it and, for each person who voted, their Discord user ID and which option(s) they picked. Votes are only used to count; the poll and the web dashboard show totals, never who voted for what. Finished giveaways and polls are removed after 30 days (and only the latest 25 finished ones per server are kept). No AI is involved.</p>
@@ -215,6 +219,7 @@
               <tr><td>Voice audio</td><td>Not saved. Processed and discarded.</td></tr>
               <tr><td>Lumo Coin wallets</td><td>Until deleted on request or the service shuts down.</td></tr>
               <tr><td>Activity stats (messages, voice time, XP)</td><td>Until deleted on request or the service shuts down.</td></tr>
+              <tr><td>Starkeepers (stars, stardust, badges, the server sky)</td><td>Until you use Forget my stars (your data; stars you placed stay in the server sky with no user ID), the owner runs <code>/forgetme</code>, it is deleted on request, or the service shuts down.</td></tr>
               <tr><td>Premium records</td><td>Until deleted on request or the service shuts down. Records stay after Premium ends so renewals pick up where they left off.</td></tr>
               <tr><td>Premium payment details</td><td>Held by Ko-fi and its payment providers under their policies, and in my Ko-fi account’s history. The bot keeps only a hashed email, a hashed transaction ID and the payment date: up to 60 days if a payment is never claimed, otherwise about 13 months, so a payment is never counted twice.</td></tr>
               <tr><td>Monthly generation counter</td><td>The current month only. Older months are removed.</td></tr>
@@ -233,7 +238,7 @@
 
       <section id="deletion">
         <h2>7. Your choices and deletion</h2>
-        <p>The server owner can run <code>/forgetme</code> in their server to erase the saved channel messages and summaries, conversation memory (including voice turns) and activity stats for that server, after a confirmation. It keeps Premium records, server settings, usage counters and Lumo Coin wallets. For anything else, to see or delete your data, message me through my <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">Discord profile</a> with your Discord user ID and what you would like removed (for example, your messages in the bot’s history, your coin wallet, or your activity stats). I will delete it and let you know when it is done. Server administrators can ask me to remove all of a server’s data the same way, including its Premium record (deleting it while Premium is active ends Premium for that server).</p>
+        <p>The server owner can run <code>/forgetme</code> in their server to erase the saved channel messages and summaries, conversation memory (including voice turns), activity stats and Starkeepers data for that server, after a confirmation. Any member can delete their own Starkeepers data in a server with Forget my stars in <code>/sky collection</code>. It keeps Premium records, server settings, usage counters and Lumo Coin wallets. For anything else, to see or delete your data, message me through my <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">Discord profile</a> with your Discord user ID and what you would like removed (for example, your messages in the bot’s history, your coin wallet, or your activity stats). I will delete it and let you know when it is done. Server administrators can ask me to remove all of a server’s data the same way, including its Premium record (deleting it while Premium is active ends Premium for that server).</p>
         <p>You can also limit what Lumo sees:</p>
         <ul>
           <li>Don’t mention Lumo, reply to it or use its name in messages you don’t want it to process.</li>
