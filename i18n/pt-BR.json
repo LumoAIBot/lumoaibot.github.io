@@ -846,5 +846,13 @@
  "Wish for the star that completes a family.": "Deseje a estrela que completa uma família.",
  "Wished star": "Estrela desejada",
  "Your first catch each night is free; more catches cost a little stardust.": "Sua primeira captura da noite é grátis; as outras custam um pouco de poeira estelar.",
- "Your sky vs the server sky": "Seu céu e o céu do servidor"
+ "Your sky vs the server sky": "Seu céu e o céu do servidor",
+ "<1>📖</1> The lore": "<1>📖</1> A história do céu",
+ "The story": "A história",
+ "<1>📖</1> The story": "<1>📖</1> A história",
+ "Chapters open as you and your server play: your first catch, your first lit constellation, new regions, an eclipse and more.": "Os capítulos abrem conforme você e seu servidor jogam: sua primeira captura, a primeira constelação acesa, novas regiões, um eclipse e mais.",
+ "Each chapter gives a <1>title</1>; some give a new <2>backdrop</2>.": "Cada capítulo dá um <1>título</1>; alguns dão um <2>fundo</2> novo.",
+ "Read them under <1>Stars → More → Story</1>.": "Leia em <1>Estrelas → Mais → História</1>.",
+ "The stars were never destroyed, only forgotten, and a sky nobody watches slowly goes dim. <1>Lumo</1>, a little lamp-robot, kept one lantern lit and tells the story in <2>{1} chapters</2> plus an interlude.": "As estrelas nunca foram destruídas, só esquecidas, e um céu que ninguém olha vai se apagando. <1>Lumo</1>, um robozinho-lâmpada, manteve uma lanterna acesa e conta a história em <2>{1} capítulos</2> e um interlúdio.",
+ "A story card from Chapter {1}, The Little Lamp, with Lumo waving": "Uma página do Capítulo {1}, A pequena lâmpada, com Lumo acenando"
 }
