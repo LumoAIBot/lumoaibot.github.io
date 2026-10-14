@@ -35,7 +35,7 @@
   <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
   <script src="/assets/lumo-holiday.js?v=30542ac95e"></script>
   <!--i18n-->
-  <link rel="stylesheet" href="/assets/lumo-lang.css?v=1b51ce4f2d">
+  <link rel="stylesheet" href="/assets/lumo-lang.css?v=22857159ee">
   <script>(function(){var D={"en": "/", "es": "/es/", "pt-BR": "/pt-br/", "ja": "/ja/"},cur="es",has=true,rel="404.html",p=null;try{p=localStorage.getItem("lumo-lang")}catch(e){}if(!p){if(cur!=="en")return;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase();var m=c.indexOf("pt")===0?"pt-BR":c.indexOf("es")===0?"es":c.indexOf("ja")===0?"ja":c.indexOf("en")===0?"en":null;if(m){p=m;break}}if(!p||p==="en")return}if(p===cur||!D[p]||!has)return;location.replace(D[p]+rel+location.search+location.hash)})()</script>
   <script type="application/json" id="lumo-t">{"Copy": "Copiar", "Copy {n}": "Copiar {n}", "Copied ✓": "Copiado ✓", "Copied {n}": "Copiado: {n}", "{n} match": "{n} resultado", "{n} matches": "{n} resultados", "Right-click a message → Apps → {n}": "Clic derecho en un mensaje → Apps → {n}", "Dark": "Oscuro", "Light": "Claro", "Auto": "Auto", "Appearance: {n}": "Apariencia: {n}", "Appearance: {n}. Theme and seasonal options": "Apariencia: {n}. Tema y opciones de temporada", "just now": "justo ahora", "{n} min ago": "hace {n} min", "Online since": "En línea desde", "Last seen": "Visto por última vez", "checking…": "comprobando…", "{n} servers": "{n} servidores", "{n} members": "{n} miembros", "server": "servidor", "servers": "servidores", "Halloween": "Halloween", "Thanksgiving": "Acción de Gracias", "Christmas": "Navidad", "· now: {name}": "· ahora: {name}", "· none right now": "· ninguno ahora", "Toggle music": "Activar o desactivar la música"}</script>
   <script src="/assets/lumo-lang.js?v=bea16ebb2e" defer></script>
@@ -132,6 +132,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="/assets/lumo-music.js?v=7885974567" data-slot=".nav-right .nav-menu" data-src="/assets/audio/outer-space-loop.mp3?v=75da4f5d" data-exclude="^/dashboard/" data-volume="0.16" data-fade="2.5" defer></script>
-  <script src="../script.js?v=493c621e93" defer></script>
+  <script src="../script.js?v=94187fedff" defer></script>
 </body>
 </html>

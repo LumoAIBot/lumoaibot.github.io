@@ -16,6 +16,8 @@
 html[lang="ja"] h1,html[lang="ja"] h2,html[lang="ja"] h3{word-break:auto-phrase}
 /* a long phrase (like 「Discordサーバーに。」 in the home hero) may still break rather than push the page wider on phones */
 html[lang="ja"] h1,html[lang="ja"] h2{overflow-wrap:anywhere}
+/* phones: Japanese headings a step smaller and with calmer line breaks (no lone 「に。」 at the end) */
+@media (max-width:640px){html[lang="ja"] h1{font-size:clamp(1.9rem,8.4vw,2.4rem);line-height:1.18;letter-spacing:-.01em;text-wrap:pretty}html[lang="ja"] h2{font-size:clamp(1.45rem,6.4vw,1.8rem);line-height:1.25;letter-spacing:0;text-wrap:pretty}}
 @media (max-width:1100px){.hero-inner{grid-template-columns:minmax(0,1fr)}}
 
 /* status pills: their words live in styles.css as CSS content */

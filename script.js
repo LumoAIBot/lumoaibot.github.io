@@ -190,7 +190,8 @@ function T(s, v) { var o = s; try { var el = document.getElementById("lumo-t"), 
     const show = (el) => { el.classList.add("on"); };
     const reset = () => { steps.forEach((s) => s.classList.remove("on")); typing.classList.remove("on"); box.classList.remove("demo-fade"); };
     box.classList.add("demo-on");
-    reset();
+    steps.forEach(show);  // until it first scrolls into view, the whole chat shows as a still frame (never an empty box)
+    let started = false;
     const beat = () => {
       timer = 0;
       if (!visible || document.hidden) { playing = false; return; }
@@ -202,7 +203,12 @@ function T(s, v) { var o = s; try { var el = document.getElementById("lumo-t"), 
       if (i === 0) timer = setTimeout(() => { reset(); beat(); }, wait);
       else timer = setTimeout(beat, wait);
     };
-    const resume = () => { if (!playing && visible && !document.hidden) { playing = true; timer = setTimeout(beat, 500); } };
+    const resume = () => {
+      if (playing || !visible || document.hidden) return;
+      playing = true;
+      if (!started) { started = true; timer = setTimeout(() => { box.classList.add("demo-fade"); timer = setTimeout(() => { reset(); beat(); }, 600); }, 2200); }
+      else timer = setTimeout(beat, 500);
+    };
     const pause = () => { clearTimeout(timer); timer = 0; playing = false; };
     new IntersectionObserver((es) => { visible = es[0].isIntersecting; visible ? resume() : pause(); }, { threshold: 0.25 }).observe(box);
     document.addEventListener("visibilitychange", () => (document.hidden ? pause() : resume()));

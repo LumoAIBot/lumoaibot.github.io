@@ -858,5 +858,6 @@
  "The <1>Server sky</1> is shared by everyone. You place your stars into its constellations with <2/>, and the whole server lights them up together.": "<1>サーバーの空</1>はみんなで共有します。<2/> で自分の星を星座に置き、サーバー全体で一緒に灯していきます。",
  "Run <1/> to send one of your stars on a <2>{1}-hour trip</2>. When it’s back, press <3>Collect</3> for <4>fragments</4> of its family (brighter stars bring more). <5>{2} fragments</5> of one family make one of that family’s stars {3} brighter, once per star a night.": "<1/> で星を<2>{1}時間の旅</2>に出せます。戻ったら<3>受け取る</3>を押して、その星のファミリーの<4>かけら</4>をもらいましょう(明るい星ほど多く持ち帰ります)。同じファミリーの<5>かけら{2}個</5>で、そのファミリーの星を{3}段階明るくできます(1つの星につき一晩1回)。",
  "Run <1/> and pick one star you don’t have yet. Every night it gets a small extra chance to show up in your watch, and that chance grows a little each night it doesn’t (up to {1}%). Switching stars starts over.": "<1/> で、まだ持っていない星をひとつ選びます。毎晩その星が観測に出る確率が少し上がり、出なかった夜ごとにさらに少しずつ上がります(最大{1}%)。星を変えると最初からになります。",
- "Read them with <1/>.": "<1/> で読めます。"
+ "Read them with <1/>.": "<1/> で読めます。",
+ "Starkeepers, the night-sky game<1>catch stars every night and light constellations with your server (beta)</1>": "Starkeepers（夜空ゲーム）<1>毎晩星をつかまえて、サーバーのみんなで星座を灯そう（ベータ）</1>"
 }
