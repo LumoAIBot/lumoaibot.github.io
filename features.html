@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lumo features: music, games, server tools and AI chat</title>
-  <meta name="description" content="See what Lumo does: SoundCloud music, seven Lumo Coin games, giveaways, polls, roles and logs are free; AI chat, pictures, live voice and a custom name and personality come with Premium.">
+  <meta name="description" content="See what Lumo does: Starkeepers (beta), a night-sky game for your whole server, plus SoundCloud music, seven Lumo Coin games, giveaways, polls, roles and logs, all free. AI-powered chat, pictures, live voice and a custom name and personality come with Premium.">
   <meta name="theme-color" content="#0b0d14">
   <meta name="color-scheme" content="dark">
   <link rel="canonical" href="https://lumobot.org/features.html">
-  <meta property="og:site_name" content="Lumo AI">
+  <meta property="og:site_name" content="Lumo">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lumobot.org/features.html">
   <meta property="og:title" content="Lumo features">
-  <meta property="og:description" content="Music, seven games, server tools and AI chat for your Discord server.">
+  <meta property="og:description" content="Starkeepers night-sky game, music, seven games and server tools for your Discord server, plus AI-powered chat with Premium.">
   <meta property="og:image" content="https://lumobot.org/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Lumo: the robot mascot waving beside the Lumo name and the tagline AI-powered all-in-one Discord bot">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lumo features">
-  <meta name="twitter:description" content="Music, seven games, server tools and AI chat for your Discord server.">
+  <meta name="twitter:description" content="Starkeepers night-sky game, music, seven games and server tools for your Discord server, plus AI-powered chat with Premium.">
   <meta name="twitter:image" content="https://lumobot.org/og-image.png">
   <meta name="twitter:image:alt" content="Lumo: the robot mascot waving beside the Lumo name and the tagline AI-powered all-in-one Discord bot">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=85086c9a13">
+  <link rel="stylesheet" href="styles.css?v=974475e62d">
   <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
   <script src="/assets/lumo-holiday.js?v=b35e80daaf"></script>
   <!--i18n-->
@@ -87,10 +87,24 @@
         <img class="hero-pose" src="assets/robot/happy-256.webp" alt="Lumo, the robot mascot, smiling" width="112" height="112" fetchpriority="high" decoding="async">
         <span class="kicker">Features</span>
         <h1>Everything Lumo <span class="grad">can do</span></h1>
-        <p class="lead">Music, games and server tools are free. AI chat comes with Premium.</p>
+        <p class="lead">Starkeepers, music, games and server tools are free. AI-powered chat comes with Premium.</p>
         <p class="illus-note">Panels below are illustrations drawn with HTML and CSS, using the bot's real reply text.</p>
       </div>
     </header>
+
+    <section class="section frow-sec" id="starkeepers">
+      <div class="wrap frow">
+        <div class="frow-copy reveal">
+          <div class="frow-head"><img class="frow-bot" src="assets/robot/happy-256.webp" alt="Lumo, the robot mascot, smiling" width="112" height="112" loading="lazy" decoding="async"><div><span class="kicker">Starkeepers</span> <span class="badge b-any">Free</span> <span class="badge b-beta">Beta</span>
+          <h2>A night sky your server fills together</h2></div></div>
+          <p>Starkeepers is Lumo’s night-sky game, in beta and actively updated. New stars appear for everyone each night: catch them with <code>/sky watch</code>, brighten them with stardust from chatting and games, and place them into your server’s shared constellations.</p>
+          <ul class="checks"><li>A watch streak and three small nightly tasks</li><li>A shared server goal each night with a small perk when you reach it</li><li>16 constellations, 100 stars and moon-phase rarities</li><li>Off until an admin turns it on in the dashboard</li></ul>
+        </div>
+        <div class="stage reveal" data-d="1">
+          <img class="sk-shot" src="assets/starkeepers-sky-1200.webp" srcset="assets/starkeepers-sky-600.webp 600w, assets/starkeepers-sky-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 560px" alt="A server’s Starkeepers sky with regions and constellations, as Lumo draws it in Discord" width="1200" height="760" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
 
     <section class="section frow-sec" id="music">
       <div class="wrap frow">
@@ -308,7 +322,7 @@
         <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">📊</span><div><h3>Profiles &amp; ranks <span class="badge b-any">Free</span></h3><p><code>/profile</code> cards with your level and 14 badges to collect, <code>/top</code> leaderboards and a <code>/server</code> snapshot.</p></div></article>
         <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">👋</span><div><h3>Welcome cards <span class="badge b-any">Free</span></h3><p>Every new member gets a welcome card with their avatar and name, and you can change the wording in the dashboard.</p></div></article>
         <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">🌟</span><div><h3>Levels <span class="badge b-any">Free</span></h3><p>Everyone earns XP and levels for chatting and voice time, in every server, with a <code>/rank</code> card and a Levels board on <code>/top</code>. Level-up messages and level roles are opt-in in the dashboard.</p></div></article>
-        <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">🌌</span><div><h3>Starkeepers <span class="badge b-any">Free</span></h3><p>Lumo&#x27;s night-sky game: catch stars each night with <code>/sky watch</code> (5 on a full moon, and some only appear in certain moon phases), brighten them with stardust from chatting and games, and see your own sky with <code>/sky view</code>. Together, place stars into 14 constellations across six regions of your server’s sky with <code>/sky constellations</code> to unlock badges and small server perks. Shooting stars fall in a channel an admin picks (the first three to press the button catch them), a monthly eclipse opens the Eclipse Ring, and <code>/top</code> has a Stargazers board. 100 stars to collect, no trading. Off until an admin turns it on in the dashboard.</p></div></article>
+        <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">🌌</span><div><h3>Starkeepers <span class="badge b-any">Free</span> <span class="badge b-beta">Beta</span></h3><p>Lumo&#x27;s night-sky game: catch stars each night with <code>/sky watch</code> (5 on a full moon, and some only appear in certain moon phases), brighten them with stardust from chatting and games, and see your own sky with <code>/sky view</code>. Together, place stars into the 16 constellations of your server’s sky (14 across six regions, plus 2 that only open during the Eclipse Ring event) with <code>/sky constellations</code> to unlock badges and small server perks. Shooting stars fall in a channel an admin picks (the first three to press the button catch them), a monthly eclipse opens the Eclipse Ring, and <code>/top</code> has a Stargazers board. 100 stars to collect, no trading. Off until an admin turns it on in the dashboard.</p></div></article>
         <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">🖥️</span><div><h3>Web dashboard (beta) <span class="badge b-any">Free</span></h3><p>Server managers log in with Discord to customize the welcome card, set up logs and the join role, manage reaction roles, Levels, Customize, giveaways and polls, and see usage.</p></div></article>
         <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">🧭</span><div><h3>AI channels <span class="badge b-premium">Premium</span></h3><p>Admins choose where Lumo's AI chat answers: everywhere, only some channels, or everywhere except some. A channel can have its own tone, or answer only when mentioned.</p></div></article>
         <article class="bento-tile b-1 reveal"><span class="f-icon" aria-hidden="true">⚖️</span><div><h3>Fair-use limits <span class="badge b-premium">Premium</span></h3><p>Each person gets 20 AI replies a day and 2 images or videos a month. Each server gets 100 AI replies a day and 15 images and videos a month. Music, games, giveaways and polls never count.</p></div></article>
@@ -333,7 +347,7 @@
       <div class="footer-brand">
         <a class="brand" href="index.html"><img src="assets/logo.webp" alt="" width="34" height="34" loading="lazy" decoding="async"><span>Lumo</span></a>
         <p class="footer-wave"><img class="mini-bot" src="assets/robot/wave-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Thanks for stopping by!</span></p>
-        <p>An AI-powered Discord bot for music, games and server tools. Built and maintained by <a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a>.</p>
+        <p>A Discord bot built around Starkeepers, a night-sky game, with music, games, server tools and AI-powered Premium. Built and maintained by <a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a>.</p>
       </div>
       <nav class="footer-cols" aria-label="Footer">
         <div>
