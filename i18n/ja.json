@@ -846,5 +846,13 @@
  "Wish for the star that completes a family.": "ファミリーをコンプリートできる星を願おう。",
  "Wished star": "願い星",
  "Your first catch each night is free; more catches cost a little stardust.": "毎晩最初のキャッチは無料。2回目以降は少しスターダストがかかります。",
- "Your sky vs the server sky": "自分の空とサーバーの空"
+ "Your sky vs the server sky": "自分の空とサーバーの空",
+ "<1>📖</1> The lore": "<1>📖</1> 世界の物語",
+ "The story": "ストーリー",
+ "<1>📖</1> The story": "<1>📖</1> ストーリー",
+ "Chapters open as you and your server play: your first catch, your first lit constellation, new regions, an eclipse and more.": "章は、あなたとサーバーが遊ぶほど開いていきます。はじめての星、最初に灯った星座、新しい地域、日食など。",
+ "Each chapter gives a <1>title</1>; some give a new <2>backdrop</2>.": "どの章でも<1>称号</1>がもらえ、新しい<2>背景</2>がもらえる章もあります。",
+ "Read them under <1>Stars → More → Story</1>.": "<1>「星」→「その他」→「ストーリー」</1>で読めます。",
+ "The stars were never destroyed, only forgotten, and a sky nobody watches slowly goes dim. <1>Lumo</1>, a little lamp-robot, kept one lantern lit and tells the story in <2>{1} chapters</2> plus an interlude.": "星は壊されたのではなく、忘れられただけ。だれにも見上げられない空は、少しずつ暗くなっていきます。小さなランプロボットの<1>Lumo</1>はランタンを灯し続け、<2>全{1}章</2>と幕間でその物語を語ります。",
+ "A story card from Chapter {1}, The Little Lamp, with Lumo waving": "第{1}章「小さなランプ」のページ。手をふるLumo"
 }
