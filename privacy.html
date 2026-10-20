@@ -91,7 +91,7 @@
         <h2>The short version</h2>
         <ul>
           <li>Lumo reads messages in the channels it can see so it can reply and follow the conversation. In servers with Premium, and in channels where the server has not switched the AI off, it keeps the most recent 150 messages per channel (the first 280 characters of each) for up to 3 days, then deletes them. In servers without Premium it does not keep message text. If you delete a message on Discord, Lumo deletes its saved copy too.</li>
-          <li>When you talk to Lumo or speak to it in a voice channel, your words, images and audio are sent to xAI (the company behind Grok) to produce the answer.</li>
+          <li>When you talk to Lumo or speak to it in a voice channel, your words, images and audio are sent to our AI provider to produce the answer.</li>
           <li>Lumo Coin wallets, activity stats (message counts, voice time, XP) and server settings are kept until they are deleted.</li>
           <li>Lumo does not record or save voice audio.</li>
           <li>The bot never asks for or stores payment details. Premium is paid through Ko-fi, which shares your name, email, the amount and any message with me. Ko-fi payment info such as your email is used only to deliver Premium and is stored hashed, never in plain text. The bot only keeps a small Premium record for each server.</li>
@@ -126,13 +126,13 @@
         <p>Lumo uses Discord’s message content access. In servers where the AI is active (servers with Premium, in channels the server has not switched off in the dashboard’s AI channels page), for each message posted in a channel it can read (whether or not the message is for Lumo) it keeps a short record: your Discord user ID and display name, the first 280 characters of the text, links in the message, links to attached or embedded images, and the time. It keeps its own replies the same way. This short-term history lets it follow a conversation and answer questions like “what were we just talking about?”. Servers without Premium, channels with the AI switched off, and direct messages get no such record. Each record is deleted after 3 days (sooner if the channel gets more than 150 newer messages), including records saved before a server’s Premium ended or a channel was switched off. If a message is deleted on Discord, its saved copy is deleted too, and if it is edited, the saved copy is updated. When asked about recent conversation, it may also save a short summary of the channel (up to 600 characters).</p>
 
         <h3>When you talk to Lumo</h3>
-        <p>When you mention Lumo, reply to it, or address it by name, it gathers what it needs to answer: your message and display name, images you attach or point to, the text of small text-file attachments, the message you are replying to and earlier messages in that reply chain (which may be written by other people), and a few recent lines between you and the bot in that channel. This is sent to xAI to generate the reply (see <a href="#third-parties">Third parties</a>).</p>
+        <p>When you mention Lumo, reply to it, or address it by name, it gathers what it needs to answer: your message and display name, images you attach or point to, the text of small text-file attachments, the message you are replying to and earlier messages in that reply chain (which may be written by other people), and a few recent lines between you and the bot in that channel. This is sent to our AI provider to generate the reply (see <a href="#third-parties">Third parties</a>).</p>
 
         <h3>Voice channels</h3>
-        <p>When someone runs <code>/voice</code> (to join) or <code>/play</code>, Lumo joins their voice channel and listens only to the person who ran the command; other people’s audio is ignored. That person’s speech is cut into short clips (a few seconds each), and each clip is sent to xAI for transcription before Lumo checks for its name; it only answers when the transcript contains its name. Silence, very short sounds (such as a cough or a one-word “ok”) and near-silent noise are skipped on the bot’s side and not sent. Audio is not recorded or saved to disk. The last 10 voice exchanges with each person are kept in memory for follow-up questions and are cleared whenever the bot restarts.</p>
+        <p>When someone runs <code>/voice</code> (to join) or <code>/play</code>, Lumo joins their voice channel and listens only to the person who ran the command; other people’s audio is ignored. That person’s speech is cut into short clips (a few seconds each), and each clip is sent to our AI provider for transcription before Lumo checks for its name; it only answers when the transcript contains its name. Silence, very short sounds (such as a cough or a one-word “ok”) and near-silent noise are skipped on the bot’s side and not sent. Audio is not recorded or saved to disk. The last 10 voice exchanges with each person are kept in memory for follow-up questions and are cleared whenever the bot restarts.</p>
 
         <h3>Image and video generation</h3>
-        <p>When you ask for an image, video or image edit, your prompt and any reference images are sent to xAI. Reference images can include profile pictures of members you ask about and the server’s custom emoji. The result is posted in the channel. Lumo does not keep a library of generated media; temporary audio files used for voice playback can remain on the server until it restarts. To enforce the monthly media limits (2 per person per month and 15 per server per month, images and videos together), it counts how many generations each server has used this month, and how many each person (by Discord user ID) has made in that server this month. Separate daily counts of AI replies (20 per person and 100 per server per day) are kept to enforce the daily AI reply limits.</p>
+        <p>When you ask for an image, video or image edit, your prompt and any reference images are sent to our AI provider. Reference images can include profile pictures of members you ask about and the server’s custom emoji. The result is posted in the channel. Lumo does not keep a library of generated media; temporary audio files used for voice playback can remain on the server until it restarts. To enforce the monthly media limits (2 per person per month and 15 per server per month, images and videos together), it counts how many generations each server has used this month, and how many each person (by Discord user ID) has made in that server this month. Separate daily counts of AI replies (20 per person and 100 per server per day) are kept to enforce the daily AI reply limits.</p>
 
         <h3>Lumo Coins and games</h3>
         <p>For each player: your user ID, coin balance, any bet in progress, the date you last claimed your daily bonus with <code>/coins daily</code> and your current daily streak, and when your wallet was created. Game rounds themselves are held in memory only.</p>
@@ -155,16 +155,16 @@
         <p>Settings that server administrators choose (welcome channel, auto-role, reaction roles, date channel, log channel and events, and AutoMod rules), plus a list of the servers Lumo is in (ID, name and member count) for my status view. When Lumo is added to a server, it records which account added it (that account’s Discord user ID and name, and the time) so I can manage the bot; this record is only visible to me and is deleted when Lumo leaves the server. Lumo also counts how often each custom server emoji is used and stores a short AI-written description of it.</p>
 
         <h3>Welcome cards</h3>
-        <p>New members get a welcome card drawn by Lumo itself with their display name and, if available, their profile picture. Nothing is sent to xAI for it, and the card is posted in the server’s welcome channel and not stored by Lumo. On Premium servers, a manager can upload a background picture for the cards on the dashboard’s Card styles page. Lumo stores one cropped copy of it (with any photo metadata removed) until a manager removes it.</p>
+        <p>New members get a welcome card drawn by Lumo itself with their display name and, if available, their profile picture. Nothing is sent to our AI provider for it, and the card is posted in the server’s welcome channel and not stored by Lumo. On Premium servers, a manager can upload a background picture for the cards on the dashboard’s Card styles page. Lumo stores one cropped copy of it (with any photo metadata removed) until a manager removes it.</p>
 
         <h3>Server logs</h3>
         <p>If administrators turn on <code>/setup logs</code>, Lumo posts events to the channel they pick: joins and leaves, kicks, bans, timeouts, nickname, role and avatar changes, voice channel joins, moves and mute changes, posted invite links, message edits and deletions (including the earlier text when Discord still has it), and channel, role, emoji and server changes. These entries live in that Discord channel. Lumo only stores the log settings.</p>
 
         <h3>AutoMod</h3>
-        <p>If a server manager turns on an AutoMod rule in the web dashboard (beta), Lumo reads each new message only to check it against the rules that are on (invite links, scam links, mass mentions, spam bursts). Nothing is sent to xAI and no message text is stored; for the spam rule Lumo keeps the times of a member’s last few messages in memory for a few seconds. When a message is removed and the server has a log channel, the log entry includes a short copy of it. Lumo stores only the AutoMod settings. Scam-link checks use a free public list of known phishing domains that Lumo downloads; no message is sent anywhere to check it.</p>
+        <p>If a server manager turns on an AutoMod rule in the web dashboard (beta), Lumo reads each new message only to check it against the rules that are on (invite links, scam links, mass mentions, spam bursts). Nothing is sent to our AI provider and no message text is stored; for the spam rule Lumo keeps the times of a member’s last few messages in memory for a few seconds. When a message is removed and the server has a log channel, the log entry includes a short copy of it. Lumo stores only the AutoMod settings. Scam-link checks use a free public list of known phishing domains that Lumo downloads; no message is sent anywhere to check it.</p>
 
         <h3>Service logs</h3>
-        <p>Like most software, the bot writes operational logs for debugging. These can include user and server IDs, display names, voice transcripts and spoken replies (the first 200 characters), music search terms, short excerpts of image prompts that xAI rejected, and error details. In voice channels, transcripts of speech that did not include the bot’s name can also appear in these logs.</p>
+        <p>Like most software, the bot writes operational logs for debugging. These can include user and server IDs, display names, voice transcripts and spoken replies (the first 200 characters), music search terms, short excerpts of image prompts that our AI provider rejected, and error details. In voice channels, transcripts of speech that did not include the bot’s name can also appear in these logs.</p>
       </section>
 
       <section id="use">
@@ -187,7 +187,7 @@
         <h2>4. Third parties</h2>
         <ul>
           <li><strong>Discord.</strong> Everything you do with Lumo happens on Discord, which handles your data under the <a href="https://discord.com/privacy" target="_blank" rel="noopener">Discord Privacy Policy</a>.</li>
-          <li><strong>xAI (Grok).</strong> Message text, images, text-file contents, voice audio, prompts and profile pictures described above are sent to xAI’s API to create replies, transcriptions, speech, images and videos. Grok may also run web searches to answer. xAI processes and may retain this data under its own terms and the <a href="https://x.ai/legal/privacy-policy" target="_blank" rel="noopener">xAI Privacy Policy</a>.</li>
+          <li><strong>Our AI provider.</strong> Message text, images, text-file contents, voice audio, prompts and profile pictures described above are sent to a third-party AI provider (currently xAI) to create replies, transcriptions, speech, images and videos, and it may run web searches to answer. It processes and may retain this data under its own terms and <a href="https://x.ai/legal/privacy-policy" target="_blank" rel="noopener">privacy policy</a>.</li>
           <li><strong>SoundCloud.</strong> When you use <code>/play</code> or ask for a song by voice, the song name or link is looked up on SoundCloud and the audio is streamed from there. Your identity is not sent. See the <a href="https://soundcloud.com/pages/privacy" target="_blank" rel="noopener">SoundCloud Privacy Policy</a>.</li>
           <li><strong>Open Trivia Database.</strong> Trivia in <code>/game</code> fetches questions from opentdb.com. No user data is sent.</li>
           <li><strong>Railway.</strong> Hosts the bot and its storage (see above).</li>
@@ -232,7 +232,7 @@
               <tr><td>Server settings and emoji data</td><td>Until changed, deleted on request, or the service shuts down. Removing Lumo from a server does not delete them automatically.</td></tr>
               <tr><td>Rate-limit timestamps</td><td>About a minute, in memory only.</td></tr>
               <tr><td>Service logs</td><td>For the retention period set by the hosting provider.</td></tr>
-              <tr><td>Data sent to xAI</td><td>As set out in xAI’s policies.</td></tr>
+              <tr><td>Data sent to our AI provider</td><td>As set out in its policies.</td></tr>
             </tbody>
           </table>
         </div>
@@ -247,7 +247,7 @@
           <li>Don’t use <code>/voice</code> (to join) or <code>/play</code> if you don’t want your speech transcribed.</li>
           <li>Server administrators can use Discord permissions to keep Lumo out of specific channels, or remove it from the server.</li>
         </ul>
-        <p>Data held by Discord, xAI or Ko-fi has to be requested from them directly.</p>
+        <p>Data held by Discord, our AI provider or Ko-fi has to be requested from them directly.</p>
       </section>
 
       <section id="children">
