@@ -859,5 +859,16 @@
  "Run <1/> to send one of your stars on a <2>{1}-hour trip</2>. When it’s back, press <3>Collect</3> for <4>fragments</4> of its family (brighter stars bring more). <5>{2} fragments</5> of one family make one of that family’s stars {3} brighter, once per star a night.": "<1/> で星を<2>{1}時間の旅</2>に出せます。戻ったら<3>受け取る</3>を押して、その星のファミリーの<4>かけら</4>をもらいましょう(明るい星ほど多く持ち帰ります)。同じファミリーの<5>かけら{2}個</5>で、そのファミリーの星を{3}段階明るくできます(1つの星につき一晩1回)。",
  "Run <1/> and pick one star you don’t have yet. Every night it gets a small extra chance to show up in your watch, and that chance grows a little each night it doesn’t (up to {1}%). Switching stars starts over.": "<1/> で、まだ持っていない星をひとつ選びます。毎晩その星が観測に出る確率が少し上がり、出なかった夜ごとにさらに少しずつ上がります(最大{1}%)。星を変えると最初からになります。",
  "Read them with <1/>.": "<1/> で読めます。",
- "Starkeepers, the night-sky game<1>catch stars every night and light constellations with your server (beta)</1>": "Starkeepers（夜空ゲーム）<1>毎晩星をつかまえて、サーバーのみんなで星座を灯そう（ベータ）</1>"
+ "Starkeepers, the night-sky game<1>catch stars every night and light constellations with your server (beta)</1>": "Starkeepers（夜空ゲーム）<1>毎晩星をつかまえて、サーバーのみんなで星座を灯そう（ベータ）</1>",
+ "<1>🏛️</1> The observatory": "<1>🏛️</1> 天文台",
+ "<1>🏛️</1> Optional · long-term": "<1>🏛️</1> オプション · 長期",
+ "The observatory": "天文台",
+ "When an admin turns it on, <1/> opens your own observatory. Spend <2>fragments</2> from trips plus <3>stardust</3> on upgrades, and the observatory levels up as you go.": "管理者がオンにすると、<1/> で自分の天文台が開きます。旅で集めた<2>かけら</2>と<3>星くず</3>で強化すると、天文台のレベルが上がります。",
+ "<1>Trip time</1>: trips get {1} minutes shorter per step (down to 1h 15m).": "<1>旅の時間</1>：1段階ごとに旅が{1}分短くなります（最短1時間15分）。",
+ "<1>Task reroll</1>: swap a nightly task you don’t like.": "<1>タスク引き直し</1>：気に入らない毎晩のタスクを入れ替えます。",
+ "<1>Telescope</1>: a small chance to still get a shooting star you missed.": "<1>望遠鏡</1>：見逃した流れ星を手に入れられる小さなチャンス。",
+ "<1>Trip slots</1>: send two stars at once (opens at level {1}).": "<1>旅の枠</1>：2つの星を同時に旅に出せます（レベル{1}で解放）。",
+ "Upgrades only spend. They never pay stardust back and never change rarity odds.": "強化は消費するだけです。星くずが戻ることも、レア度の確率が変わることもありません。",
+ "Starkeepers: your observatory. Upgrade trips, task rerolls and a telescope with fragments and stardust. When an admin turns it on.": "Starkeepers：あなたの天文台。かけらと星くずで旅・タスク引き直し・望遠鏡を強化。管理者がオンにした場合。",
+ "/sky observatory": "/sky observatory"
 }

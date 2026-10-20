@@ -859,5 +859,16 @@
  "Run <1/> to send one of your stars on a <2>{1}-hour trip</2>. When it’s back, press <3>Collect</3> for <4>fragments</4> of its family (brighter stars bring more). <5>{2} fragments</5> of one family make one of that family’s stars {3} brighter, once per star a night.": "Usa <1/> para mandar una de tus estrellas a un <2>viaje de {1} horas</2>. Cuando vuelva, pulsa <3>Recoger</3> para obtener <4>fragmentos</4> de su familia (las más brillantes traen más). <5>{2} fragmentos</5> de una familia hacen {3} punto más brillante a una estrella de esa familia, una vez por estrella cada noche.",
  "Run <1/> and pick one star you don’t have yet. Every night it gets a small extra chance to show up in your watch, and that chance grows a little each night it doesn’t (up to {1}%). Switching stars starts over.": "Usa <1/> y elige una estrella que aún no tengas. Cada noche tiene una pequeña probabilidad extra de aparecer en tu vigilia, y esa probabilidad crece un poco cada noche que no aparece (hasta un {1}%). Si cambias de estrella, vuelve a empezar.",
  "Read them with <1/>.": "Léelos con <1/>.",
- "Starkeepers, the night-sky game<1>catch stars every night and light constellations with your server (beta)</1>": "Starkeepers, el juego del cielo nocturno<1>atrapa estrellas cada noche y enciende constelaciones con tu servidor (beta)</1>"
+ "Starkeepers, the night-sky game<1>catch stars every night and light constellations with your server (beta)</1>": "Starkeepers, el juego del cielo nocturno<1>atrapa estrellas cada noche y enciende constelaciones con tu servidor (beta)</1>",
+ "<1>🏛️</1> The observatory": "<1>🏛️</1> El observatorio",
+ "<1>🏛️</1> Optional · long-term": "<1>🏛️</1> Opcional · a largo plazo",
+ "The observatory": "El observatorio",
+ "When an admin turns it on, <1/> opens your own observatory. Spend <2>fragments</2> from trips plus <3>stardust</3> on upgrades, and the observatory levels up as you go.": "Cuando un admin lo activa, <1/> abre tu propio observatorio. Gasta <2>fragmentos</2> de los viajes y <3>polvo estelar</3> en mejoras, y el observatorio sube de nivel a medida que avanzas.",
+ "<1>Trip time</1>: trips get {1} minutes shorter per step (down to 1h 15m).": "<1>Duración del viaje</1>: los viajes duran {1} minutos menos por paso (hasta 1 h 15 min).",
+ "<1>Task reroll</1>: swap a nightly task you don’t like.": "<1>Cambiar tarea</1>: cambia una tarea nocturna que no te guste.",
+ "<1>Telescope</1>: a small chance to still get a shooting star you missed.": "<1>Telescopio</1>: una pequeña probabilidad de conseguir igualmente una estrella fugaz que te perdiste.",
+ "<1>Trip slots</1>: send two stars at once (opens at level {1}).": "<1>Espacios de viaje</1>: envía dos estrellas a la vez (se abre en el nivel {1}).",
+ "Upgrades only spend. They never pay stardust back and never change rarity odds.": "Las mejoras solo gastan. Nunca devuelven polvo estelar ni cambian la probabilidad de rareza.",
+ "Starkeepers: your observatory. Upgrade trips, task rerolls and a telescope with fragments and stardust. When an admin turns it on.": "Starkeepers: tu observatorio. Mejora viajes, cambios de tarea y un telescopio con fragmentos y polvo estelar. Cuando un admin lo activa.",
+ "/sky observatory": "/sky observatory"
 }
