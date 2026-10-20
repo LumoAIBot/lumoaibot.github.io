@@ -865,7 +865,6 @@
  "Starkeepers: your observatory. Upgrade trips, task rerolls and a telescope with fragments and stardust. When an admin turns it on.": "Starkeepers: tu observatorio. Mejora viajes, cambios de tarea y un telescopio con fragmentos y polvo estelar. Cuando un admin lo activa.",
  "/sky observatory": "/sky observatory",
  "Learn Starkeepers step by step: catch stars each night, rarities and families, brightness and light, your sky and the server sky, constellations, streaks and tasks, sky trips, wished stars, comet swarms, milestones, shooting stars and eclipses.": "Aprende Starkeepers paso a paso: atrapa estrellas cada noche, rarezas y familias, brillo y luz, tu cielo y el del servidor, constelaciones, rachas y tareas, viajes, estrellas deseadas, enjambres de cometas, logros, estrellas fugaces y eclipses.",
- "Optional extra admins can turn on: one-minute comet swarms": "Extra opcional que los admins pueden activar: enjambres de cometas de un minuto",
  "Optional: pick a <1>shooting-star channel</1> for falling stars and comet swarms.": "Opcional: elige un <1>canal de estrellas fugaces</1> para las estrellas que caen y los enjambres de cometas.",
  "/sky team": "/sky team",
  "Starkeepers: pick up to {1} of your stars to hunt with. Brighter stars are a little stronger. When an admin turns hunts on.": "Starkeepers: elige hasta {1} de tus estrellas para cazar. Las más brillantes son algo más fuertes. Cuando un admin activa las cacerías.",
@@ -879,5 +878,7 @@
  "<1>Win</1> and the star is <2>rekindled</2>: you get a little stardust and a chance it joins your sky (a copy of a star you have makes it brighter).": "<1>Gana</1> y la estrella queda <2>reavivada</2>: recibes un poco de polvo estelar y una probabilidad de que se una a tu cielo (una copia de una estrella que ya tienes la hace más brillante).",
  "<1>Lose</1> and nothing is lost. Your stars are fine.": "<1>Pierde</1> y no pierdes nada. Tus estrellas están bien.",
  "<1>Cooldown</1>: one hunt every {1} seconds, and hunt stardust has its own nightly cap.": "<1>Espera</1>: una cacería cada {1} segundos, y el polvo estelar de las cacerías tiene su propio límite nocturno.",
- "Dimmed stars only come from rarities you’ve unlocked, and they’re matched to your team, so a hunt is a fair fight at any level.": "Las estrellas apagadas solo salen de rarezas que ya desbloqueaste y se ajustan a tu equipo, así que cada cacería es una pelea justa en cualquier nivel."
+ "Dimmed stars only come from rarities you’ve unlocked, and they’re matched to your team, so a hunt is a fair fight at any level.": "Las estrellas apagadas solo salen de rarezas que ya desbloqueaste y se ajustan a tu equipo, así que cada cacería es una pelea justa en cualquier nivel.",
+ "Optional extras admins can turn on: one-minute comet swarms, the observatory, and hunts with a battle team of your stars": "Extras opcionales que los admins pueden activar: enjambres de cometas de un minuto, el observatorio y cacerías con un equipo de batalla de tus estrellas",
+ "A hunt: your team of three stars against the Dimming": "Una cacería: tu equipo de tres estrellas contra la Penumbra"
 }
