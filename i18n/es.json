@@ -880,5 +880,8 @@
  "<1>Cooldown</1>: one hunt every {1} seconds, and hunt stardust has its own nightly cap.": "<1>Espera</1>: una cacería cada {1} segundos, y el polvo estelar de las cacerías tiene su propio límite nocturno.",
  "Dimmed stars only come from rarities you’ve unlocked, and they’re matched to your team, so a hunt is a fair fight at any level.": "Las estrellas apagadas solo salen de rarezas que ya desbloqueaste y se ajustan a tu equipo, así que cada cacería es una pelea justa en cualquier nivel.",
  "Optional extras admins can turn on: one-minute comet swarms, the observatory, and hunts with a battle team of your stars": "Extras opcionales que los admins pueden activar: enjambres de cometas de un minuto, el observatorio y cacerías con un equipo de batalla de tus estrellas",
- "A hunt: your team of three stars against the Dimming": "Una cacería: tu equipo de tres estrellas contra la Penumbra"
+ "<1>Story bosses</1> (if an admin turns them on): every story chapter ends with a boss the Dimming swallowed. Face it with <2/>; win to rekindle it and open the next chapter. Losing costs nothing, and chapters you already have stay yours.": "<1>Jefes de la historia</1> (si un admin los activa): cada capítulo de la historia termina con un jefe que la Penumbra se tragó. Enfréntalo con <2/>; gana para reavivarlo y abrir el siguiente capítulo. Perder no cuesta nada y los capítulos que ya tienes siguen siendo tuyos.",
+ "Starkeepers: face your story chapter’s boss with your team. Win to rekindle it and open the next chapter. When an admin turns story boss fights on.": "Starkeepers: enfréntate al jefe de tu capítulo de la historia con tu equipo. Gana para reavivarlo y abrir el siguiente capítulo. Cuando un admin activa los jefes de la historia.",
+ "/sky boss": "/sky boss",
+ "A story boss fight: your team of three against a boss and its two minions": "Una pelea contra un jefe de la historia: tu equipo de tres contra un jefe y sus dos secuaces"
 }
