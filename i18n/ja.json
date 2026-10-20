@@ -866,5 +866,18 @@
  "/sky observatory": "/sky observatory",
  "Learn Starkeepers step by step: catch stars each night, rarities and families, brightness and light, your sky and the server sky, constellations, streaks and tasks, sky trips, wished stars, comet swarms, milestones, shooting stars and eclipses.": "Starkeepersを一歩ずつ:毎晩の星つかまえ、レアリティとファミリー、明るさと光、自分の空とサーバーの空、星座、連続記録とタスク、旅、願い星、彗星群、実績、流れ星、日食。",
  "Optional extra admins can turn on: one-minute comet swarms": "管理者がオンにできるオプション:1分間の彗星群",
- "Optional: pick a <1>shooting-star channel</1> for falling stars and comet swarms.": "任意:流れ星と彗星群用の<1>流れ星チャンネル</1>を選ぶ。"
+ "Optional: pick a <1>shooting-star channel</1> for falling stars and comet swarms.": "任意:流れ星と彗星群用の<1>流れ星チャンネル</1>を選ぶ。",
+ "/sky team": "/sky team",
+ "Starkeepers: pick up to {1} of your stars to hunt with. Brighter stars are a little stronger. When an admin turns hunts on.": "Starkeepers：ハントで一緒に戦う星を{1}つまで選ぼう。明るい星ほど少し強くなります。管理者がハントをオンにした場合。",
+ "/sky hunt": "/sky hunt",
+ "Starkeepers: battle a star dulled by the Dimming with your team. Win to rekindle it for stardust and a chance it joins your sky. When an admin turns hunts on.": "Starkeepers：翳りに曇らされた星とチームで戦おう。勝てば星が再点灯し、星屑と、その星が自分の空に加わるチャンスがもらえます。管理者がハントをオンにした場合。",
+ "<1>⚔️</1> Hunts and battle teams": "<1>⚔️</1> ハントとバトルチーム",
+ "<1>⚔️</1> Optional · battles": "<1>⚔️</1> オプション · バトル",
+ "Hunts and battle teams": "ハントとバトルチーム",
+ "When an admin turns it on, the <1>Dimming</1> drifts across the sky and dulls stars until they turn on anyone who comes near. Pick up to {1} of your stars with <2/>, then run <3/> to face a dimmed star.": "管理者がオンにすると、<1>翳り</1>が空を漂い、星を曇らせて近づく人に襲いかかるようにします。<2/> で自分の星を{1}つまで選び、<3/> で曇った星に挑もう。",
+ "<1>Your team</1>: every star has its own HP, attack, defense and speed. Brighter stars are a little stronger.": "<1>チーム</1>：星にはそれぞれHP・攻撃・防御・素早さがあります。明るい星ほど少し強くなります。",
+ "<1>Win</1> and the star is <2>rekindled</2>: you get a little stardust and a chance it joins your sky (a copy of a star you have makes it brighter).": "<1>勝つ</1>と星が<2>再点灯</2>：星屑が少しもらえて、その星が自分の空に加わるチャンスもあります（すでに持っている星なら明るくなります）。",
+ "<1>Lose</1> and nothing is lost. Your stars are fine.": "<1>負けて</1>も何も失いません。星たちは無事です。",
+ "<1>Cooldown</1>: one hunt every {1} seconds, and hunt stardust has its own nightly cap.": "<1>クールダウン</1>：ハントは{1}秒に1回。ハントの星屑には毎晩の上限が別にあります。",
+ "Dimmed stars only come from rarities you’ve unlocked, and they’re matched to your team, so a hunt is a fair fight at any level.": "曇った星は解放済みのレア度からだけ現れ、チームに合わせて強さが決まるので、どのレベルでもフェアな勝負になります。"
 }
