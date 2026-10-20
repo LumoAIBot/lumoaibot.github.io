@@ -880,5 +880,8 @@
  "<1>Cooldown</1>: one hunt every {1} seconds, and hunt stardust has its own nightly cap.": "<1>クールダウン</1>：ハントは{1}秒に1回。ハントの星屑には毎晩の上限が別にあります。",
  "Dimmed stars only come from rarities you’ve unlocked, and they’re matched to your team, so a hunt is a fair fight at any level.": "曇った星は解放済みのレア度からだけ現れ、チームに合わせて強さが決まるので、どのレベルでもフェアな勝負になります。",
  "Optional extras admins can turn on: one-minute comet swarms, the observatory, and hunts with a battle team of your stars": "管理者がオンにできるオプション:1分間の彗星群、天文台、自分の星でチームを組むハント",
- "A hunt: your team of three stars against the Dimming": "ハント:3つの星のチームで翳りに挑む"
+ "<1>Story bosses</1> (if an admin turns them on): every story chapter ends with a boss the Dimming swallowed. Face it with <2/>; win to rekindle it and open the next chapter. Losing costs nothing, and chapters you already have stay yours.": "<1>ストーリーボス</1>（管理者がオンにした場合）：ストーリーの各章の最後に、翳りにのまれたボスが待っています。<2/> で挑み、勝てば光が戻って次の章が開きます。負けても失うものはなく、すでに持っている章はそのままです。",
+ "Starkeepers: face your story chapter’s boss with your team. Win to rekindle it and open the next chapter. When an admin turns story boss fights on.": "Starkeepers：チームでストーリーの章のボスに挑もう。勝てば光が戻り、次の章が開きます。管理者がストーリーボス戦をオンにしたとき。",
+ "/sky boss": "/sky boss",
+ "A story boss fight: your team of three against a boss and its two minions": "ストーリーボス戦：3つの星のチームでボスと2体の手下に挑む"
 }
