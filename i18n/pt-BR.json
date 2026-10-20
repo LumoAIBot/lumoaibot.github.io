@@ -866,5 +866,18 @@
  "/sky observatory": "/sky observatory",
  "Learn Starkeepers step by step: catch stars each night, rarities and families, brightness and light, your sky and the server sky, constellations, streaks and tasks, sky trips, wished stars, comet swarms, milestones, shooting stars and eclipses.": "Aprenda Starkeepers passo a passo: pegue estrelas toda noite, raridades e famílias, brilho e luz, seu céu e o do servidor, constelações, sequências e tarefas, viagens, estrelas desejadas, enxames de cometas, conquistas, estrelas cadentes e eclipses.",
  "Optional extra admins can turn on: one-minute comet swarms": "Extra opcional que os admins podem ativar: enxames de cometas de um minuto",
- "Optional: pick a <1>shooting-star channel</1> for falling stars and comet swarms.": "Opcional: escolha um <1>canal de estrelas cadentes</1> para estrelas que caem e enxames de cometas."
+ "Optional: pick a <1>shooting-star channel</1> for falling stars and comet swarms.": "Opcional: escolha um <1>canal de estrelas cadentes</1> para estrelas que caem e enxames de cometas.",
+ "/sky team": "/sky team",
+ "Starkeepers: pick up to {1} of your stars to hunt with. Brighter stars are a little stronger. When an admin turns hunts on.": "Starkeepers: escolha até {1} das suas estrelas para caçar. Estrelas mais brilhantes são um pouco mais fortes. Quando um admin liga as caçadas.",
+ "/sky hunt": "/sky hunt",
+ "Starkeepers: battle a star dulled by the Dimming with your team. Win to rekindle it for stardust and a chance it joins your sky. When an admin turns hunts on.": "Starkeepers: enfrente com seu time uma estrela apagada pela Penumbra. Vença para reacendê-la, ganhar poeira estelar e ter uma chance de ela entrar no seu céu. Quando um admin liga as caçadas.",
+ "<1>⚔️</1> Hunts and battle teams": "<1>⚔️</1> Caçadas e times de batalha",
+ "<1>⚔️</1> Optional · battles": "<1>⚔️</1> Opcional · batalhas",
+ "Hunts and battle teams": "Caçadas e times de batalha",
+ "When an admin turns it on, the <1>Dimming</1> drifts across the sky and dulls stars until they turn on anyone who comes near. Pick up to {1} of your stars with <2/>, then run <3/> to face a dimmed star.": "Quando um admin liga, a <1>Penumbra</1> atravessa o céu e apaga estrelas até elas se voltarem contra quem chega perto. Escolha até {1} das suas estrelas com <2/> e depois use <3/> para enfrentar uma estrela apagada.",
+ "<1>Your team</1>: every star has its own HP, attack, defense and speed. Brighter stars are a little stronger.": "<1>Seu time</1>: cada estrela tem seus próprios PV, ataque, defesa e velocidade. Estrelas mais brilhantes são um pouco mais fortes.",
+ "<1>Win</1> and the star is <2>rekindled</2>: you get a little stardust and a chance it joins your sky (a copy of a star you have makes it brighter).": "<1>Vença</1> e a estrela é <2>reacesa</2>: você ganha um pouco de poeira estelar e uma chance de ela entrar no seu céu (uma cópia de uma estrela que você já tem a deixa mais brilhante).",
+ "<1>Lose</1> and nothing is lost. Your stars are fine.": "<1>Perca</1> e nada é perdido. Suas estrelas estão bem.",
+ "<1>Cooldown</1>: one hunt every {1} seconds, and hunt stardust has its own nightly cap.": "<1>Espera</1>: uma caçada a cada {1} segundos, e a poeira estelar das caçadas tem seu próprio limite por noite.",
+ "Dimmed stars only come from rarities you’ve unlocked, and they’re matched to your team, so a hunt is a fair fight at any level.": "As estrelas apagadas só vêm de raridades que você já desbloqueou e se ajustam ao seu time, então cada caçada é uma luta justa em qualquer nível."
 }
