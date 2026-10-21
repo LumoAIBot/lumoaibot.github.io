@@ -21,3 +21,4 @@
   .guide-sec{padding:48px 0}
 }
 .brand{flex-shrink:0}@media (min-width:1241px) and (max-width:1399px){.nav-links a{padding:9px 7px;font-size:.9rem}}
+.px-ico{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;image-rendering:pixelated}.f-icon .px-ico{width:1.25em;height:1.25em;vertical-align:middle}
