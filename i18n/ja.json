@@ -883,5 +883,8 @@
  "<1>Story bosses</1> (on unless an admin turns them off): every story chapter ends with a boss the Dimming swallowed. Face it with <2/>; win to rekindle it and open the next chapter. Losing costs nothing, and chapters you already have stay yours.": "<1>ストーリーボス</1>（管理者がオフにしない限りオン）：ストーリーの各章の最後に、翳りにのまれたボスが待っています。<2/> で挑み、勝てば光が戻って次の章が開きます。負けても失うものはなく、すでに持っている章はそのままです。",
  "Starkeepers: face your story chapter’s boss with your team. Win to rekindle it and open the next chapter. On unless an admin turns story boss fights off.": "Starkeepers：チームでストーリーの章のボスに挑もう。勝てば光が戻り、次の章が開きます。管理者がストーリーボス戦をオフにしない限り使えます。",
  "/sky boss": "/sky boss",
- "A story boss fight: your team of three against a boss and its two minions": "ストーリーボス戦：3つの星のチームでボスと2体の手下に挑む"
+ "A story boss fight: your team of three against a boss and its two minions": "ストーリーボス戦：3つの星のチームでボスと2体の手下に挑む",
+ "Starkeepers: any star’s profile, with its lore, battle stats, moves, passive and your own record. Stars you haven’t rekindled show a hint and a Set wish button.": "Starkeepers：どの星でもプロフィールを表示。物語、バトルステータス、技、パッシブ、あなたの記録。まだ再点灯していない星はヒントと「願いにする」ボタンを表示します。",
+ "<1>Star profiles</1>: <2/> (or the <3>View</3> button on catch, collection, team and battle cards) opens any star’s page: its lore, battle stats, moves and passive, how bright yours is and when you first rekindled it. ◀ ▶ step through its family. A star you haven’t found yet shows only its silhouette and a hint, with a <4>Set wish</4> button.": "<1>星のプロフィール</1>：<2/>（またはキャッチ・コレクション・チーム・バトルのカードにある<3>見る</3>ボタン）で、どの星のページでも開けます。物語、バトルステータス、技とパッシブ、あなたの星の明るさと初めて再点灯した日。◀ ▶ で同じ系統をめくれます。まだ見つけていない星はシルエットとヒント、<4>願いにする</4>ボタンだけが表示されます。",
+ "/sky star": "/sky star"
 }
