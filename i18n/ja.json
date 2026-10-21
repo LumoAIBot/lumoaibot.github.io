@@ -726,7 +726,6 @@
  "Add Lumo to your Discord server, check your setup with /setup status, turn on Starkeepers, try /help, set up welcome messages, autorole, reaction roles, giveaways and polls, and learn how to get Premium.": "LumoをDiscordサーバーに追加し、/setup status で設定を確認、Starkeepers をオンにして /help を試し、ウェルカムメッセージ、自動ロール、リアクションロール、ギブアウェイ、投票を設定して、Premium の入手方法を確認しましょう。",
  "One plan per server, ${1} a month. Everyone in the server gets the AI-powered features, and Starkeepers, music, games and server tools stay free.": "1サーバーにつき1プラン、月額${1}。サーバーの全員がAI搭載の機能を使え、Starkeepers、音楽、ゲーム、サーバーツールは引き続き無料です。",
  "<1>How to play <2>→</2></1><3/> <4/><5><6>🎵</6><7>Free</7></5>": "<1>遊び方 <2>→</2></1><3/> <4/><5><6>🎵</6><7>無料</7></5>",
- "<1>My sky</1> is your own picture: every star you’ve caught, in its family color, with names for the brightest. Press <2>Twinkle</2> to see it shimmer.": "<1>マイスカイ</1>は自分だけの星空。つかまえた星がファミリーの色で並び、明るい星には名前がつきます。<2>きらめき</2>を押すと星空が輝きます。",
  "<1>Stardust</1> comes from playing: chatting, voice, Lumo’s games and Starkeepers itself. It is never sold and is never Lumo Coins. Coins only buy looks.": "<1>スターダスト</1>は遊ぶともらえます。チャット、ボイス、Lumoのゲーム、そしてStarkeepers自体。販売はなく、Lumo Coinsでもありません。コインで買えるのは見た目だけです。",
  "<1>☄️</1> Live in a channel": "<1>☄️</1> チャンネルでライブ",
  "<1>☄️</1> Shooting stars and comet swarms": "<1>☄️</1> 流れ星と彗星群",
@@ -886,5 +885,6 @@
  "A story boss fight: your team of three against a boss and its two minions": "ストーリーボス戦：3つの星のチームでボスと2体の手下に挑む",
  "Starkeepers: any star’s profile, with its lore, battle stats, moves, passive and your own record. Stars you haven’t rekindled show a hint and a Set wish button.": "Starkeepers：どの星でもプロフィールを表示。物語、バトルステータス、技、パッシブ、あなたの記録。まだ再点灯していない星はヒントと「願いにする」ボタンを表示します。",
  "<1>Star profiles</1>: <2/> (or the <3>View</3> button on catch, collection, team and battle cards) opens any star’s page: its lore, battle stats, moves and passive, how bright yours is and when you first rekindled it. ◀ ▶ step through its family. A star you haven’t found yet shows only its silhouette and a hint, with a <4>Set wish</4> button.": "<1>星のプロフィール</1>：<2/>（またはキャッチ・コレクション・チーム・バトルのカードにある<3>見る</3>ボタン）で、どの星のページでも開けます。物語、バトルステータス、技とパッシブ、あなたの星の明るさと初めて再点灯した日。◀ ▶ で同じ系統をめくれます。まだ見つけていない星はシルエットとヒント、<4>願いにする</4>ボタンだけが表示されます。",
- "/sky star": "/sky star"
+ "/sky star": "/sky star",
+ "<1>My sky</1> is your own picture: every star you’ve caught, in its family color, with names for the brightest.": "<1>マイスカイ</1>は自分だけの星空。つかまえた星がファミリーの色で並び、明るい星には名前がつきます。"
 }
