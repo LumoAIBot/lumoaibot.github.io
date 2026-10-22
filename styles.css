@@ -33,9 +33,7 @@ html[data-holiday="halloween"][data-theme="light"]{--gold-t:#7c2d12;--grad-h:lin
 html[data-holiday="thanksgiving"][data-theme="light"]{--gold-t:#7c2d12;--grad-h:linear-gradient(100deg,#7c2d12 0%,#9a3412 50%,#854d0e 100%);--grad-gold:linear-gradient(100deg,#7c2d12,#854d0e)}
 html[data-holiday="christmas"][data-theme="light"]{--gold-t:#6b4406;--grad-h:linear-gradient(100deg,#991b1b 0%,#854d0e 50%,#166534 100%);--grad-gold:linear-gradient(100deg,#6b4406,#854d0e)}
 .dc-shot{display:block;width:100%;height:auto;border-radius:6px}
-.cl-sk .dc-embed{padding:8px}
 .dc-btn .px-ico{width:16px;height:16px;image-rendering:pixelated;vertical-align:-3px}
-@media (max-width:1100px){.cl-sk{display:block}.cl-chat{display:none}.cl-sk .dc-window{font-size:.85rem}.cl-sk .dc-buttons{flex-wrap:wrap}}
 .hunt-shot{display:block;width:100%;max-width:480px;height:auto;margin-inline:auto;border-radius:14px;border:1px solid var(--line);box-shadow:var(--mock-sh);background:#0b0d14}
 #hunts .guide-shot{max-width:480px;margin-inline:auto;display:block}
-@media (min-width:1101px){.cl-sk{width:70%;z-index:3}.cl-music{display:none}.cl-chat{left:auto;right:0;width:58%;z-index:2}.cluster{min-height:660px}}
+@media (min-width:1101px){.cluster{min-height:0;display:flex;flex-direction:column;gap:22px;padding-top:36px}.cl-music,.cl-chat{position:relative;left:auto;right:auto;top:auto;bottom:auto}.cl-music{width:76%;align-self:flex-start;z-index:2}.cl-chat{width:70%;align-self:flex-end;z-index:3}}
