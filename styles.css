@@ -36,3 +36,6 @@ html[data-holiday="christmas"][data-theme="light"]{--gold-t:#6b4406;--grad-h:lin
 .cl-sk .dc-embed{padding:8px}
 .dc-btn .px-ico{width:16px;height:16px;image-rendering:pixelated;vertical-align:-3px}
 @media (max-width:1100px){.cl-sk{display:block}.cl-chat{display:none}.cl-sk .dc-window{font-size:.85rem}.cl-sk .dc-buttons{flex-wrap:wrap}}
+.hunt-shot{display:block;width:100%;max-width:480px;height:auto;margin-inline:auto;border-radius:14px;border:1px solid var(--line);box-shadow:var(--mock-sh);background:#0b0d14}
+#hunts .guide-shot{max-width:480px;margin-inline:auto;display:block}
+@media (min-width:1101px){.cl-sk{width:70%;z-index:3}.cl-music{display:none}.cl-chat{left:auto;right:0;width:58%;z-index:2}.cluster{min-height:660px}}

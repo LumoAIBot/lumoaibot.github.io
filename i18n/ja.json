@@ -893,5 +893,22 @@
  "Collection": "コレクション",
  "Server sky": "サーバーの空",
  "Illustrations of Lumo in Discord: Starkeepers, music and a chat": "Discordで動くLumoのイラスト：Starkeepers、音楽、チャット",
- "Mira's sky: {1} of {2} pixel stars under a full moon, a few of them named": "Miraの空：満月の下に{2}個中{1}個のピクセルの星、いくつかは名前付き"
+ "Mira's sky: {1} of {2} pixel stars under a full moon, a few of them named": "Miraの空：満月の下に{2}個中{1}個のピクセルの星、いくつかは名前付き",
+ "Lumo brings <1>Starkeepers</1> to your server: everyone catches stars each night, hunts wild ones with a team of three and lights up constellations together. It also plays music, runs seven games on Lumo Coins, looks after your roles and logs, and adds AI-powered chat and voice with Premium.": "Lumo はサーバーに <1>Starkeepers</1> を届けます。毎晩みんなで星をつかまえ、3体のチームで野生の星をハントし、いっしょに星座を灯しましょう。ほかにも音楽の再生、Lumo Coins で遊べる7つのゲーム、ロールとログの管理ができ、Premium ならAI搭載のチャットと音声も使えます。",
+ "<1>Mira</1> used <2>/sky hunt</2>": "<1>Mira</1> が <2>/sky hunt</2> を使用しました",
+ "<1>⚔️</1> Hunt again": "<1>⚔️</1> もう一度ハント",
+ "<1>🛡️</1> Team": "<1>🛡️</1> チーム",
+ "View": "見る",
+ "Hunts": "ハント",
+ "Hunt wild stars with your team": "チームで野生の星をハントしよう",
+ "Pick your three best stars with <1/>, then battle a wild pack with <2/>. Every star has its own stats, special moves and an ultimate.": "<1/> でいちばん強い星を3体選び、<2/> で野生の群れとバトル。星ごとにステータス、必殺技、アルティメットがあります。",
+ "Win to rekindle a wild star, and it may join your sky: {1}% common, {2}% uncommon, {3}% rare, {4}% radiant, {5}% celestial": "勝つと野生の星がよみがえり、あなたの空に加わることも：コモン{1}%、アンコモン{2}%、レア{3}%、ラディアント{4}%、セレスティアル{5}%",
+ "One hunt every {1} seconds, and up to {2} stardust a night from hunts": "ハントは{1}秒に1回、ハントで得られる星くずは1晩{2}まで",
+ "Solo story bosses with <1/>: beat each chapter’s boss to open the next": "<1/> でソロのストーリーボス：各章のボスを倒すと次の章が開きます",
+ "Losing costs nothing. Your stars are always fine.": "負けても何も失いません。あなたの星はいつも無事です。",
+ "How hunts work <1>→</1>": "ハントのしくみ <1>→</1>",
+ "Illustrations of Lumo in Discord: a Starkeepers hunt, music and a chat": "DiscordでのLumoのイラスト：Starkeepersのハント、音楽、チャット",
+ "A real Starkeepers hunt from Lumo, with the Hunt again, Team and View buttons": "LumoのStarkeepersの実際のハントと「もう一度ハント」「チーム」「見る」ボタン",
+ "A real /sky hunt battle from Lumo: a team of three pixel stars beats a wild pack of three": "Lumoの実際の /sky hunt バトル：ピクセルの星3体のチームが野生の3体の群れに勝利",
+ "<1>⚔️</1> Battles · Beta": "<1>⚔️</1> バトル · ベータ"
 }
