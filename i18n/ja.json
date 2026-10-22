@@ -887,5 +887,11 @@
  "/sky star": "/sky star",
  "<1>My sky</1> is your own picture: every star you’ve caught, in its family color, with names for the brightest.": "<1>マイスカイ</1>は自分だけの星空。つかまえた星がファミリーの色で並び、明るい星には名前がつきます。",
  "Once a month the world’s shadow crosses the moon and turns it red for two nights. The <1>Eclipse Ring</1> region opens, rare and celestial stars show up a little more often, every moon star can appear, and more stars fall.": "月に一度、世界の影が月を横切り、2晩のあいだ月を赤く染めます。<1>月食リング</1>エリアが開き、レアやセレスティアルの星が少し出やすくなり、どの月の星も現れる可能性があり、星がたくさん降ります。",
- "<1>The moon keeps watch too</1>: each phase calls one family closer (its stars show up more often). A <2>new moon</2> is a Dimming night: hunts are tougher and can bring a rarer star, for {1}× stardust inside the nightly cap. A <3>full moon</3> makes a rekindled star a little likelier to join you, and a <4>half moon</4> adds a fragment to trips.": "<1>月も見守っています</1>：満ち欠けごとにひとつのファミリーを呼び寄せます（その星が出やすくなります）。<2>新月</2>は翳りの夜。ハントが手ごわくなり、よりレアな星が出ることも。星屑は1.5倍（1晩の上限内）。<3>満月</3>は再点灯した星が仲間になりやすく、<4>半月</4>は旅のかけらが1つ増えます。"
+ "<1>The moon keeps watch too</1>: each phase calls one family closer (its stars show up more often). A <2>new moon</2> is a Dimming night: hunts are tougher and can bring a rarer star, for {1}× stardust inside the nightly cap. A <3>full moon</3> makes a rekindled star a little likelier to join you, and a <4>half moon</4> adds a fragment to trips.": "<1>月も見守っています</1>：満ち欠けごとにひとつのファミリーを呼び寄せます（その星が出やすくなります）。<2>新月</2>は翳りの夜。ハントが手ごわくなり、よりレアな星が出ることも。星屑は1.5倍（1晩の上限内）。<3>満月</3>は再点灯した星が仲間になりやすく、<4>半月</4>は旅のかけらが1つ増えます。",
+ "A real Starkeepers sky picture from Lumo, with the Tonight, Collection and Server sky buttons": "Lumoの実際のStarkeepersの空の画像と「今夜」「コレクション」「サーバーの空」ボタン",
+ "Tonight": "今夜",
+ "Collection": "コレクション",
+ "Server sky": "サーバーの空",
+ "Illustrations of Lumo in Discord: Starkeepers, music and a chat": "Discordで動くLumoのイラスト：Starkeepers、音楽、チャット",
+ "Mira's sky: {1} of {2} pixel stars under a full moon, a few of them named": "Miraの空：満月の下に{2}個中{1}個のピクセルの星、いくつかは名前付き"
 }
