@@ -893,5 +893,22 @@
  "Collection": "Colección",
  "Server sky": "Cielo del servidor",
  "Illustrations of Lumo in Discord: Starkeepers, music and a chat": "Ilustraciones de Lumo en Discord: Starkeepers, música y un chat",
- "Mira's sky: {1} of {2} pixel stars under a full moon, a few of them named": "El cielo de Mira: {1} de {2} estrellas pixeladas bajo la luna llena, algunas con nombre"
+ "Mira's sky: {1} of {2} pixel stars under a full moon, a few of them named": "El cielo de Mira: {1} de {2} estrellas pixeladas bajo la luna llena, algunas con nombre",
+ "Lumo brings <1>Starkeepers</1> to your server: everyone catches stars each night, hunts wild ones with a team of three and lights up constellations together. It also plays music, runs seven games on Lumo Coins, looks after your roles and logs, and adds AI-powered chat and voice with Premium.": "Lumo trae <1>Starkeepers</1> a tu servidor: cada noche todos atrapan estrellas, cazan estrellas salvajes con un equipo de tres y encienden constelaciones juntos. También pone música, tiene siete juegos con Lumo Coins, cuida tus roles y registros, y con Premium suma chat y voz con IA.",
+ "<1>Mira</1> used <2>/sky hunt</2>": "<1>Mira</1> usó <2>/sky hunt</2>",
+ "<1>⚔️</1> Hunt again": "<1>⚔️</1> Cazar otra vez",
+ "<1>🛡️</1> Team": "<1>🛡️</1> Equipo",
+ "View": "Ver",
+ "Hunts": "Cacerías",
+ "Hunt wild stars with your team": "Caza estrellas salvajes con tu equipo",
+ "Pick your three best stars with <1/>, then battle a wild pack with <2/>. Every star has its own stats, special moves and an ultimate.": "Elige tus tres mejores estrellas con <1/> y luego enfréntate a una manada salvaje con <2/>. Cada estrella tiene sus propias estadísticas, movimientos especiales y una definitiva.",
+ "Win to rekindle a wild star, and it may join your sky: {1}% common, {2}% uncommon, {3}% rare, {4}% radiant, {5}% celestial": "Gana para reavivar una estrella salvaje, y puede unirse a tu cielo: {1}% común, {2}% poco común, {3}% rara, {4}% radiante, {5}% celestial",
+ "One hunt every {1} seconds, and up to {2} stardust a night from hunts": "Una cacería cada {1} segundos, y hasta {2} de polvo estelar por noche con las cacerías",
+ "Solo story bosses with <1/>: beat each chapter’s boss to open the next": "Jefes de la historia en solitario con <1/>: vence al jefe de cada capítulo para abrir el siguiente",
+ "Losing costs nothing. Your stars are always fine.": "Perder no cuesta nada. Tus estrellas siempre están bien.",
+ "How hunts work <1>→</1>": "Cómo funcionan las cacerías <1>→</1>",
+ "Illustrations of Lumo in Discord: a Starkeepers hunt, music and a chat": "Ilustraciones de Lumo en Discord: una cacería de Starkeepers, música y un chat",
+ "A real Starkeepers hunt from Lumo, with the Hunt again, Team and View buttons": "Una cacería real de Starkeepers en Lumo, con los botones Cazar otra vez, Equipo y Ver",
+ "A real /sky hunt battle from Lumo: a team of three pixel stars beats a wild pack of three": "Una batalla real de /sky hunt en Lumo: un equipo de tres estrellas pixeladas vence a una manada salvaje de tres",
+ "<1>⚔️</1> Battles · Beta": "<1>⚔️</1> Batallas · Beta"
 }
