@@ -22,3 +22,16 @@
 }
 .brand{flex-shrink:0}@media (min-width:1241px) and (max-width:1399px){.nav-links a{padding:9px 7px;font-size:.9rem}}
 .px-ico{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;image-rendering:pixelated}.f-icon .px-ico{width:1.25em;height:1.25em;vertical-align:middle}
+/* Contrast pass (WCAG AA): gradient headline, gold labels, primary buttons */
+:root{--grad-h:linear-gradient(100deg,#9aa3ff 0%,#c4b5ff 45%,var(--gold-2) 100%);--btn-grad:linear-gradient(135deg,#5562f0,#4752c4)}
+.grad{-webkit-text-fill-color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+html:not([data-theme="light"]) .grad{filter:drop-shadow(0 2px 10px rgba(0,0,0,.45))}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){.grad,.facts li:nth-child(4) strong{background:none;color:var(--head);-webkit-text-fill-color:currentColor}}
+@media (forced-colors:active){.grad,.facts li:nth-child(4) strong{background:none;color:CanvasText;-webkit-text-fill-color:CanvasText;filter:none}}
+html[data-theme="light"]{--gold-t:#6b4406;--grad-h:linear-gradient(100deg,#3f4bbd 0%,#5b21b6 48%,#854d0e 100%);--grad-gold:linear-gradient(100deg,#6b4406,#854d0e)}
+html[data-holiday="halloween"][data-theme="light"]{--gold-t:#7c2d12;--grad-h:linear-gradient(100deg,#5b21b6 0%,#9a3412 60%,#854d0e 100%);--grad-gold:linear-gradient(100deg,#7c2d12,#9a3412)}
+html[data-holiday="thanksgiving"][data-theme="light"]{--gold-t:#7c2d12;--grad-h:linear-gradient(100deg,#7c2d12 0%,#9a3412 50%,#854d0e 100%);--grad-gold:linear-gradient(100deg,#7c2d12,#854d0e)}
+html[data-holiday="christmas"][data-theme="light"]{--gold-t:#6b4406;--grad-h:linear-gradient(100deg,#991b1b 0%,#854d0e 50%,#166534 100%);--grad-gold:linear-gradient(100deg,#6b4406,#854d0e)}
+.dc-shot{display:block;width:100%;height:auto;border-radius:6px}
+.cl-sk .dc-embed{padding:8px}
+.dc-btn .px-ico{width:16px;height:16px;image-rendering:pixelated;vertical-align:-3px}
