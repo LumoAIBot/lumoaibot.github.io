@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Comandos de Lumo: los 21 comandos de barra</title>
+  <title>Comandos de Lumo: los 22 comandos de barra</title>
   <meta name="description" content="Cada comando de barra de Lumo con opciones y permisos: Starkeepers (/sky), música, siete juegos, Lumo Coins, perfiles, sorteos, encuestas, configuración del servidor y Premium.">
   <meta name="theme-color" content="#0b0d14">
   <meta name="color-scheme" content="dark">
@@ -98,7 +98,7 @@
       <div class="wrap cmd-tools">
         <label class="search">
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
-          <input id="cmd-search" type="search" placeholder="Buscar entre 21 comandos de barra…" autocomplete="off" aria-label="Busca comandos por nombre, descripción o categoría" title="Pulsa / para buscar">
+          <input id="cmd-search" type="search" placeholder="Buscar entre 22 comandos de barra…" autocomplete="off" aria-label="Busca comandos por nombre, descripción o categoría" title="Pulsa / para buscar">
         </label>
         <span class="cmd-count" id="cmd-count" aria-live="polite"></span>
         <div class="chips" role="group" aria-label="Filtrar por categoría"><button class="chip active" data-filter="all" type="button">Todos</button><button class="chip" data-filter="chat" type="button">Chat y voz</button><button class="chip" data-filter="music" type="button">Música</button><button class="chip" data-filter="games" type="button">Juegos</button><button class="chip" data-filter="coins" type="button">Lumo Coins</button><button class="chip" data-filter="community" type="button">Perfiles y estadísticas</button><button class="chip" data-filter="giveaways" type="button">Sorteos y encuestas</button><button class="chip" data-filter="admin" type="button">Configuración del servidor</button><button class="chip" data-filter="premium" type="button">Premium</button></div>
@@ -107,7 +107,7 @@
 
     <section class="section section-tight cmd-section" id="commands">
       <div class="wrap">
-        <p class="cmd-note h-mini"><img class="mini-bot" src="../assets/robot/gaming-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>21 comandos de barra. <code class="arg">arg?</code> significa opcional.</span></p>
+        <p class="cmd-note h-mini"><img class="mini-bot" src="../assets/robot/gaming-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>22 comandos de barra. <code class="arg">arg?</code> significa opcional.</span></p>
         <p class="cmd-note h-mini"><img class="mini-bot" src="../assets/robot/idea-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span><strong>Los roles por reacción y Personalizar</strong> ya no son comandos de barra: gestiónalos en el <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">panel web (beta)</a>, junto con los sorteos y las encuestas.</span></p>
         <div id="cmd-list">
 <section class="cmd-group" data-group="chat"><h2><span aria-hidden="true">🎙️</span> Chat y voz <small>3</small></h2><div class="cmd-grid"><article class="cmd" data-cat="chat" data-search="/help how lumo works, and every command. topic jump straight to a help page">
@@ -221,7 +221,7 @@
   <header><button class="cmd-name" type="button" data-copy="/top" title="Copiar">/top</button><span class="badges"><span class="badge b-any">Todos</span></span></header>
   <p>Clasificaciones del servidor: mensajes, tiempo en voz, niveles u observadores. Elige Mensajes, Tiempo en voz, Niveles u Observadores. Niveles muestra el top 5 como imagen. Observadores ordena a los jugadores de Starkeepers por la luz de su cielo.</p><ul class="args"><li><code class="arg">sort?</code><span>Cómo ordenar a la gente</span></li></ul>
 </article></div></section>
-<section class="cmd-group" data-group="giveaways"><h2><span aria-hidden="true">🎉</span> Sorteos y encuestas <small>9</small></h2><div class="cmd-grid"><article class="cmd" data-cat="giveaways" data-search="/giveaway start start a giveaway in this channel (or another one). administrators only. posts a giveaway with enter and leave buttons. duration looks like 30m, 2h, 1d or 1d12h (1 minute to 30 days). winners are drawn fairly at random from people still in the server. up to 10 running at once. free, no ai. prize what people can win duration how long it runs, like 30m, 2h, 1d or 1d12h (1 minute to 30 days) winners how many winners (1-20, default 1) role only people with this role can enter (optional) channel where to post it (default: this channel)">
+<section class="cmd-group" data-group="giveaways"><h2><span aria-hidden="true">🎉</span> Sorteos, encuestas y recordatorios <small>13</small></h2><div class="cmd-grid"><article class="cmd" data-cat="giveaways" data-search="/giveaway start start a giveaway in this channel (or another one). administrators only. posts a giveaway with enter and leave buttons. duration looks like 30m, 2h, 1d or 1d12h (1 minute to 30 days). winners are drawn fairly at random from people still in the server. up to 10 running at once. free, no ai. prize what people can win duration how long it runs, like 30m, 2h, 1d or 1d12h (1 minute to 30 days) winners how many winners (1-20, default 1) role only people with this role can enter (optional) channel where to post it (default: this channel)">
   <header><button class="cmd-name" type="button" data-copy="/giveaway start" title="Copiar">/giveaway start</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
   <p>Empieza un sorteo en este canal (o en otro). Solo administradores. Publica un sorteo con botones de Participar y Salir. La duración se escribe como 30m, 2h, 1d o 1d12h (de 1 minuto a 30 días). Los ganadores se eligen al azar y de forma justa entre quienes siguen en el servidor. Hasta 10 a la vez. Gratis, sin IA.</p><ul class="args"><li><code class="arg req">prize</code><span>Qué se puede ganar</span></li><li><code class="arg req">duration</code><span>Cuánto dura, como 30m, 2h, 1d o 1d12h (de 1 minuto a 30 días)</span></li><li><code class="arg">winners?</code><span>Cuántos ganadores (1-20, por defecto 1)</span></li><li><code class="arg">role?</code><span>Solo quienes tengan este rol pueden participar (opcional)</span></li><li><code class="arg">channel?</code><span>Dónde publicarlo (por defecto: este canal)</span></li></ul>
 </article>
@@ -256,6 +256,22 @@
 <article class="cmd" data-cat="giveaways" data-search="/poll list show this server&#x27;s open polls and the latest closed ones. shows the open polls and the latest closed ones, only to you.">
   <header><button class="cmd-name" type="button" data-copy="/poll list" title="Copiar">/poll list</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
   <p>Muestra las encuestas abiertas de este servidor y las últimas cerradas. Muestra las encuestas abiertas y las últimas cerradas, solo a ti.</p>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/reminder create crea un recordatorio que publica una tarjeta a una hora fija. se repite cada día, cada 2 días, entre semana, en días elegidos o una vez, en tu zona horaria (con horario de verano).">
+  <header><button class="cmd-name" type="button" data-copy="/reminder create" title="Copiar">/reminder create</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
+  <p>Crea un recordatorio que publica una tarjeta a una hora fija. Se repite cada día, cada 2 días, entre semana, en días elegidos o una vez, en tu zona horaria (con horario de verano).</p><ul class="args"><li><code class="arg">channel</code></li><li><code class="arg">time</code></li><li><code class="arg">timezone?</code></li><li><code class="arg">repeat?</code></li><li><code class="arg">role?</code></li><li><code class="arg">banner?</code></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/reminder card diseña la tarjeta de recordatorio del servidor con vista previa: colores, la campana o la mascota, tu propio icono o banner (los gif animados funcionan).">
+  <header><button class="cmd-name" type="button" data-copy="/reminder card" title="Copiar">/reminder card</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
+  <p>Diseña la tarjeta de recordatorio del servidor con vista previa: colores, la campana o la mascota, tu propio icono o banner (los GIF animados funcionan).</p><ul class="args"><li><code class="arg">style?</code></li><li><code class="arg">icon?</code></li><li><code class="arg">icon_image?</code></li><li><code class="arg">background?</code></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/reminder banner dale a un recordatorio su propio banner o icono (un gif anima la tarjeta), o quítalos.">
+  <header><button class="cmd-name" type="button" data-copy="/reminder banner" title="Copiar">/reminder banner</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
+  <p>Dale a un recordatorio su propio banner o icono (un GIF anima la tarjeta), o quítalos.</p><ul class="args"><li><code class="arg">reminder</code></li><li><code class="arg">image?</code></li><li><code class="arg">icon?</code></li></ul>
+</article>
+<article class="cmd" data-cat="giveaways" data-search="/reminder list mira todos los recordatorios con su próximo envío y los botones pausar, editar, probar y borrar.">
+  <header><button class="cmd-name" type="button" data-copy="/reminder list" title="Copiar">/reminder list</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
+  <p>Mira todos los recordatorios con su próximo envío y los botones Pausar, Editar, Probar y Borrar.</p>
 </article></div></section>
 <section class="cmd-group" data-group="admin"><h2><span aria-hidden="true">🛡️</span> Configuración del servidor <small>9</small></h2><div class="cmd-grid"><article class="cmd" data-cat="admin" data-search="/setup status see what&#x27;s set up in this server and what needs fixing. administrators only. a private checklist of what is set up in your server (welcome, logs, auto-role, reaction and color roles, date channel, void, automod, premium, customization) with the command to fix each gap. it warns about deleted channels or roles, missing permissions and role order, and changes nothing.">
   <header><button class="cmd-name" type="button" data-copy="/setup status" title="Copiar">/setup status</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
