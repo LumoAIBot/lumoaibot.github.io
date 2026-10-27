@@ -116,19 +116,19 @@
 </article></div></section>
 <section class="cmd-group"><h2> Giveaways, polls &amp; reminders <small>13</small></h2><div class="cmd-grid"><article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/giveaway start</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
-<p>Start a giveaway in this channel (or another one). Administrators only. Posts a giveaway with Enter and Leave buttons. Duration looks like 30m, 2h, 1d or 1d12h (1 minute to 30 days). Winners are drawn fairly at random from people still in the server. Up to 10 running at once. Free, no AI.</p><ul class="args"><li><code class="arg req">prize</code><span>What people can win</span></li><li><code class="arg req">duration</code><span>How long it runs, like 30m, 2h, 1d or 1d12h (1 minute to 30 days)</span></li><li><code class="arg">winners?</code><span>How many winners (1-20, default 1)</span></li><li><code class="arg">role?</code><span>Only people with this role can enter (optional)</span></li><li><code class="arg">channel?</code><span>Where to post it (default: this channel)</span></li></ul>
+<p>Start a giveaway in this channel (or another one). Manage Server. Posts a giveaway with Enter and Leave buttons. Duration looks like 30m, 2h, 1d or 1d12h (1 minute to 30 days). Winners are drawn fairly at random from people still in the server. Up to 10 running at once. Free, no AI.</p><ul class="args"><li><code class="arg req">prize</code><span>What people can win</span></li><li><code class="arg req">duration</code><span>How long it runs, like 30m, 2h, 1d or 1d12h (1 minute to 30 days)</span></li><li><code class="arg">winners?</code><span>How many winners (1-20, default 1)</span></li><li><code class="arg">role?</code><span>Only people with this role can enter (optional)</span></li><li><code class="arg">channel?</code><span>Where to post it (default: this channel)</span></li></ul>
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/giveaway end</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
-<p>End a giveaway now and pick the winners. Administrators only. Ends it now and picks the winners. Safe to press twice: winners are only picked once.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Which giveaway</span></li></ul>
+<p>End a giveaway now and pick the winners. Manage Server. Ends it now and picks the winners. Safe to press twice: winners are only picked once.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Which giveaway</span></li></ul>
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/giveaway reroll</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
-<p>Pick a new winner for a giveaway that has ended. Administrators only. Picks a new winner after a giveaway ended. Someone who already won is never picked again.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Which giveaway</span></li><li><code class="arg">count?</code><span>How many new winners (default 1)</span></li></ul>
+<p>Pick a new winner for a giveaway that has ended. Manage Server. Picks a new winner after a giveaway ended. Someone who already won is never picked again.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Which giveaway</span></li><li><code class="arg">count?</code><span>How many new winners (default 1)</span></li></ul>
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/giveaway cancel</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
-<p>Cancel a running giveaway without picking anyone. Administrators only. Stops a running giveaway without picking anyone.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Which giveaway</span></li></ul>
+<p>Cancel a running giveaway without picking anyone. Manage Server. Stops a running giveaway without picking anyone.</p><ul class="args"><li><code class="arg req">giveaway</code><span>Which giveaway</span></li></ul>
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/giveaway list</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
@@ -136,11 +136,11 @@
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/poll create</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
-<p>Post a poll in this channel (or another one). Administrators only. Posts a poll with 2 to 10 option buttons. One vote per person that they can change, or several with multiple. Counts update live and nobody sees who voted for what. Add a duration to close it automatically. Up to 10 open at once. Free, no AI.</p><ul class="args"><li><code class="arg req">question</code><span>What you want to ask</span></li><li><code class="arg req">option1</code><span>First option</span></li><li><code class="arg req">option2</code><span>Second option</span></li><li><code class="arg">option3?</code><span>Third option (optional)</span></li><li><code class="arg">option4?</code><span>Fourth option (optional)</span></li><li><code class="arg">option5?</code><span>Fifth option (optional)</span></li><li><code class="arg">option6?</code><span>Sixth option (optional)</span></li><li><code class="arg">option7?</code><span>Seventh option (optional)</span></li><li><code class="arg">option8?</code><span>Eighth option (optional)</span></li><li><code class="arg">option9?</code><span>Ninth option (optional)</span></li><li><code class="arg">option10?</code><span>Tenth option (optional)</span></li><li><code class="arg">duration?</code><span>Close it automatically after this long, like 30m, 2h or 1d (optional)</span></li><li><code class="arg">multiple?</code><span>Let people pick several options (default: one)</span></li><li><code class="arg">channel?</code><span>Where to post it (default: this channel)</span></li></ul>
+<p>Post a poll in this channel (or another one). Manage Server. Posts a poll with 2 to 10 option buttons. One vote per person that they can change, or several with multiple. Counts update live and nobody sees who voted for what. Add a duration to close it automatically. Up to 10 open at once. Free, no AI.</p><ul class="args"><li><code class="arg req">question</code><span>What you want to ask</span></li><li><code class="arg req">option1</code><span>First option</span></li><li><code class="arg req">option2</code><span>Second option</span></li><li><code class="arg">option3?</code><span>Third option (optional)</span></li><li><code class="arg">option4?</code><span>Fourth option (optional)</span></li><li><code class="arg">option5?</code><span>Fifth option (optional)</span></li><li><code class="arg">option6?</code><span>Sixth option (optional)</span></li><li><code class="arg">option7?</code><span>Seventh option (optional)</span></li><li><code class="arg">option8?</code><span>Eighth option (optional)</span></li><li><code class="arg">option9?</code><span>Ninth option (optional)</span></li><li><code class="arg">option10?</code><span>Tenth option (optional)</span></li><li><code class="arg">duration?</code><span>Close it automatically after this long, like 30m, 2h or 1d (optional)</span></li><li><code class="arg">multiple?</code><span>Let people pick several options (default: one)</span></li><li><code class="arg">channel?</code><span>Where to post it (default: this channel)</span></li></ul>
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/poll close</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
-<p>Close a poll now and post the final results. Administrators only. Closes a poll now and posts the final results.</p><ul class="args"><li><code class="arg req">poll</code><span>Which poll</span></li></ul>
+<p>Close a poll now and post the final results. Manage Server. Closes a poll now and posts the final results.</p><ul class="args"><li><code class="arg req">poll</code><span>Which poll</span></li></ul>
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/poll results</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
@@ -176,7 +176,7 @@
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/setup welcome</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
-<p>Set the channel for welcome messages. Administrators only.</p><ul class="args"><li><code class="arg req">channel</code><span>Channel where new-member welcomes should post</span></li></ul>
+<p>Set the channel for welcome messages. Manage Server.</p><ul class="args"><li><code class="arg req">channel</code><span>Channel where new-member welcomes should post</span></li></ul>
 </article>
 <article class="cmd">
 <header><button class="cmd-name" title="Copy" type="button">/setup autorole</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
