@@ -49,7 +49,8 @@ function T(s, v) { var o = s; try { var el = document.getElementById("lumo-t"), 
       .catch(function () {});
   }
 
-  function schedule() { clearInterval(timer); timer = setInterval(load, EVERY); }
+  function schedule() { clearInterval(window.__lumoStatsT); timer = window.__lumoStatsT = setInterval(load, EVERY); }
+  /* preview: page swaps drop page listeners, so this is re-added when the home page script runs again */
   document.addEventListener("visibilitychange", function () {
     if (!document.hidden && Date.now() - last >= EVERY) load();
   });

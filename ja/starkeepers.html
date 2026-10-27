@@ -1,324 +1,154 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Starkeepersの遊び方:Lumoの夜空ゲーム初心者ガイド</title>
-  <meta name="description" content="Starkeepersを一歩ずつ:毎晩の星つかまえ、レアリティとファミリー、明るさと光、自分の空とサーバーの空、星座、連続記録とタスク、旅、願い星、彗星群、実績、流れ星、月食。">
-  <meta name="theme-color" content="#0b0d14">
-  <meta name="color-scheme" content="dark">
-  <link rel="canonical" href="https://lumobot.org/ja/starkeepers.html">
-  <meta property="og:site_name" content="Lumo">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lumobot.org/ja/starkeepers.html">
-  <meta property="og:title" content="Starkeepersの遊び方">
-  <meta property="og:description" content="Discord向けLumoの夜空ゲームを、画像でやさしく解説するガイドです。">
-  <meta property="og:image" content="https://lumobot.org/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Lumo：Lumoの名前と「AI搭載オールインワンDiscordボット」のキャッチコピーの横で手を振るロボットのマスコット">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Starkeepersの遊び方">
-  <meta name="twitter:description" content="Discord向けLumoの夜空ゲームを、画像でやさしく解説するガイドです。">
-  <meta name="twitter:image" content="https://lumobot.org/og-image.png">
-  <meta name="twitter:image:alt" content="Lumo：Lumoの名前と「AI搭載オールインワンDiscordボット」のキャッチコピーの横で手を振るロボットのマスコット">
-  <link rel="icon" href="../favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=6c30b5a8cc">
-  <script>(function(d){var s="dark";try{s=localStorage.getItem("aeth-theme")||s}catch(e){}if(s!="light"&&s!="auto")s="dark";var h=d.documentElement;h.classList.add("js");h.setAttribute("data-theme-pref",s);h.setAttribute("data-theme",s=="auto"?(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"):s)})(document)</script>
-  <script src="/assets/lumo-holiday.js?v=30542ac95e"></script>
-  <!--i18n-->
-  <link rel="alternate" hreflang="en" href="https://lumobot.org/starkeepers.html">
-  <link rel="alternate" hreflang="es" href="https://lumobot.org/es/starkeepers.html">
-  <link rel="alternate" hreflang="pt-BR" href="https://lumobot.org/pt-br/starkeepers.html">
-  <link rel="alternate" hreflang="ja" href="https://lumobot.org/ja/starkeepers.html">
-  <link rel="alternate" hreflang="x-default" href="https://lumobot.org/starkeepers.html">
-  <link rel="stylesheet" href="/assets/lumo-lang.css?v=22857159ee">
-  <script>(function(){var D={"en": "/", "es": "/es/", "pt-BR": "/pt-br/", "ja": "/ja/"},cur="ja",has=true,rel="starkeepers.html",p=null;try{p=localStorage.getItem("lumo-lang")}catch(e){}if(!p){if(cur!=="en")return;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase();var m=c.indexOf("pt")===0?"pt-BR":c.indexOf("es")===0?"es":c.indexOf("ja")===0?"ja":c.indexOf("en")===0?"en":null;if(m){p=m;break}}if(!p||p==="en")return}if(p===cur||!D[p]||!has)return;location.replace(D[p]+rel+location.search+location.hash)})()</script>
-  <script type="application/json" id="lumo-t">{"Copy": "コピー", "Copy {n}": "{n}をコピー", "Copied ✓": "コピーしました ✓", "Copied {n}": "コピーしました：{n}", "{n} match": "{n}件", "{n} matches": "{n}件", "Right-click a message → Apps → {n}": "メッセージを右クリック → アプリ → {n}", "Dark": "ダーク", "Light": "ライト", "Auto": "自動", "Appearance: {n}": "表示：{n}", "Appearance: {n}. Theme and seasonal options": "表示：{n}。テーマと季節のオプション", "just now": "たった今", "{n} min ago": "{n}分前", "Online since": "オンライン開始", "Last seen": "最終確認", "checking…": "確認中…", "{n} servers": "{n}サーバー", "{n} members": "メンバー{n}人", "server": "サーバー", "servers": "サーバー", "Halloween": "ハロウィン", "Thanksgiving": "感謝祭", "Christmas": "クリスマス", "· now: {name}": "· 現在：{name}", "· none right now": "· 今はなし", "Toggle music": "音楽のオン・オフ"}</script>
-  <script src="/assets/lumo-lang.js?v=bea16ebb2e" defer></script>
-  <!--/i18n-->
-</head>
-<body>
-  <a class="skip-link" href="#main">本文へスキップ</a>
-  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+<!doctype html><html lang=ja data-theme=dark><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Starkeepersの遊び方:Lumoの夜空ゲーム初心者ガイド</title><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0b0d14"><meta name="color-scheme" content="dark light"><link rel=stylesheet href="../base.css"><script>try{var t=localStorage.getItem('aeth-theme')||'dark',d=document.documentElement;d.dataset.themePref=t;d.dataset.theme=t=='auto'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):(t=='light'?'light':'dark')}catch(e){}</script><!--L--><meta content="Starkeepersを一歩ずつ:毎晩の星つかまえ、レアリティとファミリー、明るさと光、自分の空とサーバーの空、星座、連続記録とタスク、旅、願い星、彗星群、実績、流れ星、月食。" name="description"><link href="https://lumobot.org/ja/starkeepers.html" rel="canonical"><meta content="Lumo" property="og:site_name"><meta content="website" property="og:type"><meta content="https://lumobot.org/ja/starkeepers.html" property="og:url"><meta content="Starkeepersの遊び方" property="og:title"><meta content="Discord向けLumoの夜空ゲームを、画像でやさしく解説するガイドです。" property="og:description"><meta content="https://lumobot.org/og-image.png" property="og:image"><meta content="1200" property="og:image:width"><meta content="630" property="og:image:height"><meta content="Lumo：Lumoの名前と「AI搭載オールインワンDiscordボット」のキャッチコピーの横で手を振るロボットのマスコット" property="og:image:alt"><meta content="summary_large_image" name="twitter:card"><meta content="Starkeepersの遊び方" name="twitter:title"><meta content="Discord向けLumoの夜空ゲームを、画像でやさしく解説するガイドです。" name="twitter:description"><meta content="https://lumobot.org/og-image.png" name="twitter:image"><meta content="Lumo：Lumoの名前と「AI搭載オールインワンDiscordボット」のキャッチコピーの横で手を振るロボットのマスコット" name="twitter:image:alt"><link rel="alternate" hreflang="en" href="https://lumobot.org/starkeepers.html"><link rel="alternate" hreflang="es" href="https://lumobot.org/es/starkeepers.html"><link rel="alternate" hreflang="pt-BR" href="https://lumobot.org/pt-br/starkeepers.html"><link rel="alternate" hreflang="ja" href="https://lumobot.org/ja/starkeepers.html"><link rel="alternate" hreflang="x-default" href="https://lumobot.org/starkeepers.html"><script>(function(){var D={"en": "", "es": "es/", "pt-BR": "pt-br/", "ja": "ja/"},cur="ja",has=true,rel="starkeepers.html",p=null;try{p=localStorage.getItem("lumo-lang")}catch(e){}if(!p){if(cur!=="en")return;var n=navigator.languages||[navigator.language||""];for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase();var m=c.indexOf("pt")===0?"pt-BR":c.indexOf("es")===0?"es":c.indexOf("ja")===0?"ja":c.indexOf("en")===0?"en":null;if(m){p=m;break}}if(!p||p==="en")return}if(p===cur||D[p]===undefined||!has)return;location.replace("../"+D[p]+(rel||"index.html")+location.search+location.hash)})()</script><!--/L--></head><body class="L-chapters"><!--L--><script type="application/json" id="lumo-t">{"Copy": "コピー", "Copy {n}": "{n}をコピー", "Copied ✓": "コピーしました ✓", "Copied {n}": "コピーしました：{n}", "{n} match": "{n}件", "{n} matches": "{n}件", "Right-click a message → Apps → {n}": "メッセージを右クリック → アプリ → {n}", "Dark": "ダーク", "Light": "ライト", "Auto": "自動", "Appearance: {n}": "表示：{n}", "Appearance: {n}. Theme and seasonal options": "表示：{n}。テーマと季節のオプション", "just now": "たった今", "{n} min ago": "{n}分前", "Online since": "オンライン開始", "Last seen": "最終確認", "checking…": "確認中…", "{n} servers": "{n}サーバー", "{n} members": "メンバー{n}人", "server": "サーバー", "servers": "サーバー", "Halloween": "ハロウィン", "Thanksgiving": "感謝祭", "Christmas": "クリスマス", "· now: {name}": "· 現在：{name}", "· none right now": "· 今はなし", "Toggle music": "音楽のオン・オフ", "Lumo is <em>online.<\/em>": "Lumoは<em>オンラインです。<\/em>", "Lumo is <em>partly down.<\/em>": "Lumoは<em>一部停止中です。<\/em>", "Lumo is <em>starting.<\/em>": "Lumoは<em>起動中です。<\/em>", "Lumo is <em>offline.<\/em>": "Lumoは<em>オフラインです。<\/em>", "Lumo can't reach Discord right now. It usually comes back on its own within a few minutes.": "LumoはいまDiscordにつながっていません。たいてい数分で自動的に戻ります。", "Everything is working: commands, music and AI chat.": "すべて正常です：コマンド、音楽、AIチャット。", "Commands work, but AI chat and music are having trouble right now.": "コマンドは使えますが、AIチャットと音楽にいま問題が出ています。", "Most things work, but AI chat is having trouble and may be slow.": "ほとんど使えますが、AIチャットに問題があり遅くなることがあります。", "Most things work, but music is having trouble and may not start.": "ほとんど使えますが、音楽に問題があり再生が始まらないことがあります。", "Working": "正常", "Down": "停止", "Trouble": "問題あり", "Couldn't reach Lumo": "Lumoに接続できませんでした", "The status check did not answer. Try again in a minute.": "ステータス確認から応答がありませんでした。1分ほどしてからもう一度お試しください。", "Unknown": "不明"}</script><!--/L--><header class=top><a class=brand href="index.html"><img class=logo-head src="../assets/logo.webp" width=30 height=30 alt="">Lumo</a><nav class=main-nav><a href="getting-started.html">はじめに</a><a href="features.html"><img class="px bob" src="../sparkle.png" width=13 alt="">機能</a><a href="starkeepers.html" aria-current=page>遊び方</a><a href="commands.html">コマンド</a><a href="premium.html">Premium</a><a href="faq.html">FAQ</a><a href="dashboard.html"><img class="px bob" src="../moon-full.png" width=13 alt="">ダッシュボード</a></nav><div class=hr><a class="btn sm" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&permissions=309576723664&scope=bot+applications.commands" rel=noopener>Discordに追加</a><!--L--><details class="lang-pop"><summary class=lang-btn aria-label="言語: 日本語" title="言語"><svg class=lang-g viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-code" translate="no">日本</span></summary><div class="lang-menu"><span class="lang-h">言語</span><a href="../starkeepers.html" hreflang="en" lang="en" data-lang="en"><span translate="no">English</span></a><a href="../es/starkeepers.html" hreflang="es" lang="es" data-lang="es"><span translate="no">Español</span></a><a href="../pt-br/starkeepers.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR"><span translate="no">Português (Brasil)</span></a><a href="../ja/starkeepers.html" hreflang="ja" lang="ja" data-lang="ja" aria-current="true"><span translate="no">日本語</span><span class=lang-ck aria-hidden=true>✓</span></a></div></details><!--/L--><div class="theme-pop"><button type="button" class="theme-btn" data-theme-menu aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu" aria-label="表示と季節テーマ" title="表示"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button><div class="theme-menu" id="theme-menu" hidden><div class="theme-seg-wrap"><span>表示</span><div class="theme-seg" role="group" aria-label="カラーテーマ"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>ダーク</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>ライト</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>自動</span></button></div></div><div class="theme-seg-wrap"><span>季節テーマ <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="季節テーマ"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>自動</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>オフ</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>ハロウィン</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>感謝祭</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>クリスマス</span></button></div></div></div></div><details class=menu><summary class=hbtn aria-label=Menu>メニュー</summary><div class=menu-p><a href="getting-started.html">はじめに</a><a href="features.html">機能</a><a href="starkeepers.html">遊び方</a><a href="commands.html">コマンド</a><a href="premium.html">Premium</a><a href="faq.html">FAQ</a><a href="dashboard.html">ダッシュボード</a><a href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&permissions=309576723664&scope=bot+applications.commands" rel=noopener>Discordに追加</a></div></details></div></header><main><section class="hero page-hero"><div><p class=mono>Starkeepers · 遊び方</p><h1>Starkeepersの遊び方</h1><div class=lede><p class="lead">Lumoの夜空ゲームを画像で解説。毎晩星をつかまえ、自分の空を育て、みんなでサーバーの空を灯そう。</p></div><div class=btns><a class="btn" href="#start">ここから始めよう</a><a class="btn ghost" href="features.html#starkeepers">機能ページを見る</a></div></div><figure class="fig tilt"><img src="../assets/starkeepers-hero-960.webp" alt=""><figcaption class=mono>数晩たったサーバーの夜空</figcaption></figure></section><nav class=toc-strip><span class=mono>このガイドの内容</span><a href="#start">はじめに</a><a href="#watch">夜の観測と星つかまえ</a><a href="#hunts">ハントとバトルチーム</a><a href="#rarities">レアリティとファミリー</a><a href="#brightness"><img alt="" aria-hidden="true" class="px-ico" height="20" src="../sparkle.png" width="20"/> 明るさと光</a><a href="#skies">自分の空とサーバーの空</a><a href="#constellations">星座・エリア・特典</a><a href="#streak">連続記録・タスク・サーバー目標</a><a href="#trips">星の旅とかけら</a><a href="#observatory">天文台</a><a href="#wish">願い星</a><a href="#shooting">流れ星と彗星群</a><a href="#eclipse"><img alt="" aria-hidden="true" class="px-ico" height="20" src="../assets/px/moon-eclipse.png" width="20"/> 月食</a><a href="#milestones">実績</a><a href="#story">ストーリー</a><a href="#tips">コツ</a><a href="#faq"><span aria-hidden="true">❓</span> よくある質問</a></nav><section class=ed id="start"><div class=no>01</div><div class=body>
 
-  <header class="nav" id="top">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html" aria-label="Lumoホーム"><img src="../assets/logo.webp" alt="" width="36" height="36" decoding="async"><span>Lumo</span></a>
-      <nav class="nav-right" aria-label="メイン">
-        <div class="nav-links">
-        <a href="getting-started.html">はじめに</a>
-        <a href="features.html">機能</a>
-        <a href="starkeepers.html" aria-current="page">遊び方</a>
-        <a href="commands.html">コマンド</a>
-        <a href="premium.html">Premium</a>
-        <a href="faq.html">FAQ</a>
-        <a href="dashboard.html">ダッシュボード <span class="beta-chip">ベータ</span></a>
-        </div>
-        <!--i18n-sw--><details class="lang-pop"><summary aria-label="言語: 日本語" title="言語"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-code" translate="no">日本</span></summary><div class="lang-menu"><span class="lang-h">言語</span><a href="/starkeepers.html" hreflang="en" lang="en" data-lang="en"><span translate="no">English</span></a><a href="/es/starkeepers.html" hreflang="es" lang="es" data-lang="es"><span translate="no">Español</span></a><a href="/pt-br/starkeepers.html" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR"><span translate="no">Português (Brasil)</span></a><a href="/ja/starkeepers.html" hreflang="ja" lang="ja" data-lang="ja" aria-current="true"><span translate="no">日本語</span><span class=lang-ck aria-hidden=true>✓</span></a></div></details><!--/i18n-sw--><div class="theme-pop"><button type="button" class="theme-btn" data-theme-menu aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu" aria-label="表示と季節テーマ" title="表示"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button><div class="theme-menu" id="theme-menu" hidden><div class="theme-seg-wrap"><span>表示</span><div class="theme-seg" role="group" aria-label="カラーテーマ"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>ダーク</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>ライト</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>自動</span></button></div></div><div class="theme-seg-wrap"><span>季節テーマ <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="季節テーマ"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>自動</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>オフ</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>ハロウィン</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>感謝祭</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>クリスマス</span></button></div></div></div></div>
-        <a class="btn btn-ghost btn-sm nav-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボードを開く <span class="beta-chip">ベータ</span></a>
-        <a class="btn btn-primary btn-sm nav-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Discordに追加</a>
-        <details class="nav-menu">
-          <summary aria-label="メニュー"><span class="bars" aria-hidden="true"></span></summary>
-          <div class="nav-panel">
-          <a href="getting-started.html">はじめに</a>
-          <a href="features.html">機能</a>
-          <a href="starkeepers.html" aria-current="page">遊び方</a>
-          <a href="commands.html">コマンド</a>
-          <a href="premium.html">Premium</a>
-          <a href="faq.html">FAQ</a>
-          <a href="dashboard.html">ダッシュボードについて <span class="beta-chip">ベータ</span></a>
-          <a class="btn btn-ghost nav-panel-dash" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボードを開く <span class="beta-chip">ベータ</span></a>
-            <a class="btn btn-primary nav-panel-add" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Discordに追加</a>
-            <div class="theme-seg-wrap"><span>表示</span><div class="theme-seg" role="group" aria-label="カラーテーマ"><button type="button" class="seg-b" data-theme-set="dark" aria-pressed="false"><svg class="ti ti-dark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><span>ダーク</span></button><button type="button" class="seg-b" data-theme-set="light" aria-pressed="false"><svg class="ti ti-light" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>ライト</span></button><button type="button" class="seg-b" data-theme-set="auto" aria-pressed="false"><svg class="ti ti-auto" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg><span>自動</span></button></div></div><div class="theme-seg-wrap"><span>季節テーマ <small data-holiday-now></small></span><div class="hol-grid" role="group" aria-label="季節テーマ"><button type="button" class="hol-b hol-auto" data-holiday-set="auto" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>自動</span></button><button type="button" class="hol-b hol-off" data-holiday-set="off" aria-pressed="false"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 18 18 6"/></svg><span>オフ</span></button><button type="button" class="hol-b hol-halloween" data-holiday-set="halloween" aria-pressed="false"><span class="he" aria-hidden="true">🎃</span><span>ハロウィン</span></button><button type="button" class="hol-b hol-thanksgiving" data-holiday-set="thanksgiving" aria-pressed="false"><span class="he" aria-hidden="true">🦃</span><span>感謝祭</span></button><button type="button" class="hol-b hol-christmas" data-holiday-set="christmas" aria-pressed="false"><span class="he" aria-hidden="true">🎄</span><span>クリスマス</span></button></div></div>
-          </div>
-        </details>
-      </nav>
-    </div>
-  </header>
+<div class="guide-copy">
+<span class="kicker">ステップ 1</span>
+<h2>はじめに:最初からオンです</h2>
+<p>Starkeepersはすべてのサーバーで無料ですが、最初から<b>オン</b>です。サーバーの管理者はWebダッシュボードでオフにできます。<a href="https://dashboard.lumobot.org" rel="noopener" target="_blank">ダッシュボード</a>を開き、サーバーを選んで<b>Starkeepers</b>を開いてオフにします。ハント、天文台、ストーリーボスにもそれぞれスイッチがあります。</p><ol class="guide-steps"><li>最初からオンです（管理者はダッシュボードでオフにできます）。</li><li>任意:流れ星と彗星群用の<b>流れ星チャンネル</b>を選ぶ。</li><li>みんな:<code>/sky watch</code>と入力。</li></ol>
+</div>
 
-  
-  <main id="main">
-    <header class="page-hero">
-      <div class="wrap page-hero-inner">
-        <img class="hero-pose" src="../assets/robot/happy-256.webp" alt="ほほえむロボットのマスコット、Lumo" width="112" height="112" fetchpriority="high" decoding="async">
-        <span class="kicker">Starkeepers · 遊び方</span>
-        <h1><span class="grad">Starkeepers</span>の遊び方</h1>
-        <p class="lead">Lumoの夜空ゲームを画像で解説。毎晩星をつかまえ、自分の空を育て、みんなでサーバーの空を灯そう。</p>
-        <div class="cta center"><a class="btn btn-primary" href="#start">ここから始めよう</a><a class="btn btn-ghost" href="features.html#starkeepers">機能ページを見る</a></div>
-      </div>
-    </header>
-    <nav class="guide-toc wrap" aria-label="このページの内容"><a href="#start"><span aria-hidden="true">🛠️</span> はじめに</a><a href="#watch"><span aria-hidden="true">🔭</span> 夜の観測と星つかまえ</a><a href="#hunts"><span aria-hidden="true">⚔️</span> ハントとバトルチーム</a><a href="#rarities"><span aria-hidden="true">✨</span> レアリティとファミリー</a><a href="#brightness"><img class="px-ico" src="/assets/px/star.png" alt="" width="20" height="20" aria-hidden="true"> 明るさと光</a><a href="#skies"><span aria-hidden="true">🌌</span> 自分の空とサーバーの空</a><a href="#constellations"><span aria-hidden="true">🗺️</span> 星座・エリア・特典</a><a href="#streak"><span aria-hidden="true">🔥</span> 連続記録・タスク・サーバー目標</a><a href="#trips"><span aria-hidden="true">🧭</span> 星の旅とかけら</a><a href="#observatory"><span aria-hidden="true">🏛️</span> 天文台</a><a href="#wish"><span aria-hidden="true">🌠</span> 願い星</a><a href="#shooting"><span aria-hidden="true">☄️</span> 流れ星と彗星群</a><a href="#eclipse"><img class="px-ico" src="/assets/px/moon-eclipse.png" alt="" width="20" height="20" aria-hidden="true"> 月食</a><a href="#milestones"><span aria-hidden="true">🏅</span> 実績</a><a href="#story"><span aria-hidden="true">📖</span> ストーリー</a><a href="#tips"><span aria-hidden="true">💡</span> コツ</a><a href="#faq"><span aria-hidden="true">❓</span> よくある質問</a></nav>
-    <section class="section guide-sec" id="start">
-      <div class="wrap guide-row guide-solo">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🛠️</span> ステップ 1</span>
-          <h2>はじめに:最初からオンです</h2>
-          <p>Starkeepersはすべてのサーバーで無料ですが、最初から<b>オン</b>です。サーバーの管理者はWebダッシュボードでオフにできます。<a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボード</a>を開き、サーバーを選んで<b>Starkeepers</b>を開いてオフにします。ハント、天文台、ストーリーボスにもそれぞれスイッチがあります。</p><ol class="guide-steps"><li>最初からオンです（管理者はダッシュボードでオフにできます）。</li><li>任意:流れ星と彗星群用の<b>流れ星チャンネル</b>を選ぶ。</li><li>みんな:<code>/sky watch</code>と入力。</li></ol>
-        </div>
-        
-      </div>
-    </section>
-    <section class="section guide-sec" id="watch">
-      <div class="wrap guide-row guide-flip">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🔭</span> 毎晩</span>
-          <h2>夜の観測と星つかまえ</h2>
-          <p>米国東部時間の深夜0時に、<b>あなた</b>だけの新しい星が現れます(星は人それぞれ)。<code>/sky watch</code>で<b>今夜</b>タブを開き、星を押してつかまえましょう。</p><ul class="checks"><li>毎晩最初のキャッチは無料。2回目以降は少しスターダストがかかります。</li><li>持っている星をもう一度つかまえると、その星が明るくなります。</li><li>下のタブ(今夜・星・マイスカイ)で画面を切り替えます。旅・願い星・ストーリー・サーバーの空には専用の <code>/sky</code> コマンドがあります。</li></ul>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/tonight.webp" alt="今夜の星、連続記録、タスク、サーバー目標が並ぶ/sky watchの今夜タブ" width="728" height="352" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="hunts">
-      <div class="wrap guide-row">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">⚔️</span> バトル · ベータ</span>
-          <h2>ハントとバトルチーム</h2>
-          <p>管理者がオフにしない限り、<b>翳り</b>が空を漂い、星を曇らせて近づく人に襲いかかるようにします。<code>/sky team</code> で自分の星を3つまで選び、<code>/sky hunt</code> で曇った星に挑もう。</p><ul class="checks"><li><b>チーム</b>：星にはそれぞれHP・攻撃・防御・素早さがあります。明るい星ほど少し強くなります。</li><li><b>勝つ</b>と星が<b>再点灯</b>：星屑が少しもらえて、その星が自分の空に加わるチャンスもあります（すでに持っている星なら明るくなります）。</li><li><b>負けて</b>も何も失いません。星たちは無事です。</li><li><b>クールダウン</b>：ハントは30秒に1回。ハントの星屑には毎晩の上限が別にあります。</li></ul><p>曇った星は解放済みのレア度からだけ現れ、チームに合わせて強さが決まるので、どのレベルでもフェアな勝負になります。</p><p><b>ストーリーボス</b>（管理者がオフにしない限りオン）：ストーリーの各章の最後に、翳りにのまれたボスが待っています。<code>/sky boss</code> で挑み、勝てば光が戻って次の章が開きます。負けても失うものはなく、すでに持っている章はそのままです。</p><p><b>月も見守っています</b>：満ち欠けごとにひとつのファミリーを呼び寄せます（その星が出やすくなります）。<b>新月</b>は翳りの夜。ハントが手ごわくなり、よりレアな星が出ることも。星屑は1.5倍（1晩の上限内）。<b>満月</b>は再点灯した星が仲間になりやすく、<b>半月</b>は旅のかけらが1つ増えます。</p><p><b>星のプロフィール</b>：<code>/sky star</code>（またはキャッチ・コレクション・チーム・バトルのカードにある<b>見る</b>ボタン）で、どの星のページでも開けます。物語、バトルステータス、技とパッシブ、あなたの星の明るさと初めて再点灯した日。◀ ▶ で同じ系統をめくれます。まだ見つけていない星はシルエットとヒント、<b>願いにする</b>ボタンだけが表示されます。</p>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/hunt.webp" alt="ストーリーボス戦：最大3つの星のチームでボスに挑む" width="480" height="360" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="rarities">
-      <div class="wrap guide-row">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">✨</span> 見つかるもの</span>
-          <h2>レアリティとファミリー</h2>
-          <p><b>8つのファミリー</b>(エンバー、フロスト、オーロラ、タイド、ブルーム、ヴェール、ランタン、ホロウ)に<b>100個の星</b>があり、それぞれ形が違います。星にはコモンからセレスティアルまでのレアリティがあり、レアな星ほど大きく輝き、レベルが上がると解放されます。</p><ul class="checks"><li>月の満ち欠けによってしか現れない星もあります。</li><li>しばらくレアな星が出ないと、救済の仕組みで必ず出るようになります。</li></ul>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/rarities.webp" alt="コモンからセレスティアルまで、各ファミリーの星のアート" width="870" height="976" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="brightness">
-      <div class="wrap guide-row guide-flip">
-        <div class="guide-copy reveal">
-          <span class="kicker"><img class="px-ico" src="/assets/px/star.png" alt="" width="20" height="20" aria-hidden="true"> 星を育てよう</span>
-          <h2>明るさと光</h2>
-          <p>星にはそれぞれ1〜5の<b>明るさ</b>があります。<b>星</b>タブでスターダストを使う、同じ星をもう一度つかまえる、旅のかけらを使う、のどれかで上げられます。明るくてレアな星ほど<b>光</b>が多く、光が星座を灯します。</p><p><b>スターダスト</b>は遊ぶともらえます。チャット、ボイス、Lumoのゲーム、そしてStarkeepers自体。販売はなく、Lumo Coinsでもありません。コインで買えるのは見た目だけです。</p>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/stars.webp" alt="スターダスト、光、明るい星が並ぶ星タブ" width="728" height="331" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="skies">
-      <div class="wrap guide-row">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🌌</span> ふたつの空</span>
-          <h2>自分の空とサーバーの空</h2>
-          <p><b>マイスカイ</b>は自分だけの星空。つかまえた星がファミリーの色で並び、明るい星には名前がつきます。</p><p><b>サーバーの空</b>はみんなで共有します。<code>/sky server</code> で自分の星を星座に置き、サーバー全体で一緒に灯していきます。</p>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/mysky.webp" alt="名前つきの星が並ぶプレイヤー自身の星空" width="960" height="560" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="constellations">
-      <div class="wrap guide-row guide-flip">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🗺️</span> みんなで</span>
-          <h2>星座・エリア・特典</h2>
-          <p>サーバーの空には<b>エリア</b>があり、それぞれに<b>星座</b>があります。星座の枠を正しいファミリーの星で埋め、光の目標に届くと<b>灯ります</b>。ラベルには「あと1個の星が必要」のように、足りないものが必ず表示されます。</p><ul class="checks"><li>灯った星座はサーバー全体に小さな<b>特典</b>をくれます。スターダストが少し増える、確率が少し上がる、など。</li><li>星座を灯すと新しいエリアが開くことがあります。</li><li>手伝った全員がその星座のバッジをもらえます。</li></ul>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/serversky.webp" alt="エリアと星座のある共有のサーバーの空" width="1200" height="760" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="streak">
-      <div class="wrap guide-row guide-solo">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🔥</span> 続けよう</span>
-          <h2>連続記録・タスク・サーバー目標</h2>
-          <p>毎晩観測して<b>連続記録</b>を伸ばそう。7晩ごとに星がひとつ増えます。毎晩<b>3つの小さなタスク</b>(「星を2個つかまえる」など)もあり、少しスターダストがもらえます。サーバー全体で共有する<b>目標</b>もあり、達成すると小さな特典があります。</p>
-        </div>
-        
-      </div>
-    </section>
-    <section class="section guide-sec" id="trips">
-      <div class="wrap guide-row">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🧭</span> 留守のあいだに</span>
-          <h2>星の旅とかけら</h2>
-          <p><code>/sky trip</code> で星を<b>2時間の旅</b>に出せます。戻ったら<b>受け取る</b>を押して、その星のファミリーの<b>かけら</b>をもらいましょう(明るい星ほど多く持ち帰ります)。同じファミリーの<b>かけら10個</b>で、そのファミリーの星を1段階明るくできます(1つの星につき一晩1回)。</p><ul class="checks"><li>一晩の最初の3回の旅では、それぞれ1スターダストももらえます。</li><li>旅から戻るとLumoが旅のメッセージを更新します。メンションが欲しいときは<b>通知する</b>をオンに。</li></ul>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/trips.webp" alt="帰り道の星と受け取ったかけらが表示された星の旅の画面" width="728" height="274" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="observatory">
-      <div class="wrap guide-row">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🏛️</span> オプション · 長期</span>
-          <h2>天文台</h2>
-          <p>管理者がオフにしない限り、<code>/sky observatory</code> で自分の天文台が開きます。旅で集めた<b>かけら</b>と<b>星くず</b>で強化すると、天文台のレベルが上がります。</p><ul class="checks"><li><b>旅の時間</b>：1段階ごとに旅が15分短くなります（最短1時間15分）。</li><li><b>タスク引き直し</b>：気に入らない毎晩のタスクを入れ替えます。</li><li><b>望遠鏡</b>：見逃した流れ星を手に入れられる小さなチャンス。</li><li><b>旅の枠</b>：2つの星を同時に旅に出せます（レベル3で解放）。</li></ul><p>強化は消費するだけです。星くずが戻ることも、レア度の確率が変わることもありません。</p>
-        </div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="wish">
-      <div class="wrap guide-row guide-flip">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🌠</span> 欲しい星</span>
-          <h2>願い星</h2>
-          <p><code>/sky wish</code> で、まだ持っていない星をひとつ選びます。毎晩その星が観測に出る確率が少し上がり、出なかった夜ごとにさらに少しずつ上がります(最大10%)。星を変えると最初からになります。</p>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/wish.webp" alt="今夜の追加確率が表示された願い星の画面" width="728" height="282" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="shooting">
-      <div class="wrap guide-row">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">☄️</span> チャンネルでライブ</span>
-          <h2>流れ星と彗星群</h2>
-          <p>一日に何度か、管理者が選んだチャンネルに<b>流れ星</b>が落ちてきます。最初に<b>つかまえる</b>を押した3人がもらえます。</p><p>ときどき<b>彗星群</b>が1分間だけ通り過ぎます(管理者がオンにした場合)。みんなで<b>つかまえるのを手伝う</b>を押すと、手伝った人はスターダストを、上位の協力者は少し多くもらえます。</p>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/comet.webp" alt="「つかまえるのを手伝う」ボタンと上位の協力者が載った彗星群のメッセージ" width="728" height="234" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="eclipse">
-      <div class="wrap guide-row guide-flip">
-        <div class="guide-copy reveal">
-          <span class="kicker"><img class="px-ico" src="/assets/px/moon-eclipse.png" alt="" width="20" height="20" aria-hidden="true"> 月に一度</span>
-          <h2>月食</h2>
-          <p>月に一度、世界の影が月を横切り、2晩のあいだ月を赤く染めます。<b>月食リング</b>エリアが開き、レアやセレスティアルの星が少し出やすくなり、どの月の星も現れる可能性があり、星がたくさん降ります。</p>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/eclipse.webp" alt="Discordで表示される月食のアニメーション" width="420" height="236" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="milestones">
-      <div class="wrap guide-row">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">🏅</span> あなたの進み具合</span>
-          <h2>実績</h2>
-          <p>コレクション実績(10・50・100回目のキャッチ、ファミリーのコンプリート、初めてのセレスティアルなど)をクリアすると、星空の画像に表示できる<b>称号</b>、少しのスターダスト、ときには新しい<b>背景</b>がもらえます。星タブの<b>その他 → 実績</b>で確認できます。</p>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/milestones.webp" alt="称号と進み具合が並ぶ実績リスト" width="728" height="431" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="story">
-      <div class="wrap guide-row guide-flip">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">📖</span> 世界の物語</span>
-          <h2>ストーリー</h2>
-          <p>星は壊されたのではなく、忘れられただけ。だれにも見上げられない空は、少しずつ暗くなっていきます。小さなランプロボットの<b>Lumo</b>はランタンを灯し続け、<b>全8章</b>と幕間でその物語を語ります。</p><ul class="checks"><li>章は、あなたとサーバーが遊ぶほど開いていきます。はじめての星、最初に灯った星座、新しい地域、月食など。</li><li>どの章でも<b>称号</b>がもらえ、新しい<b>背景</b>がもらえる章もあります。</li><li><code>/sky story</code> で読めます。</li></ul>
-        </div>
-        <div class="stage reveal" data-d="1"><img class="guide-shot" src="../assets/guide/ja/story.webp" alt="第1章「小さなランプ」のページ。手をふるLumo" width="720" height="780" loading="lazy" decoding="async"></div>
-      </div>
-    </section>
-    <section class="section guide-sec" id="tips">
-      <div class="wrap guide-row guide-flip guide-solo">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">💡</span> 知っておくと便利</span>
-          <h2>コツ</h2>
-          <ul class="checks"><li>1回だけでも毎晩観測しよう。連続記録が続きます。</li><li>今夜タブでタスクを確認しよう。手軽にスターダストがもらえます。</li><li>サーバーに必要な場所に星を置こう。足りないものはラベルに書いてあります。</li><li>ログオフ前に星を旅に出そう。</li><li>ファミリーをコンプリートできる星を願おう。</li><li>置いた星を明るくしよう。その光はサーバー全体に効きます。</li></ul>
-        </div>
-        
-      </div>
-    </section>
-    <section class="section guide-sec" id="faq">
-      <div class="wrap guide-row guide-solo">
-        <div class="guide-copy reveal">
-          <span class="kicker"><span aria-hidden="true">❓</span> 質問</span>
-          <h2>FAQ</h2>
-          <div class="guide-faq"><details class="faq"><summary>Starkeepersは有料?</summary><div class="faq-body"><p>いいえ。すべてのサーバーで無料です。Lumo Coinsで買えるのは見た目(夜空の背景)だけで、スターダストは買えません。</p></div></details><details class="faq"><summary>/skyが見えないのはなぜ?</summary><div class="faq-body"><p>管理者がダッシュボードでStarkeepersをオフにしている可能性があります。オンに戻すよう頼んでください。</p></div></details><details class="faq"><summary>新しい星はいつ出る?</summary><div class="faq-body"><p>毎晩、米国東部時間(ET)の深夜0時です。</p></div></details><details class="faq"><summary>星がなくなることはある?</summary><div class="faq-body"><p>いいえ。つかまえた星はずっとあなたのものです。自分のデータを消したい場合は「その他 → 星を忘れる」から削除できます。</p></div></details><details class="faq"><summary>星座に「あと1個の星が必要」と出るのはなぜ?</summary><div class="faq-body"><p>すべての枠が埋まり、光の目標に届いたときだけ灯ります。何が足りないかはラベルに表示されます。</p></div></details><details class="faq"><summary>彗星群や流れ星は全員にメンションする?</summary><div class="faq-body"><p>いいえ。管理者が選んだチャンネルにだけ投稿され、管理者がオンにするまでは無効です。</p></div></details></div>
-        </div>
-        
-      </div>
-    </section>
+</div></section><section class=ed id="watch"><div class=no>02</div><div class=body>
 
-    <section class="section section-cta">
-      <div class="wrap">
-        <div class="final-cta reveal">
-          <img class="cta-bot" src="../assets/robot/celebrating-256.webp" alt="お祝いするマスコットロボのLumo" width="104" height="104" loading="lazy" decoding="async">
-          <h2>最初の星をつかまえてみよう!</h2>
-          <p>Lumoを追加して、<code>/sky watch</code>と入力しよう。</p>
-          <div class="cta center"><a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Discordに追加</a><a class="btn btn-ghost" href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボードを開く</a></div>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="guide-copy">
+<span class="kicker">毎晩</span>
+<h2>夜の観測と星つかまえ</h2>
+<p>米国東部時間の深夜0時に、<b>あなた</b>だけの新しい星が現れます(星は人それぞれ)。<code>/sky watch</code>で<b>今夜</b>タブを開き、星を押してつかまえましょう。</p><ul class="checks"><li>毎晩最初のキャッチは無料。2回目以降は少しスターダストがかかります。</li><li>持っている星をもう一度つかまえると、その星が明るくなります。</li><li>下のタブ(今夜・星・マイスカイ)で画面を切り替えます。旅・願い星・ストーリー・サーバーの空には専用の <code>/sky</code> コマンドがあります。</li></ul>
+</div>
+<div class="stage"><img alt="今夜の星、連続記録、タスク、サーバー目標が並ぶ/sky watchの今夜タブ" class="guide-shot" height="352" src="../assets/guide/en/tonight.webp" width="728"/><p class="mono figcap">今夜の星、連続記録、タスク、サーバー目標が並ぶ/sky watchの今夜タブ</p></div>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="index.html"><img src="../assets/logo.webp" alt="" width="34" height="34" loading="lazy" decoding="async"><span>Lumo</span></a>
-        <p class="footer-wave"><img class="mini-bot" src="../assets/robot/wave-96.webp" alt="" width="40" height="40" loading="lazy" decoding="async"><span>ご覧いただきありがとうございます！</span></p>
-        <p>夜空ゲーム「Starkeepers」を中心に、音楽・ゲーム・サーバーツール、そしてAI搭載の Premium をそなえたDiscordボット。開発・運営：<a href="https://github.com/OniSyris" target="_blank" rel="noopener">@OniSyris</a></p>
-      </div>
-      <nav class="footer-cols" aria-label="フッター">
-        <div>
-          <h2>見る</h2>
-          <a href="getting-started.html">はじめに</a>
-          <a href="features.html">機能</a>
-          <a href="starkeepers.html" aria-current="page">遊び方</a>
-          <a href="commands.html">コマンド</a>
-          <a href="premium.html">Premium</a>
-          <a href="faq.html">FAQ</a>
-          <a href="changelog.html">更新履歴</a>
-          <a href="https://dashboard.lumobot.org" target="_blank" rel="noopener">ダッシュボードを開く <span class="beta-chip">ベータ</span></a>
-          <a href="dashboard.html">ダッシュボードについて</a>
-        </div>
-        <div>
-          <h2>サポート</h2>
-          <a href="https://discord.gg/KZjebts36C" target="_blank" rel="noopener">サポートサーバーに参加</a>
-          <a href="https://discord.com/users/1022200760018161684" target="_blank" rel="noopener">DiscordでOriにメッセージ</a>
-          <a href="faq.html#claim">Premiumを有効化</a>
-          <a href="faq.html#permissions">権限の説明</a>
-          <a href="status.html">稼働状況</a>
-          <a href="https://top.gg/bot/1545140271073722378/vote" target="_blank" rel="noopener">Top.ggで投票</a>
-        </div>
-        <div>
-          <h2>規約</h2>
-          <a href="../terms.html">利用規約</a>
-          <a href="../privacy.html">プライバシーポリシー</a>
-        </div>
-      </nav>
-    </div>
-    <div class="wrap footer-note">Discordとは無関係です。Lumo Coinsは遊び用で、現実の価値はありません。音楽：wipics作<a href="https://opengameart.org/content/outer-space-loop" target="_blank" rel="noopener">Outer Space Loop</a>（CC0）</div>
-  </footer>
+</div></section><section class=ed id="hunts"><div class=no>03</div><div class=body>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="/assets/lumo-music.js?v=7885974567" data-slot=".nav-right .nav-menu" data-src="/assets/audio/outer-space-loop.mp3?v=75da4f5d" data-exclude="^/dashboard/" data-volume="0.16" data-fade="2.5" defer></script>
-  <script src="../script.js?v=94187fedff" defer></script>
-</body>
-</html>
+<div class="guide-copy">
+<span class="kicker">バトル · ベータ</span>
+<h2>ハントとバトルチーム</h2>
+<p>管理者がオフにしない限り、<b>翳り</b>が空を漂い、星を曇らせて近づく人に襲いかかるようにします。<code>/sky team</code> で自分の星を3つまで選び、<code>/sky hunt</code> で曇った星に挑もう。</p><ul class="checks"><li><b>チーム</b>：星にはそれぞれHP・攻撃・防御・素早さがあります。明るい星ほど少し強くなります。</li><li><b>勝つ</b>と星が<b>再点灯</b>：星屑が少しもらえて、その星が自分の空に加わるチャンスもあります（すでに持っている星なら明るくなります）。</li><li><b>負けて</b>も何も失いません。星たちは無事です。</li><li><b>クールダウン</b>：ハントは30秒に1回。ハントの星屑には毎晩の上限が別にあります。</li></ul><p>曇った星は解放済みのレア度からだけ現れ、チームに合わせて強さが決まるので、どのレベルでもフェアな勝負になります。</p><p><b>ストーリーボス</b>（管理者がオフにしない限りオン）：ストーリーの各章の最後に、翳りにのまれたボスが待っています。<code>/sky boss</code> で挑み、勝てば光が戻って次の章が開きます。負けても失うものはなく、すでに持っている章はそのままです。</p><p><b>月も見守っています</b>：満ち欠けごとにひとつのファミリーを呼び寄せます（その星が出やすくなります）。<b>新月</b>は翳りの夜。ハントが手ごわくなり、よりレアな星が出ることも。星屑は1.5倍（1晩の上限内）。<b>満月</b>は再点灯した星が仲間になりやすく、<b>半月</b>は旅のかけらが1つ増えます。</p><p><b>星のプロフィール</b>：<code>/sky star</code>（またはキャッチ・コレクション・チーム・バトルのカードにある<b>見る</b>ボタン）で、どの星のページでも開けます。物語、バトルステータス、技とパッシブ、あなたの星の明るさと初めて再点灯した日。◀ ▶ で同じ系統をめくれます。まだ見つけていない星はシルエットとヒント、<b>願いにする</b>ボタンだけが表示されます。</p>
+</div>
+<div class="stage"><img alt="ストーリーボス戦：最大3つの星のチームでボスに挑む" class="guide-shot" height="360" src="../assets/guide/en/hunt.webp" width="480"/><p class="mono figcap">ストーリーボス戦：最大3つの星のチームでボスに挑む</p></div>
+
+</div></section><section class=ed id="rarities"><div class=no>04</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">見つかるもの</span>
+<h2>レアリティとファミリー</h2>
+<p><b>8つのファミリー</b>(エンバー、フロスト、オーロラ、タイド、ブルーム、ヴェール、ランタン、ホロウ)に<b>100個の星</b>があり、それぞれ形が違います。星にはコモンからセレスティアルまでのレアリティがあり、レアな星ほど大きく輝き、レベルが上がると解放されます。</p><ul class="checks"><li>月の満ち欠けによってしか現れない星もあります。</li><li>しばらくレアな星が出ないと、救済の仕組みで必ず出るようになります。</li></ul>
+</div>
+<div class="stage"><img alt="コモンからセレスティアルまで、各ファミリーの星のアート" class="guide-shot" height="976" src="../assets/guide/en/rarities.webp" width="870"/><p class="mono figcap">コモンからセレスティアルまで、各ファミリーの星のアート</p></div>
+
+</div></section><section class=ed id="brightness"><div class=no>05</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker"><img alt="" aria-hidden="true" class="px-ico" height="20" src="../sparkle.png" width="20"/> 星を育てよう</span>
+<h2>明るさと光</h2>
+<p>星にはそれぞれ1〜5の<b>明るさ</b>があります。<b>星</b>タブでスターダストを使う、同じ星をもう一度つかまえる、旅のかけらを使う、のどれかで上げられます。明るくてレアな星ほど<b>光</b>が多く、光が星座を灯します。</p><p><b>スターダスト</b>は遊ぶともらえます。チャット、ボイス、Lumoのゲーム、そしてStarkeepers自体。販売はなく、Lumo Coinsでもありません。コインで買えるのは見た目だけです。</p>
+</div>
+<div class="stage"><img alt="スターダスト、光、明るい星が並ぶ星タブ" class="guide-shot" height="331" src="../assets/guide/en/stars.webp" width="728"/><p class="mono figcap">スターダスト、光、明るい星が並ぶ星タブ</p></div>
+
+</div></section><section class=ed id="skies"><div class=no>06</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">ふたつの空</span>
+<h2>自分の空とサーバーの空</h2>
+<p><b>マイスカイ</b>は自分だけの星空。つかまえた星がファミリーの色で並び、明るい星には名前がつきます。</p><p><b>サーバーの空</b>はみんなで共有します。<code>/sky server</code> で自分の星を星座に置き、サーバー全体で一緒に灯していきます。</p>
+</div>
+<div class="stage"><img alt="名前つきの星が並ぶプレイヤー自身の星空" class="guide-shot" height="560" src="../assets/guide/en/mysky.webp" width="960"/><p class="mono figcap">名前つきの星が並ぶプレイヤー自身の星空</p></div>
+
+</div></section><section class=ed id="constellations"><div class=no>07</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">みんなで</span>
+<h2>星座・エリア・特典</h2>
+<p>サーバーの空には<b>エリア</b>があり、それぞれに<b>星座</b>があります。星座の枠を正しいファミリーの星で埋め、光の目標に届くと<b>灯ります</b>。ラベルには「あと1個の星が必要」のように、足りないものが必ず表示されます。</p><ul class="checks"><li>灯った星座はサーバー全体に小さな<b>特典</b>をくれます。スターダストが少し増える、確率が少し上がる、など。</li><li>星座を灯すと新しいエリアが開くことがあります。</li><li>手伝った全員がその星座のバッジをもらえます。</li></ul>
+</div>
+<div class="stage"><img alt="エリアと星座のある共有のサーバーの空" class="guide-shot" height="760" src="../assets/guide/en/serversky.webp" width="1200"/><p class="mono figcap">エリアと星座のある共有のサーバーの空</p></div>
+
+</div></section><section class=ed id="streak"><div class=no>08</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">続けよう</span>
+<h2>連続記録・タスク・サーバー目標</h2>
+<p>毎晩観測して<b>連続記録</b>を伸ばそう。7晩ごとに星がひとつ増えます。毎晩<b>3つの小さなタスク</b>(「星を2個つかまえる」など)もあり、少しスターダストがもらえます。サーバー全体で共有する<b>目標</b>もあり、達成すると小さな特典があります。</p>
+</div>
+
+</div></section><section class=ed id="trips"><div class=no>09</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">留守のあいだに</span>
+<h2>星の旅とかけら</h2>
+<p><code>/sky trip</code> で星を<b>2時間の旅</b>に出せます。戻ったら<b>受け取る</b>を押して、その星のファミリーの<b>かけら</b>をもらいましょう(明るい星ほど多く持ち帰ります)。同じファミリーの<b>かけら10個</b>で、そのファミリーの星を1段階明るくできます(1つの星につき一晩1回)。</p><ul class="checks"><li>一晩の最初の3回の旅では、それぞれ1スターダストももらえます。</li><li>旅から戻るとLumoが旅のメッセージを更新します。メンションが欲しいときは<b>通知する</b>をオンに。</li></ul>
+</div>
+<div class="stage"><img alt="帰り道の星と受け取ったかけらが表示された星の旅の画面" class="guide-shot" height="274" src="../assets/guide/en/trips.webp" width="728"/><p class="mono figcap">帰り道の星と受け取ったかけらが表示された星の旅の画面</p></div>
+
+</div></section><section class=ed id="observatory"><div class=no>10</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">オプション · 長期</span>
+<h2>天文台</h2>
+<p>管理者がオフにしない限り、<code>/sky observatory</code> で自分の天文台が開きます。旅で集めた<b>かけら</b>と<b>星くず</b>で強化すると、天文台のレベルが上がります。</p><ul class="checks"><li><b>旅の時間</b>：1段階ごとに旅が15分短くなります（最短1時間15分）。</li><li><b>タスク引き直し</b>：気に入らない毎晩のタスクを入れ替えます。</li><li><b>望遠鏡</b>：見逃した流れ星を手に入れられる小さなチャンス。</li><li><b>旅の枠</b>：2つの星を同時に旅に出せます（レベル3で解放）。</li></ul><p>強化は消費するだけです。星くずが戻ることも、レア度の確率が変わることもありません。</p>
+</div>
+
+</div></section><section class=ed id="wish"><div class=no>11</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">欲しい星</span>
+<h2>願い星</h2>
+<p><code>/sky wish</code> で、まだ持っていない星をひとつ選びます。毎晩その星が観測に出る確率が少し上がり、出なかった夜ごとにさらに少しずつ上がります(最大10%)。星を変えると最初からになります。</p>
+</div>
+<div class="stage"><img alt="今夜の追加確率が表示された願い星の画面" class="guide-shot" height="282" src="../assets/guide/en/wish.webp" width="728"/><p class="mono figcap">今夜の追加確率が表示された願い星の画面</p></div>
+
+</div></section><section class=ed id="shooting"><div class=no>12</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">チャンネルでライブ</span>
+<h2>流れ星と彗星群</h2>
+<p>一日に何度か、管理者が選んだチャンネルに<b>流れ星</b>が落ちてきます。最初に<b>つかまえる</b>を押した3人がもらえます。</p><p>ときどき<b>彗星群</b>が1分間だけ通り過ぎます(管理者がオンにした場合)。みんなで<b>つかまえるのを手伝う</b>を押すと、手伝った人はスターダストを、上位の協力者は少し多くもらえます。</p>
+</div>
+<div class="stage"><img alt="「つかまえるのを手伝う」ボタンと上位の協力者が載った彗星群のメッセージ" class="guide-shot" height="234" src="../assets/guide/en/comet.webp" width="728"/><p class="mono figcap">「つかまえるのを手伝う」ボタンと上位の協力者が載った彗星群のメッセージ</p></div>
+
+</div></section><section class=ed id="eclipse"><div class=no>13</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker"><img alt="" aria-hidden="true" class="px-ico" height="20" src="../assets/px/moon-eclipse.png" width="20"/> 月に一度</span>
+<h2>月食</h2>
+<p>月に一度、世界の影が月を横切り、2晩のあいだ月を赤く染めます。<b>月食リング</b>エリアが開き、レアやセレスティアルの星が少し出やすくなり、どの月の星も現れる可能性があり、星がたくさん降ります。</p>
+</div>
+<div class="stage"><img alt="Discordで表示される月食のアニメーション" class="guide-shot" height="236" src="../assets/guide/en/eclipse.webp" width="420"/><p class="mono figcap">Discordで表示される月食のアニメーション</p></div>
+
+</div></section><section class=ed id="milestones"><div class=no>14</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">あなたの進み具合</span>
+<h2>実績</h2>
+<p>コレクション実績(10・50・100回目のキャッチ、ファミリーのコンプリート、初めてのセレスティアルなど)をクリアすると、星空の画像に表示できる<b>称号</b>、少しのスターダスト、ときには新しい<b>背景</b>がもらえます。星タブの<b>その他 → 実績</b>で確認できます。</p>
+</div>
+<div class="stage"><img alt="称号と進み具合が並ぶ実績リスト" class="guide-shot" height="431" src="../assets/guide/en/milestones.webp" width="728"/><p class="mono figcap">称号と進み具合が並ぶ実績リスト</p></div>
+
+</div></section><section class=ed id="story"><div class=no>15</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">世界の物語</span>
+<h2>ストーリー</h2>
+<p>星は壊されたのではなく、忘れられただけ。だれにも見上げられない空は、少しずつ暗くなっていきます。小さなランプロボットの<b>Lumo</b>はランタンを灯し続け、<b>全8章</b>と幕間でその物語を語ります。</p><ul class="checks"><li>章は、あなたとサーバーが遊ぶほど開いていきます。はじめての星、最初に灯った星座、新しい地域、月食など。</li><li>どの章でも<b>称号</b>がもらえ、新しい<b>背景</b>がもらえる章もあります。</li><li><code>/sky story</code> で読めます。</li></ul>
+</div>
+<div class="stage"><img alt="第1章「小さなランプ」のページ。手をふるLumo" class="guide-shot" height="780" src="../assets/guide/en/story.webp" width="720"/><p class="mono figcap">第1章「小さなランプ」のページ。手をふるLumo</p></div>
+
+</div></section><section class=ed id="tips"><div class=no>16</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker">知っておくと便利</span>
+<h2>コツ</h2>
+<ul class="checks"><li>1回だけでも毎晩観測しよう。連続記録が続きます。</li><li>今夜タブでタスクを確認しよう。手軽にスターダストがもらえます。</li><li>サーバーに必要な場所に星を置こう。足りないものはラベルに書いてあります。</li><li>ログオフ前に星を旅に出そう。</li><li>ファミリーをコンプリートできる星を願おう。</li><li>置いた星を明るくしよう。その光はサーバー全体に効きます。</li></ul>
+</div>
+
+</div></section><section class=ed id="faq"><div class=no>17</div><div class=body>
+
+<div class="guide-copy">
+<span class="kicker"><span aria-hidden="true">❓</span> 質問</span>
+<h2>FAQ</h2>
+<div class="guide-faq"><details class="faq"><summary>Starkeepersは有料?</summary><div class="faq-body"><p>いいえ。すべてのサーバーで無料です。Lumo Coinsで買えるのは見た目(夜空の背景)だけで、スターダストは買えません。</p></div></details><details class="faq"><summary>/skyが見えないのはなぜ?</summary><div class="faq-body"><p>管理者がダッシュボードでStarkeepersをオフにしている可能性があります。オンに戻すよう頼んでください。</p></div></details><details class="faq"><summary>新しい星はいつ出る?</summary><div class="faq-body"><p>毎晩、米国東部時間(ET)の深夜0時です。</p></div></details><details class="faq"><summary>星がなくなることはある?</summary><div class="faq-body"><p>いいえ。つかまえた星はずっとあなたのものです。自分のデータを消したい場合は「その他 → 星を忘れる」から削除できます。</p></div></details><details class="faq"><summary>星座に「あと1個の星が必要」と出るのはなぜ?</summary><div class="faq-body"><p>すべての枠が埋まり、光の目標に届いたときだけ灯ります。何が足りないかはラベルに表示されます。</p></div></details><details class="faq"><summary>彗星群や流れ星は全員にメンションする?</summary><div class="faq-body"><p>いいえ。管理者が選んだチャンネルにだけ投稿され、管理者がオンにするまでは無効です。</p></div></details></div>
+</div>
+
+</div></section><section class=cta><img alt="お祝いするマスコットロボのLumo" class="cta-bot" height="104" src="../assets/robot/celebrating-256.webp" width="104"/><div><h2>最初の星をつかまえてみよう!</h2>
+<p>Lumoを追加して、<code>/sky watch</code>と入力しよう。</p>
+<div class="cta center"><a class="btn" href="https://discord.com/oauth2/authorize?client_id=1545140271073722378&amp;permissions=309576723664&amp;scope=bot+applications.commands" rel="noopener" target="_blank">Discordに追加</a><a class="btn ghost" href="https://dashboard.lumobot.org" rel="noopener" target="_blank">ダッシュボードを開く</a></div></div></section></main><footer class=colophon><div class=c1><img src="../assets/robot/wave-96.webp" width=44 alt=""><div><b>Lumo</b><p>夜空の入ったDiscordボット。サポートサーバーの助けを借りながら、Oriyiがひとりで作っています。</p></div></div>
+<div><p class=mono>見る</p><a href="getting-started.html">はじめに</a><a href="features.html">機能</a><a href="starkeepers.html">遊び方</a><a href="commands.html">コマンド</a><a href="premium.html">Premium</a><a href="changelog.html">更新履歴</a></div>
+<div><p class=mono>ヘルプ</p><a href="faq.html">FAQ</a><a href="https://dashboard.lumobot.org">ダッシュボードを開く</a><a href="dashboard.html">ダッシュボードについて</a><a href="https://discord.gg/KZjebts36C" rel=noopener>サポートサーバー</a><a href="https://discord.com/users/1022200760018161684" rel=noopener>Oriにメッセージ</a><a href="faq.html#claim">Premiumを有効化</a><a href="faq.html#permissions">権限の説明</a><a href="https://top.gg/bot/1545140271073722378/vote" rel=noopener>Top.ggで投票</a></div>
+<div><p class=mono>細かい決まりごと</p><a href="status.html">稼働状況</a><a href="../terms.html">規約</a><a href="../privacy.html">プライバシー</a><a href="https://github.com/OniSyris" rel=noopener>@OniSyris</a></div><p class="mono small" style="grid-column:1/-1;opacity:.75;margin-top:12px">Discordとは提携していません。Lumo Coinsは現実の価値がない遊び用の通貨です。音楽：Outer Space Loop by wipics（CC0）。</p></footer><script src="../sky.js"></script><div class=pv-label>プレビュー版</div><script src="../theme.js"></script><script src="../assets/lumo-holiday.js"></script><script src="../mascot.js"></script><script src="../assets/lumo-stats.js"></script><!--L--><script src="../assets/lumo-lang.js"></script><!--/L--><script src="../assets/lumo-music.js" data-slot=".top .hr .theme-pop" data-src="../assets/audio/outer-space-loop.mp3" data-volume="0.16" data-fade="2.5"></script></body></html>

@@ -1,0 +1,19 @@
+/* Living Lumo (ported from lumobot.org): blinks now and then, waves on hover or tap, leans a little toward the cursor.
+   Eyelids are two small shapes over the art; eye spots per picture (holiday outfits included), in px of 512px art. No bobbing. */
+(function(){var EYES={"celebrating-256":[[198,228,29,38],[291,231,30,38]],"celebrating-96":[[199,230,26,33],[291,234,26,35]],"confused-384":[[174,229,34,45],[271,241,36,47]],"fire-96":[[200,263,23,29],[284,265,25,31]],"gaming-320":[[185,258,33,53],[286,259,37,55]],"gaming-96":[[186,261,29,40],[288,262,34,45]],"happy-256":[[212,234,34,44],[319,235,34,44]],"happy-96":[[214,237,29,40],[321,238,30,41]],"idea-320":[[181,286,28,39],[267,290,31,40]],"idea-96":[[180,288,26,34],[268,292,29,34]],"music-320":[[203,252,33,43],[302,243,33,43]],"music-96":[[205,254,29,38],[303,246,30,38]],"salute-192":[[195,234,30,41],[288,239,32,41]],"salute-96":[[195,235,26,37],[289,241,30,39]],"surprised-96":[[205,255,27,35],[300,255,28,35]],"thinking-256":[[168,221,33,44],[268,235,36,46]],"trophy-320":[[247,244,27,36],[330,262,30,38]],"trophy-96":[[248,247,24,31],[330,264,25,33]],"wave-512":[[213,246,34,45],[319,250,34,45]],"wave-96":[[215,249,30,41],[320,253,31,40]],"working-320":[[220,272,31,54],[312,275,40,59]],"working-96":[[222,276,25,38],[314,279,30,43]],"halloween":[[212,262,32,42],[308,266,31,41]],"thanksgiving":[[212,242,34,45],[317,246,34,45]],"christmas":[[210,252,32,42],[307,256,32,42]]};
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,fine=matchMedia('(hover: hover) and (pointer: fine)').matches,rigs=[];
+function key(src){var m=src.match(/robot\/(?:(halloween|thanksgiving|christmas)\/)?([a-z]+-(\d+))\.webp/);if(!m)return null;return m[1]&&+m[3]>=256?m[1]:m[2]}
+document.querySelectorAll('.plate img.bot').forEach(function(img){if(img.parentNode.classList.contains('bot-rig'))return;
+ var rig=document.createElement('span');rig.className='bot-rig';img.parentNode.insertBefore(rig,img);rig.appendChild(img);
+ var lids=[0,1].map(function(){var l=document.createElement('span');l.className='bot-lid';l.setAttribute('aria-hidden','true');rig.appendChild(l);return l});
+ function place(){var e=EYES[key(img.getAttribute('src')||'')];lids.forEach(function(l,i){if(!e){l.style.display='none';return}var p=e[i],x=p[0],y=p[1],w=p[2],h=p[3];l.style.display='';l.style.left=((x-w/2-4)/5.12)+'%';l.style.top=((y-h/2-4)/5.12)+'%';l.style.width=((w+8)/5.12)+'%';l.style.height=((h+8)/5.12)+'%'})}
+ place();new MutationObserver(place).observe(img,{attributes:true,attributeFilter:['src']});
+ if(!reduce){var wave=function(){rig.classList.remove('wave');void rig.offsetWidth;rig.classList.add('wave')};
+  rig.onpointerenter=function(e){if(e.pointerType==='mouse')wave()};rig.onclick=wave;rig.onanimationend=function(e){if(e.animationName==='bot-wave')rig.classList.remove('wave')}}
+ rigs.push(rig)});
+if(!rigs.length||reduce)return;
+function blink(){if(document.hidden||!document.body.contains(rigs[0]))return;rigs.forEach(function(r){r.classList.remove('blink');void r.offsetWidth;r.classList.add('blink')})}
+clearTimeout(window.__lumoBlink);(function loop(){window.__lumoBlink=setTimeout(function(){blink();if(Math.random()<.2)setTimeout(blink,260);loop()},2600+Math.random()*3800)})();
+if(fine){var raf=0,mx=0,my=0;window.onpointermove=function(e){mx=e.clientX;my=e.clientY;if(raf)return;raf=requestAnimationFrame(function(){raf=0;rigs.forEach(function(r){var b=r.getBoundingClientRect();if(!b.width)return;var dx=Math.max(-1,Math.min(1,(mx-(b.left+b.width/2))/600)),dy=Math.max(-1,Math.min(1,(my-(b.top+b.height/2))/600));r.style.transform='translate('+(dx*5).toFixed(1)+'px,'+(dy*3).toFixed(1)+'px) rotate('+(dx*3).toFixed(2)+'deg)'})})};
+ document.documentElement.onpointerleave=function(){rigs.forEach(function(r){r.style.transform=''})}}
+})();
