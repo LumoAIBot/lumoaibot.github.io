@@ -257,21 +257,21 @@
   <header><button class="cmd-name" type="button" data-copy="/poll list" title="Copiar">/poll list</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
   <p>Muestra las encuestas abiertas de este servidor y las últimas cerradas. Muestra las encuestas abiertas y las últimas cerradas, solo a ti.</p>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder create crea un recordatorio que publica una tarjeta a una hora fija. se repite cada día, cada 2 días, entre semana, en días elegidos o una vez, en tu zona horaria (con horario de verano).">
+<article class="cmd" data-cat="giveaways" data-search="/reminder create crea un recordatorio que publica una tarjeta a una hora fija (24 horas). se repite cada día, cada 2 días, entre semana, en días elegidos o una vez, en tu zona horaria (horario de verano incluido).">
   <header><button class="cmd-name" type="button" data-copy="/reminder create" title="Copiar">/reminder create</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
-  <p>Crea un recordatorio que publica una tarjeta a una hora fija. Se repite cada día, cada 2 días, entre semana, en días elegidos o una vez, en tu zona horaria (con horario de verano).</p><ul class="args"><li><code class="arg">channel</code></li><li><code class="arg">time</code></li><li><code class="arg">timezone?</code></li><li><code class="arg">repeat?</code></li><li><code class="arg">role?</code></li><li><code class="arg">banner?</code></li></ul>
+  <p>Crea un recordatorio que publica una tarjeta a una hora fija (24 horas). Se repite cada día, cada 2 días, entre semana, en días elegidos o una vez, en tu zona horaria (horario de verano incluido).</p><ul class="args"><li><code class="arg">channel</code></li><li><code class="arg">time</code></li><li><code class="arg">repeat</code></li><li><code class="arg">timezone?</code></li><li><code class="arg">start_date?</code></li></ul>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder card diseña la tarjeta de recordatorio del servidor con vista previa: colores, la campana o la mascota, tu propio icono o banner (los gif animados funcionan).">
-  <header><button class="cmd-name" type="button" data-copy="/reminder card" title="Copiar">/reminder card</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
-  <p>Diseña la tarjeta de recordatorio del servidor con vista previa: colores, la campana o la mascota, tu propio icono o banner (los GIF animados funcionan).</p><ul class="args"><li><code class="arg">style?</code></li><li><code class="arg">icon?</code></li><li><code class="arg">icon_image?</code></li><li><code class="arg">background?</code></li></ul>
+<article class="cmd" data-cat="giveaways" data-search="/reminder test vista previa de un recordatorio solo para ti: su tarjeta (animada si es gif), canal, hora, repetición, próximo envío y rol mencionado.">
+  <header><button class="cmd-name" type="button" data-copy="/reminder test" title="Copiar">/reminder test</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
+  <p>Vista previa de un recordatorio solo para ti: su tarjeta (animada si es GIF), canal, hora, repetición, próximo envío y rol mencionado.</p><ul class="args"><li><code class="arg">name</code></li></ul>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder banner dale a un recordatorio su propio banner o icono (un gif anima la tarjeta), o quítalos.">
-  <header><button class="cmd-name" type="button" data-copy="/reminder banner" title="Copiar">/reminder banner</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
-  <p>Dale a un recordatorio su propio banner o icono (un GIF anima la tarjeta), o quítalos.</p><ul class="args"><li><code class="arg">reminder</code></li><li><code class="arg">image?</code></li><li><code class="arg">icon?</code></li></ul>
+<article class="cmd" data-cat="giveaways" data-search="/reminder upload sube un banner o icono (png, jpg, webp o gif animado). elige un recordatorio por nombre, o déjalo vacío para el estilo del servidor.">
+  <header><button class="cmd-name" type="button" data-copy="/reminder upload" title="Copiar">/reminder upload</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
+  <p>Sube un banner o icono (PNG, JPG, WEBP o GIF animado). Elige un recordatorio por nombre, o déjalo vacío para el estilo del servidor.</p><ul class="args"><li><code class="arg">what</code></li><li><code class="arg">image</code></li><li><code class="arg">name?</code></li></ul>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder list mira todos los recordatorios con su próximo envío y los botones pausar, editar, probar y borrar.">
+<article class="cmd" data-cat="giveaways" data-search="/reminder list gestiona todos los recordatorios: pausar, editar, probar, borrar, rol a mencionar, su estilo y el estilo del servidor.">
   <header><button class="cmd-name" type="button" data-copy="/reminder list" title="Copiar">/reminder list</button><span class="badges"><span class="badge b-admin">Gestionar servidor</span></span></header>
-  <p>Mira todos los recordatorios con su próximo envío y los botones Pausar, Editar, Probar y Borrar.</p>
+  <p>Gestiona todos los recordatorios: pausar, editar, probar, borrar, rol a mencionar, su estilo y el estilo del servidor.</p>
 </article></div></section>
 <section class="cmd-group" data-group="admin"><h2><span aria-hidden="true">🛡️</span> Configuración del servidor <small>9</small></h2><div class="cmd-grid"><article class="cmd" data-cat="admin" data-search="/setup status see what&#x27;s set up in this server and what needs fixing. administrators only. a private checklist of what is set up in your server (welcome, logs, auto-role, reaction and color roles, date channel, void, automod, premium, customization) with the command to fix each gap. it warns about deleted channels or roles, missing permissions and role order, and changes nothing.">
   <header><button class="cmd-name" type="button" data-copy="/setup status" title="Copiar">/setup status</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>

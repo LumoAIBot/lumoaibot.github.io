@@ -256,21 +256,21 @@
   <header><button class="cmd-name" type="button" data-copy="/poll list" title="Copy">/poll list</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
   <p>Show this server&#x27;s open polls and the latest closed ones. Shows the open polls and the latest closed ones, only to you.</p>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder create set a reminder that posts a card at a set time. repeats every day, every 2 days, on weekdays, on chosen days or once, in your time zone (daylight saving handled).">
+<article class="cmd" data-cat="giveaways" data-search="/reminder create set a reminder that posts a card at a set time (24-hour). repeats every day, every 2 days, on weekdays, on chosen days or once, in your time zone (daylight saving handled).">
   <header><button class="cmd-name" type="button" data-copy="/reminder create" title="Copy">/reminder create</button><span class="badges"><span class="badge b-admin">Manage Server</span></span></header>
-  <p>Set a reminder that posts a card at a set time. Repeats every day, every 2 days, on weekdays, on chosen days or once, in your time zone (daylight saving handled).</p><ul class="args"><li><code class="arg">channel</code></li><li><code class="arg">time</code></li><li><code class="arg">timezone?</code></li><li><code class="arg">repeat?</code></li><li><code class="arg">role?</code></li><li><code class="arg">banner?</code></li></ul>
+  <p>Set a reminder that posts a card at a set time (24-hour). Repeats every day, every 2 days, on weekdays, on chosen days or once, in your time zone (daylight saving handled).</p><ul class="args"><li><code class="arg">channel</code></li><li><code class="arg">time</code></li><li><code class="arg">repeat</code></li><li><code class="arg">timezone?</code></li><li><code class="arg">start_date?</code></li></ul>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder card design the server&#x27;s reminder card with a live preview: colors, the bell or lumo mascot, your own icon or banner (animated gifs work).">
-  <header><button class="cmd-name" type="button" data-copy="/reminder card" title="Copy">/reminder card</button><span class="badges"><span class="badge b-admin">Manage Server</span></span></header>
-  <p>Design the server&#x27;s reminder card with a live preview: colors, the bell or Lumo mascot, your own icon or banner (animated GIFs work).</p><ul class="args"><li><code class="arg">style?</code></li><li><code class="arg">icon?</code></li><li><code class="arg">icon_image?</code></li><li><code class="arg">background?</code></li></ul>
+<article class="cmd" data-cat="giveaways" data-search="/reminder test preview one reminder just for you: its card (animated if gif), channel, time, repeat, next send and role ping.">
+  <header><button class="cmd-name" type="button" data-copy="/reminder test" title="Copy">/reminder test</button><span class="badges"><span class="badge b-admin">Manage Server</span></span></header>
+  <p>Preview one reminder just for you: its card (animated if GIF), channel, time, repeat, next send and role ping.</p><ul class="args"><li><code class="arg">name</code></li></ul>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder banner give one reminder its own banner or icon (a gif animates the card), or remove them.">
-  <header><button class="cmd-name" type="button" data-copy="/reminder banner" title="Copy">/reminder banner</button><span class="badges"><span class="badge b-admin">Manage Server</span></span></header>
-  <p>Give one reminder its own banner or icon (a GIF animates the card), or remove them.</p><ul class="args"><li><code class="arg">reminder</code></li><li><code class="arg">image?</code></li><li><code class="arg">icon?</code></li></ul>
+<article class="cmd" data-cat="giveaways" data-search="/reminder upload upload a banner or icon (png, jpg, webp or an animated gif). pick a reminder by name, or leave it empty for the server look.">
+  <header><button class="cmd-name" type="button" data-copy="/reminder upload" title="Copy">/reminder upload</button><span class="badges"><span class="badge b-admin">Manage Server</span></span></header>
+  <p>Upload a banner or icon (PNG, JPG, WEBP or an animated GIF). Pick a reminder by name, or leave it empty for the server look.</p><ul class="args"><li><code class="arg">what</code></li><li><code class="arg">image</code></li><li><code class="arg">name?</code></li></ul>
 </article>
-<article class="cmd" data-cat="giveaways" data-search="/reminder list see every reminder with its next send time, with pause, edit, test and delete buttons.">
+<article class="cmd" data-cat="giveaways" data-search="/reminder list manage every reminder: pause, edit, test, delete, role ping, its look and the server look.">
   <header><button class="cmd-name" type="button" data-copy="/reminder list" title="Copy">/reminder list</button><span class="badges"><span class="badge b-admin">Manage Server</span></span></header>
-  <p>See every reminder with its next send time, with Pause, Edit, Test and Delete buttons.</p>
+  <p>Manage every reminder: pause, edit, test, delete, role ping, its look and the server look.</p>
 </article></div></section>
 <section class="cmd-group" data-group="admin"><h2><span aria-hidden="true">🛡️</span> Server setup <small>9</small></h2><div class="cmd-grid"><article class="cmd" data-cat="admin" data-search="/setup status see what&#x27;s set up in this server and what needs fixing. administrators only. a private checklist of what is set up in your server (welcome, logs, auto-role, reaction and color roles, date channel, void, automod, premium, customization) with the command to fix each gap. it warns about deleted channels or roles, missing permissions and role order, and changes nothing.">
   <header><button class="cmd-name" type="button" data-copy="/setup status" title="Copy">/setup status</button><span class="badges"><span class="badge b-admin">Admin</span></span></header>
