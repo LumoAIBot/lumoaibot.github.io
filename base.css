@@ -234,7 +234,7 @@ section.cta{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 7%
 .mq{display:flex;gap:22px;align-items:center;width:max-content;animation:mq 60s linear infinite}.mq code{font-size:15px;white-space:nowrap}.mq img{width:12px;opacity:.8}
 .marquee:hover .mq{animation-play-state:paused}@keyframes mq{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.mq{animation:none;flex-wrap:wrap;width:auto;padding:0 5vw}}
-details.menu{border:0;padding:0}
+details.menu,details.lang-pop{border:0;padding:0}
 .marquee+.ed::before{display:none}
 /* ===== detailed orrery ===== */
 :root{--ink-o:#2a3550;--ring:#8a6214}[data-theme=dark]{--ink-o:#b9b0ff;--ring:#e8cf8a}
