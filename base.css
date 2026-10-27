@@ -398,3 +398,5 @@ html[lang=ja] h1,html[lang=ja] h2,html[lang=ja] h3{word-break:auto-phrase;overfl
  section.cta h2{font-size:24px}section.cta img{width:76px}
  .colophon{font-size:13.5px;gap:3vw}.c1 b{font-size:18px}
 }
+.main-nav a.nav-dash{border:1px solid var(--ink);padding:3px 10px}
+.menu-p a.nav-dash{font-weight:600}
