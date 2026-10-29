@@ -85,8 +85,8 @@ section.cta h2{font-size:30px}section.cta p{color:var(--mute);margin-top:8px}.ct
 .L-qa .body>nav{position:sticky;top:90px;align-self:start;display:flex;flex-direction:column;gap:4px;font-size:14px;border-left:1px solid var(--line);padding-left:16px}.L-qa .body>nav a{text-decoration:none;color:var(--mute)}
 .faq-group{margin-top:var(--s4)}.faq-list>h2:first-child{margin-top:0}
 /* L-diary (changelog) */
-.L-diary .ed{grid-template-columns:minmax(0,1fr)}.cl-day{display:grid;grid-template-columns:200px minmax(0,1fr);gap:4vw;padding:var(--s4) 0;border-top:1px solid var(--line)}
-.cl-day>*{grid-column:2;margin:0}.cl-day>h2{grid-column:1;grid-row:1/span 9;font-size:22px;color:var(--acc)}.cl-day>*+*{margin-top:12px}
+.L-diary .ed{grid-template-columns:minmax(0,1fr)}.cl-day{display:grid;grid-template-columns:200px minmax(0,1fr);gap:0 4vw;padding:var(--s4) 0;border-top:1px solid var(--line)}
+.cl-day>*{grid-column:2;margin:0}.cl-day>h2{grid-column:1;grid-row:1/span 9;font-size:22px;color:var(--acc)}.cl-day>*+*:not(h2+*){margin-top:12px}
 /* L-steps */
 .gs-step{list-style:none;display:grid;grid-template-columns:70px 1fr;gap:20px;padding:var(--s3) 0;border-bottom:1px solid var(--line)}.gs-step .num{font-family:Fraunces;font-size:44px;color:var(--acc);line-height:1}
 .L-steps ol,.L-steps ul.gs{padding:0}.gs-step>div>*+*{margin-top:10px}
