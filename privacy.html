@@ -62,7 +62,7 @@
 <h3>AutoMod</h3>
 <p>If a server manager turns on an AutoMod rule in the web dashboard (beta), Lumo reads each new message only to check it against the rules that are on (invite links, scam links, mass mentions, spam bursts). Nothing is sent to our AI provider and no message text is stored; for the spam rule Lumo keeps the times of a member’s last few messages in memory for a few seconds. When a message is removed and the server has a log channel, the log entry includes a short copy of it. Lumo stores only the AutoMod settings. Scam-link checks use a free public list of known phishing domains that Lumo downloads; no message is sent anywhere to check it.</p>
 <h3>Service logs</h3>
-<p>Like most software, the bot writes operational logs for debugging. These can include user and server IDs, display names, voice transcripts and spoken replies (the first 200 characters), music search terms, short excerpts of image prompts that our AI provider rejected, and error details. In voice channels, transcripts of speech that did not include the bot’s name can also appear in these logs.</p>
+<p>Like most software, the bot writes operational logs for debugging. These can include user and server IDs, display names, voice transcripts and spoken replies (the first 200 characters), music search terms, the first 80 characters of Lumo’s AI chat replies (with a shortened, scrambled user code instead of your user ID), short excerpts of image prompts that our AI provider rejected, and error details. In voice channels, transcripts of speech that did not include the bot’s name can also appear in these logs.</p>
 </section><section id="use">
 <h2>2. How it is used</h2>
 <ul>
