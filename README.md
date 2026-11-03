@@ -21,7 +21,7 @@ The mock Discord panels are illustrations in HTML/CSS, not screenshots. No track
 ## Languages
 
 The English pages at the root are the source. `/es/`, `/pt-br/` and `/ja/` are built from them with
-`python3 i18n/build.py` (translations in `i18n/<code>.json`, keyed by the English text). Run it after editing an
+`python3 i18n/build.py` (**outdated: do not run**, see the note at the top of the script; translations in `i18n/<code>.json`, keyed by the English text). Run it after editing an
 English page, then `python3 i18n/build.py --check` should print no "would change" line. It also adds the hreflang
 links, the language switcher and the cache-busting versions to every page, and the language URLs to `sitemap.xml`.
 `privacy.html` and `terms.html` stay English and say so in all four languages. Changelog entries stay English.
