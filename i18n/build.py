@@ -1,3 +1,7 @@
+# !!! DO NOT RUN: OUTDATED !!!
+# This script no longer matches the live pages (they were built by a newer generator and then edited by hand).
+# Running it would rewrite every page and turn about 124 hand-translated strings per language back to English.
+# Edit the English and translated pages directly until the translation tables are rebuilt.
 """Build the Español, Português (Brasil) and 日本語 pages from the English ones.
 
     python3 i18n/build.py          # rewrite /es/, /pt-br/, /ja/ and the language bits of the English pages
